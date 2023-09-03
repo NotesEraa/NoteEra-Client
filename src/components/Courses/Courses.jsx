@@ -13,7 +13,7 @@ function Courses() {
 
   useEffect(() => {
     // Fetch college data from the API
-    axios.get('http://localhost:5000/data/all/colleges')
+    axios.get('https://notesera-backend.onrender.com/data/all/colleges')
       .then(response => {
         const collegeData = response.data.map(college => ({
           value: college,
@@ -30,7 +30,7 @@ function Courses() {
     setSelectedCollege(selectedOption); // Update selected college state
 
     // Fetch years for the selected college from the API
-    axios.get(`http://localhost:5000/data/all/${selectedOption.value}/years`)
+    axios.get(`https://notesera-backend.onrender.com/data/all/${selectedOption.value}/years`)
       .then(response => {
         const yearData = response.data.map(year => ({
           value: year,
@@ -47,7 +47,7 @@ function Courses() {
     setSelectedYear(selectedOption); // Update selected year state
 
     // Fetch types for the selected college and year from the API
-    axios.get(`http://localhost:5000/data/all/${selectedCollege.value}/${selectedOption.value}/types`)
+    axios.get(`https://notesera-backend.onrender.com/data/all/${selectedCollege.value}/${selectedOption.value}/types`)
       .then(response => {
         const typeData = response.data.map(type => ({
           value: type,
@@ -67,7 +67,7 @@ function Courses() {
 
   const constructLink = async () => {
     if (selectedCollege && selectedYear && selectedType) {
-      const link = `http://localhost:5000/data/all/${selectedCollege.value}/${selectedYear.value}/${selectedType.value}/links`;
+      const link = `https://notesera-backend.onrender.com/data/all/${selectedCollege.value}/${selectedYear.value}/${selectedType.value}/links`;
       try {
         const response = await axios.get(link);
         const links = response.data;
