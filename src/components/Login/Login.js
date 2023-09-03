@@ -27,7 +27,7 @@ const Login = () => {
       const userPasskey = window.prompt('Enter Passkey');
 
       if (userPasskey === loginPasskey) {
-        await axios.post('http://localhost:5000/auth/login', { email, password });
+        await axios.post('https://notesera-backend.onrender.com/auth/login', { email, password });
         navigate('/login9874Notes/dashboard');
       } else {
         setError('Invalid passkey');
