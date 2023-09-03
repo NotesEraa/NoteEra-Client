@@ -26,7 +26,7 @@ const SignUp = () => {
 
     try {
       // Perform signup logic using Axios or your preferred method
-      await axios.post('http://localhost:5000/auth/signup', {
+      await axios.post('https://notesera-backend.onrender.com/auth/signup', {
         username: username, 
         email: email,       
         password: password 
