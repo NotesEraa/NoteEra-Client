@@ -17,7 +17,7 @@ const EditData = () => {
   // Fetch the existing data based on the ID when the component mounts
   useEffect(() => {
     // Make an API call to fetch the data based on the ID and set the state variables
-    axios.get(`http://localhost:5000/data/${id}`)
+    axios.get(`https://notesera-backend.onrender.com/data/${id}`)
       .then((response) => {
         const data = response.data;
         setCollege(data.college);
@@ -43,7 +43,7 @@ const EditData = () => {
     };
 
     // Make an API call to update the data
-    axios.put(`http://localhost:5000/data/${id}`, updatedData)
+    axios.put(`https://notesera-backend.onrender.com/data/${id}`, updatedData)
       .then((response) => {
         // Handle success, e.g., redirect to a success page or show a success message
         console.log('Data updated successfully!', response.data.message);
