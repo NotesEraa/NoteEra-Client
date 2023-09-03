@@ -33,7 +33,7 @@ const AddData = () => {
 
       if (userPasskey === addPasskey) {
         // If the passkey matches, proceed to redirect the user to the dashboard
-        await axios.post('http://localhost:5000/data/add', formData);
+        await axios.post('https://notesera-backend.onrender.com/data/add', formData);
         setFormData(initialFormData);
         window.alert('Data added successfully');
       } else {
