@@ -19,7 +19,7 @@ const Dashboard = () => {
   const handleDelete = async (id) => {
     try {
       // Make a DELETE request to your server to delete the data entry
-      await axios.delete(`http://localhost:5000/data/${id}`);
+      await axios.delete(`https://notesera-backend.onrender.com/data/${id}`);
   
       // Remove the deleted data entry from the local state (dataList)
       const updatedList = dataList.filter((data) => data._id !== id);
@@ -35,7 +35,7 @@ const Dashboard = () => {
   // Function to fetch data from the backend
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/data/all'); 
+      const response = await axios.get('https://notesera-backend.onrender.com/data/all'); 
       setDataList(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
