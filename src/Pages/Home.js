@@ -538,7 +538,7 @@ export default function Home() {
                   </div>
                   <div className="tab-pane fade" id="teb_photography" role="tabpanel">
                     <div className="row">
-                      <div className="col col-lg-5" style={{marginLeft: '0px', marginRight: '75px'}}>
+                      <div className="col col-lg-5">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.linkedin.com/in/sujal-soni/" data-cursor-text="View">
@@ -570,7 +570,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="https://www.linkedin.com/in/sujal-soni/">
-                                Sujal Soni: Diligent Learner, Full Stack Web Developer
+                              Sujal Soni: Diligent Learner, Full Stack Web Developer
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://www.linkedin.com/in/sujal-soni/">
@@ -632,7 +632,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="col col-lg-5" style={{marginLeft: '0px', marginRight: '75px'}}>
+                      <div className="col col-lg-5">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/jasneet2003/" data-cursor-text="View">
@@ -664,11 +664,11 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="https://www.instagram.com/jasneet2003/">
-                                Jasneet Singh Saini: I Create Content and craft elegant Frontend
+                              Jasneet Singh Saini: I Create Content and craft elegant Frontend
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://www.linkedin.com/in/jasneet-singh-saini-473638214/">
-                              <span className="btn_text">Linkedin</span>
+                              <span className="btn_text">LinkedIn</span>
                               <span className="btn_icon">
                                 <i className="fas fa-long-arrow-right"></i>
                                 <i className="fas fa-long-arrow-right"></i>
