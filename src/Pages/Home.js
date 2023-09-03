@@ -50,7 +50,7 @@ export default function Home() {
               <div className="col col-lg-3 col-5">
                 <div className="site_logo">
                   <a className="site_link" href="index.html">
-                    <img src="Assets2/NotesEra.png" style={{width: "200px"}} alt="NotesEra - Online Learning Platform" />
+                    <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751840/Assets2/NotesEra_sq741d.png" style={{width: "200px"}} alt="NotesEra - Online Learning Platform" />
                   </a>
                 </div>
               </div>
@@ -137,34 +137,34 @@ export default function Home() {
                   <div className="col col-lg-5">
                     <div className="banner_image_1 decoration_wrap">
                       <div className="image_wrap">
-                        <img src="Assets2/banner.png" alt="Notes-Era – Online Learning Platform" />
+                        <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751695/Assets2/banner_gwfmq2.png" alt="Notes-Era – Online Learning Platform" />
                       </div>
                       <div className="satisfied_student">
                         <h3 className="wrap_title">4000+ Satisfied Student</h3>
                         <ul className="students_thumbnail unordered_list_center">
                           <li>
                             <span>
-                              <img src="Assets2/Untitleddesign(1).png" alt="Notes-Era – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751792/Assets2/Untitleddesign_1_wceupe.png" alt="Notes-Era – Online Learning Platform" />
                             </span>
                           </li>
                           <li>
                             <span>
-                              <img src="Assets2/Untitleddesign(2).png" alt="Notes-Era – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751793/Assets2/Untitleddesign_2_fje1wf.png" alt="Notes-Era – Online Learning Platform" />
                             </span>
                           </li>
                           <li>
                             <span>
-                              <img src="Assets2/Untitleddesign(3).png" alt="Notes-Era – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751793/Assets2/Untitleddesign_3_lknnof.png" alt="Notes-Era – Online Learning Platform" />
                             </span>
                           </li>
                           <li>
                             <span>
-                              <img src="Assets2/Untitleddesign(4).png" alt="Notes-Era – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751793/Assets2/Untitleddesign_4_ljes1d.png" alt="Notes-Era – Online Learning Platform" />
                             </span>
                           </li>
                           <li>
                             <span>
-                              <img src="Assets2/Untitleddesign.png" alt="Notes-Era – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751794/Assets2/Untitleddesign_flr1tu.png" alt="Notes-Era – Online Learning Platform" />
                             </span>
                           </li>
                         </ul>
@@ -201,7 +201,7 @@ export default function Home() {
                   </div>
 
                   <div className="image_widget" style={{ boxShadow: '10px 10px 0 #af6bed' }}>
-                    <img src="Assets2/about_image_1.jpg" alt="NotesEra – Online Learning Platform" />
+                    <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751627/Assets2/about_image_1_bumdcm.jpg" alt="NotesEra – Online Learning Platform" />
                   </div>
                 </div>
                 <div className="col col-lg-6">
@@ -444,7 +444,7 @@ export default function Home() {
                           <div className="item_image">
                             <a href="https://instagram.com/ayushsaxena_29?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
                               data-cursor-text="View">
-                              <img src="Assets2/AyushSaxena.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751653/Assets2/AyushSaxena_is1eix.png" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -491,7 +491,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/sakshijha.ai/" data-cursor-text="View">
-                              <img src="Assets2/SakshiJha.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751776/Assets2/SakshiJha_qizkb3.png" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -542,7 +542,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.linkedin.com/in/sujal-soni/" data-cursor-text="View">
-                              <img src="Assets2/Sujal1234.jpg" alt="NotesEra – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693754196/Assets2/Sujal1238_zcemf2.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -570,7 +570,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="https://www.linkedin.com/in/sujal-soni/">
-                                Sujal Soni: Diligent Learner, Web Crafting Enthusiast
+                                Sujal Soni: Diligent Learner, Full Stack Web Developer
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://www.linkedin.com/in/sujal-soni/">
@@ -590,7 +590,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/" data-cursor-text="View">
-                              <img src="Assets2/ArthGupta.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751653/Assets2/ArthGupta_qmkzfi.png" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -636,7 +636,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/jasneet2003/" data-cursor-text="View">
-                              <img src="Assets2/Jasneet.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751700/Assets2/Jasneet_icemp5.png" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -682,7 +682,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/" data-cursor-text="View">
-                              <img src="Assets2/AAradhyaTiwari.png" alt="Collab – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751642/Assets2/AAradhyaTiwari_rghpyx.png" alt="Collab – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -737,7 +737,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/sebas_j_tian/" data-cursor-text="View">
-                              <img src="Assets2/JerinThomas.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751787/Assets2/JerinThomas_clyf4h.png" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -784,7 +784,7 @@ export default function Home() {
                           <div className="item_image">
                             <a href="https://www.instagram.com/_d.a.a.n.i.y.a.a.l_/?igshid=MmU2YjMzNjRlOQ%3D%3D"
                               data-cursor-text="View">
-                              <img src="Assets2/DaaniyaalAbbasi.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751771/Assets2/DaaniyaalAbbasi_wer64h.png" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -838,7 +838,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/aditii_003/" data-cursor-text="View">
-                              <img src="Assets2/AditiDalal.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751649/Assets2/AditiDalal_ufiyay.png" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -884,7 +884,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/_ananya.rai_/" data-cursor-text="View">
-                              <img src="Assets2/AnanyaRai.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751650/Assets2/AnanyaRai_vp5yl6.png" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -936,7 +936,7 @@ export default function Home() {
                           <div className="item_image">
                             <a href="https://www.instagram.com/unfilteredhawk/?igshid=MmU2YjMzNjRlOQ%3D%3D"
                               data-cursor-text="View">
-                              <img src="Assets2/AnnirughSharma.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751645/Assets2/AnnirughSharma_xwt67g.png" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -1019,18 +1019,18 @@ export default function Home() {
                   <div className="row images_group decoration_wrap">
                     <div className="col col-md-6 col-sm-6">
                       <div className="image_wrap">
-                        <img src="Assets2/colleagues-studying-together-exam.jpg" alt="NotesEra – Online Learning Platform" />
+                        <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751699/Assets2/GROUP3_jc8gy2.avif" alt="NotesEra – Online Learning Platform" />
                       </div>
                       <div className="image_wrap">
-                        <img src="Assets2/hhhhhhhhhhhhhhhhhhhh.jpg" alt="NotesEra – Online Learning Platform" />
+                        <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751751/Assets2/RedBrownHaired_b2xmqb.avif" alt="NotesEra – Online Learning Platform" />
                       </div>
                     </div>
                     <div className="col col-md-6 col-sm-6">
                       <div className="image_wrap">
-                        <img src="Assets2/online-communication.jpg" alt="NotesEra – Online Learning Platform" />
+                        <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751682/Assets2/GROUP1_l6yqnz.avif" alt="NotesEra – Online Learning Platform" />
                       </div>
                       <div className="image_wrap">
-                        <img src="Assets2/university-students-discussing.jpg" alt="NotesEra – Online Learning Platform" />
+                        <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751686/Assets2/GROUP4_agwq2y.avif" alt="NotesEra – Online Learning Platform" />
                       </div>
                     </div>
                     <div className="deco_item shape_img_1" data-parallax='{"y" : -130, "smoothness": 6}'>
@@ -1054,7 +1054,8 @@ export default function Home() {
               <div className="row align-items-center">
                 <div className="col col-lg-6">
                   <div className="image_widget">
-                    <img src="Assets2/young-attractive-smiling-student.jpg" alt="NotesEra – Online Learning Platform" />
+                    <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751894/Assets2/young-attractive-smiling-student_kxvd2e.jpg" alt="NotesEra – Online Learning Platform" loading='lazy'/>
+                    {/* Assets2/young-attractive-smiling-student.jpg */}
                   </div>
                 </div>
                 <div className="col col-lg-6">
@@ -1300,7 +1301,7 @@ export default function Home() {
                     <div className="carousel_item">
                       <div className="testimonial_item">
                         <div className="testimonial_image">
-                          <img src="./Assets2/testimonial1.jpg" alt="NotesEra – Online Learning Platform" />
+                          <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751783/Assets2/testimonial1_dnot1b.jpg" alt="NotesEra – Online Learning Platform" />
                         </div>
                         <div className="testimonial_content">
                           <ul className="rating_star unordered_list">
@@ -1325,7 +1326,7 @@ export default function Home() {
                     <div className="carousel_item">
                       <div className="testimonial_item">
                         <div className="testimonial_image">
-                          <img src="Assets2/testimonial2.jpg" alt="NotesEra – Online Learning Platform" />
+                          <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751792/Assets2/testimonial2_ighuyx.jpg" alt="NotesEra – Online Learning Platform" />
                         </div>
                         <div className="testimonial_content">
                           <ul className="rating_star unordered_list">
@@ -1353,7 +1354,7 @@ export default function Home() {
                     <div className="carousel_item">
                       <div className="testimonial_item">
                         <div className="testimonial_image">
-                          <img src="Assets2/testimonial3.jpg" alt="NotesEra – Online Learning Platform" />
+                          <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751791/Assets2/testimonial3_jnlyrq.jpg" alt="NotesEra – Online Learning Platform" />
                         </div>
                         <div className="testimonial_content">
                           <ul className="rating_star unordered_list">
@@ -1378,7 +1379,7 @@ export default function Home() {
                     <div className="carousel_item">
                       <div className="testimonial_item">
                         <div className="testimonial_image">
-                          <img src="Assets2/testimonial4.jpg" alt="NotesEra – Online Learning Platform"/>
+                          <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751788/Assets2/testimonial4_zsozig.jpg" alt="NotesEra – Online Learning Platform"/>
                         </div>
                         <div className="testimonial_content">
                           <ul className="rating_star unordered_list">
@@ -1467,7 +1468,7 @@ export default function Home() {
                   <div className="footer_widget">
                     <div className="site_logo">
                       <a className="site_link" href="index.html">
-                        <img src="Assets2/NotesEra.png" alt="NotesEra - Online Learning Platform" />
+                        <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751840/Assets2/NotesEra_sq741d.png" alt="NotesEra - Online Learning Platform" />
                       </a>
                     </div>
                     <p>
@@ -1612,7 +1613,7 @@ export default function Home() {
                       <li>
                         <a className="blog_small" href="https://www.instagram.com/p/Ct1zJSPNdKA/?img_index=1">
                           <span className="item_image">
-                            <img src="Assets2/article1.png" alt="NotesEra – Online Learning Platform" />
+                            <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751633/Assets2/article1_y1lbop.png" alt="NotesEra – Online Learning Platform" />
                           </span>
                           <span className="item_content">
                             <span className="item_author"><i className="fas fa-user-alt"></i> by Notes-Era</span>
@@ -1624,7 +1625,7 @@ export default function Home() {
                       <li>
                         <a className="blog_small" href="https://www.instagram.com/p/CtyxOG7tDPP/?img_index=1">
                           <span className="item_image">
-                            <img src="Assets2/article2.png" alt="NotesEra – Online Learning Platform" />
+                            <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751638/Assets2/article2_aheonw.png" alt="NotesEra – Online Learning Platform" />
                           </span>
                           <span className="item_content">
                             <span className="item_author"><i className="fas fa-user-alt"></i> by Notes-Era</span>
