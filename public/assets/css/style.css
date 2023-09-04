@@ -4926,11 +4926,10 @@ Responsive For Mobile & Tablet Devices
 
 @media screen and (max-width: 680px) {
   .banner_small_title{
-    margin-left: 50px;
+    margin-left: 0px;
   }
   .banner_big_title{
-    text-align: center;
-    margin-left: 42px;
+    margin-left: 0px;
   }
 }
 
