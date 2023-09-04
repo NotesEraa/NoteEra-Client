@@ -2,8 +2,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
-import Courses from './Pages/Courses/Courses';
-import SignUp from './Pages/SignUp';
+import Courses from './Pages/Courses/Courses.jsz';
+import SignUp from './Pages/SignUp/SignUp';
 import Login from './components/Login/Login';
 import Dashboard from './components/Dashboard/dashboard';
 import AddData from './components/AddData/AddData';
@@ -25,9 +25,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="courses">
-            <Courses />
-          </Route>
+        <Route path="/courses" element={<Courses />} />
         <Route path="/signup9875" element={<SignUp />} />
         <Route path="/login9874Notes" element={<Login />} />
         <Route path="/login9874Notes/dashboard" element={<Dashboard />} />
