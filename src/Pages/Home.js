@@ -434,7 +434,16 @@ export default function Home() {
                       <i className="fas fa-palette"></i>
                       <span>Consultant</span>
                     </button>
+                        // ----------------
                   </li>
+                  <li role="presentation">
+                    <button data-bs-toggle="tab" data-bs-target="#teb_design" type="button" role="tab"
+                      aria-selected="false">
+                      <i className="fas fa-palette"></i>
+                      <span>Database</span>
+                    </button>
+              // ---------------------------------
+                        </li>
                 </ul>
                 <div className="tab-content">
                   <div className="tab-pane fade show active" id="teb_hr" role="tabpanel">
