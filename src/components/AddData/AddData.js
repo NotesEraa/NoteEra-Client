@@ -13,7 +13,7 @@ const AddData = () => {
   };
   
   const [formData, setFormData] = useState(initialFormData);
-  const addPasskey = "not40add20";
+  //const addPasskey = "not40add20";
   
 
   const handleChange = (e) => {
@@ -29,16 +29,20 @@ const AddData = () => {
     e.preventDefault();
 
     try {
-      const userPasskey = window.prompt('Enter Passkey');
+      // const userPasskey = window.prompt('Enter Passkey');
 
-      if (userPasskey === addPasskey) {
-        // If the passkey matches, proceed to redirect the user to the dashboard
-        await axios.post('https://notesera-backend.onrender.com/data/add', formData);
-        setFormData(initialFormData);
-        window.alert('Data added successfully');
-      } else {
-        window.alert('Invalid Passkey');
-      }
+      // if (userPasskey === addPasskey) {
+      //   // If the passkey matches, proceed to redirect the user to the dashboard
+      //   await axios.post('https://notesera-backend.onrender.com/data/add', formData);
+      //   setFormData(initialFormData);
+      //   window.alert('Data added successfully');
+      // } else {
+      //   window.alert('Invalid Passkey');
+      // }
+
+      await axios.post('https://notesera-backend.onrender.com/data/add', formData);
+      setFormData(initialFormData);
+      window.alert('Data added successfully');
       
     } catch (error) {
       // Handle errors
