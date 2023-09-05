@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import './Dashboard.css'; // You can create a CSS file for Dashboard styling
 import { useNavigate } from 'react-router-dom';
@@ -32,6 +33,8 @@ const Dashboard = () => {
     }
   };
 
+
+
   // Function to fetch data from the backend
   const fetchData = async () => {
     try {
@@ -42,8 +45,18 @@ const Dashboard = () => {
     }
   };
 
+ 
   useEffect(() => {
-    // Fetch data when the component mounts
+    // // Check if the token is present in LocalStorage
+    // const token = localStorage.getItem('token');
+
+    // if (!token) {
+    //   // If token is not found, redirect to login
+    //   navigate('/login9874Notes');
+    // } else {
+    //   // If token is found, you can fetch data or perform other actions
+    //   fetchData();
+    // }
     fetchData();
   }, []);
 
@@ -66,6 +79,7 @@ const Dashboard = () => {
         <div className="card-body1">
           <p>Year: {data.year}</p>
           <p>Type: {data.type}</p>
+          <p>Subject: {data.subject}</p>
           <p>Link: {data.link}</p>
         </div>
         <div className="card-actions1">

@@ -4,12 +4,13 @@ import axios from 'axios';
 import Select from 'react-select';
 
 function Courses() {
-  const [colleges, setColleges] = useState([]); // State for college options
-  const [years, setYears] = useState([]); // State for year options
-  const [types, setTypes] = useState([]); // State for type options
-  const [selectedCollege, setSelectedCollege] = useState(null); // State for selected college
-  const [selectedYear, setSelectedYear] = useState(null); // State for selected year
-  const [selectedType, setSelectedType] = useState(null); // State for selected type
+  const [colleges, setColleges] = useState([]);
+  const [years, setYears] = useState([]);
+  const [types, setTypes] = useState([]);
+  const [subjects, setSubjects] = useState([]);
+  const [selectedCollege, setSelectedCollege] = useState(null);
+  const [selectedYear, setSelectedYear] = useState(null);
+  const [selectedType, setSelectedType] = useState(null);
 
   useEffect(() => {
     // Fetch college data from the API
@@ -19,15 +20,15 @@ function Courses() {
           value: college,
           label: college,
         }));
-        setColleges(collegeData); // Update state with colleges
+        setColleges(collegeData);
       })
       .catch(error => {
         console.error('Error fetching colleges:', error);
       });
-  }, []); // Empty dependency array to run this effect only once
+  }, []);
 
   const handleCollegeChange = (selectedOption) => {
-    setSelectedCollege(selectedOption); // Update selected college state
+    setSelectedCollege(selectedOption);
 
     // Fetch years for the selected college from the API
     axios.get(`https://notesera-backend.onrender.com/data/all/${selectedOption.value}/years`)
@@ -36,7 +37,7 @@ function Courses() {
           value: year,
           label: year,
         }));
-        setYears(yearData); // Update state with years
+        setYears(yearData);
       })
       .catch(error => {
         console.error('Error fetching years:', error);
@@ -44,7 +45,7 @@ function Courses() {
   };
 
   const handleYearChange = (selectedOption) => {
-    setSelectedYear(selectedOption); // Update selected year state
+    setSelectedYear(selectedOption);
 
     // Fetch types for the selected college and year from the API
     axios.get(`https://notesera-backend.onrender.com/data/all/${selectedCollege.value}/${selectedOption.value}/types`)
@@ -53,7 +54,7 @@ function Courses() {
           value: type,
           label: type,
         }));
-        setTypes(typeData); // Update state with types
+        setTypes(typeData);
       })
       .catch(error => {
         console.error('Error fetching types:', error);
@@ -61,24 +62,24 @@ function Courses() {
   };
 
   const handleTypeChange = (selectedOption) => {
-    setSelectedType(selectedOption); // Update selected type state
+    setSelectedType(selectedOption);
   };
 
-
-  const constructLink = async () => {
+  const fetchSubjects = async () => {
     if (selectedCollege && selectedYear && selectedType) {
-      const link = `https://notesera-backend.onrender.com/data/all/${selectedCollege.value}/${selectedYear.value}/${selectedType.value}/links`;
+      const link = `https://notesera-backend.onrender.com/data/all/${selectedCollege.value}/${selectedYear.value}/${selectedType.value}/subjects`;
       try {
         const response = await axios.get(link);
-        const links = response.data;
-        // Do something with the links, such as navigating to the first one
-        if (links.length > 0) {
-          window.location.href = links[0].link;
-        }
+        const subjectsData = response.data;
+        setSubjects(subjectsData);
       } catch (error) {
-        console.error('Error fetching links:', error);
+        console.error('Error fetching subjects:', error);
       }
     }
+  };
+
+  const openSubjectLink = (link) => {
+    window.open(link, '_blank');
   };
 
   return (
@@ -118,11 +119,15 @@ function Courses() {
         </div>
 
         <div className="button-div">
-          <button id="submitBtn" onClick={constructLink}>Submit</button>
+          <button id="submitBtn" onClick={fetchSubjects}>Submit</button>
         </div>
 
-        <div id="coursesList">
-          {/* The list of matching courses will be displayed here */}
+        <div className="subjects-container">
+          {subjects.map((subject, index) => (
+            <div key={index} className="subject-rectangle" onClick={() => openSubjectLink(subject.link)}>
+              {subject.name}
+            </div>
+          ))}
         </div>
       </div>
     </div>

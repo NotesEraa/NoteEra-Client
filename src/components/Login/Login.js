@@ -12,7 +12,7 @@ const Login = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  // const loginPasskey = 501020;
+  // const loginPasskey = process.env.REACT_APP_LOGIN_PASSKEY;
   
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -27,15 +27,8 @@ const Login = () => {
       // const userPasskey = window.prompt('Enter Passkey');
       await axios.post('https://notesera-backend.onrender.com/auth/login', { email, password });
       navigate('/login9874Notes/dashboard');
-      // if (userPasskey === loginPasskey) {
-      //   await axios.post('https://notesera-backend.onrender.com/auth/login', { email, password });
-      //   navigate('/login9874Notes/dashboard');
-      // } else {
-      //   setError('Invalid passkey');
-      //   window.alert('Invalid Passkey');
-      //   navigate('/login9874Notes');
-      // }
-    } catch (error) {
+    }
+     catch (error) {
       setError('Invalid email or password');
     }
   };

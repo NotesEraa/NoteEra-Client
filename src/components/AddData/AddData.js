@@ -1,19 +1,35 @@
-import React, { useState } from 'react';
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useState } from 'react';
 import './AddData.css';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 
 const AddData = () => {
 
+  const navigate = useNavigate();
+
   const initialFormData = {
     college: '',
     year: '1',
     type: 'Notes',
+    subject: '',
     link: '',
   };
   
   const [formData, setFormData] = useState(initialFormData);
-  //const addPasskey = "not40add20";
+  // const addPasskey = process.env.REACT_APP_ADD_PASSKEY;
+
+  // useEffect(() => {
+  //   // Check if the token is present in LocalStorage
+  //   const token = localStorage.getItem('token');
+
+  //   if (!token) {
+  //     // If token is not found, redirect to login
+  //     navigate('/login9874Notes');
+  //   }
+  // }, []);
   
 
   const handleChange = (e) => {
@@ -39,7 +55,6 @@ const AddData = () => {
       // } else {
       //   window.alert('Invalid Passkey');
       // }
-
       await axios.post('https://notesera-backend.onrender.com/data/add', formData);
       setFormData(initialFormData);
       window.alert('Data added successfully');
@@ -97,6 +112,16 @@ const AddData = () => {
             <option value="MST2">MST2</option>
             <option value="End Sem">End Sem</option>
           </select>
+        </div>
+        <div className="form-group3">
+          <label htmlFor="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name='subject'
+            value={formData.subject}
+            onChange={handleChange}
+          />
         </div>
         <div className="form-group3">
           <label htmlFor="link">Link:</label>

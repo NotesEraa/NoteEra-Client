@@ -1,9 +1,12 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './EditData.css'; // Import your CSS stylesimport axios from 'axios';
+
 import axios from 'axios';
 
 const EditData = () => {
+
   // Use the useParams hook to get the ID of the data you want to edit
   const { id } = useParams();
   const navigate = useNavigate();
@@ -13,6 +16,8 @@ const EditData = () => {
   const [year, setYear] = useState('');
   const [type, setType] = useState('');
   const [link, setLink] = useState('');
+  const [subject, setSubject] = useState('');
+
 
   // Fetch the existing data based on the ID when the component mounts
   useEffect(() => {
@@ -23,6 +28,7 @@ const EditData = () => {
         setCollege(data.college);
         setYear(data.year);
         setType(data.type);
+        setSubject(data.subject);
         setLink(data.link);
       })
       .catch((error) => {
@@ -39,6 +45,7 @@ const EditData = () => {
       college,
       year,
       type,
+      subject,
       link,
     };
 
@@ -99,6 +106,16 @@ const EditData = () => {
             <option value="MST2">MST2</option>
             <option value="End Sem">End Sem</option>
           </select>
+        </div>
+        <div className="form-group">
+          <label htmlFor="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            required
+          />
         </div>
         <div className="form-group">
           <label htmlFor="link">Link:</label>
