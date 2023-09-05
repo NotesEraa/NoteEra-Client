@@ -12,7 +12,7 @@ const Login = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  const loginPasskey = 501020;
+  // const loginPasskey = 501020;
   
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -24,9 +24,9 @@ const Login = () => {
 
 
     try {
-      const userPasskey = window.prompt('Enter Passkey');
+      // const userPasskey = window.prompt('Enter Passkey');
       await axios.post('https://notesera-backend.onrender.com/auth/login', { email, password });
-       navigate('/login9874Notes/dashboard');
+      navigate('/login9874Notes/dashboard');
       // if (userPasskey === loginPasskey) {
       //   await axios.post('https://notesera-backend.onrender.com/auth/login', { email, password });
       //   navigate('/login9874Notes/dashboard');
