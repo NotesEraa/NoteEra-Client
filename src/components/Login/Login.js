@@ -12,7 +12,7 @@ const Login = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  const loginPasskey = "not50add10";
+  const loginPasskey = 501020;
   
   const handleLogin = async (e) => {
     e.preventDefault();
