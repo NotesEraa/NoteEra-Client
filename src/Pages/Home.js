@@ -916,7 +916,7 @@ export default function Home() {
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://www.instagram.com/_ananya.rai_/">
-                              <span className="btn_text">View Course</span>
+                              <span className="btn_text">Instagram</span>
                               <span className="btn_icon">
                                 <i className="fas fa-long-arrow-right"></i>
                                 <i className="fas fa-long-arrow-right"></i>
