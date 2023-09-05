@@ -413,6 +413,15 @@ export default function Home() {
                       <i className="fas fa-camera"></i>
                       <span>Technicals</span>
                     </button>
+                        </li>
+                 <li role="presentation">
+  <button data-bs-toggle="tab" data-bs-target="#teb_database" type="button" role="tab" aria-selected="false">
+    <i className="fas fa-database"></i>
+    <span>Database</span>
+  </button>
+</li>
+
+                        
                   </li>
                   <li role="presentation">
                     <button data-bs-toggle="tab" data-bs-target="#teb_programming" type="button" role="tab"
