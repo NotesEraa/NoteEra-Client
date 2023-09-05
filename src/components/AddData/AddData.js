@@ -13,7 +13,7 @@ const AddData = () => {
   };
   
   const [formData, setFormData] = useState(initialFormData);
-  const addPasskey = process.env.REACT_APP_ADD_PASSKEY;
+  const addPasskey = "not40add20";
   
 
   const handleChange = (e) => {
