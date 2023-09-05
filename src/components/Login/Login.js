@@ -25,15 +25,16 @@ const Login = () => {
 
     try {
       const userPasskey = window.prompt('Enter Passkey');
-
-      if (userPasskey === loginPasskey) {
-        await axios.post('https://notesera-backend.onrender.com/auth/login', { email, password });
-        navigate('/login9874Notes/dashboard');
-      } else {
-        setError('Invalid passkey');
-        window.alert('Invalid Passkey');
-        navigate('/login9874Notes');
-      }
+      await axios.post('https://notesera-backend.onrender.com/auth/login', { email, password });
+       navigate('/login9874Notes/dashboard');
+      // if (userPasskey === loginPasskey) {
+      //   await axios.post('https://notesera-backend.onrender.com/auth/login', { email, password });
+      //   navigate('/login9874Notes/dashboard');
+      // } else {
+      //   setError('Invalid passkey');
+      //   window.alert('Invalid Passkey');
+      //   navigate('/login9874Notes');
+      // }
     } catch (error) {
       setError('Invalid email or password');
     }
