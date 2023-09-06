@@ -73,6 +73,7 @@ function Courses() {
         const subjectsData = response.data;
         console.log(subjectsData);
         setSubjects(subjectsData);
+        console.log(subjectsData);
       } catch (error) {
         console.error('Error fetching subjects:', error);
       }
