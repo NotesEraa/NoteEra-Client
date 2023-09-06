@@ -75,15 +75,26 @@ function Courses() {
       } catch (error) {
         console.error('Error fetching subjects:', error);
       }
-    } else {
-      // Optionally, you can display a message to the user if not all options are selected.
-      console.error('Please select college, year, and type');
     }
   };
 
-  const openSubjectLink = (link) => {
-    window.open(link, '_blank');
+  // Function to open the link associated with a subject
+  const openSubjectLink = async (subject) => {
+    if (selectedCollege && selectedYear && selectedType && subject) {
+      const link = `https://notesera-backend.onrender.com/data/all/${selectedCollege.value}/${selectedYear.value}/${selectedType.value}/${subject}/links`;
+      try {
+        const response = await axios.get(link);
+        const links = response.data;
+        // Check if there are links, and if so, open the first one in a new tab
+        if (links.length > 0) {
+          window.open(links[0].link, '_blank');
+        }
+      } catch (error) {
+        console.error('Error fetching links:', error);
+      }
+    }
   };
+
 
   return (
     <div className='main-body'>
@@ -125,15 +136,18 @@ function Courses() {
           <button id="submitBtn" onClick={fetchSubjects}>Submit</button>
         </div>
 
-        {selectedCollege && selectedYear && selectedType && (
-          <div className="subjects-container">
-            {subjects.map((subject, index) => (
-              <div key={index} className="subject-rectangle" onClick={() => openSubjectLink(subject.link)}>
-                {subject.name}
-              </div>
-            ))}
-          </div>
-        )}
+        {/* Display subjects in rectangular containers */}
+        <div className="subjects-container">
+          {subjects.map((subject, index) => (
+            <div
+              key={index}
+              className="subject-rectangle"
+              onClick={() => openSubjectLink(subject)}
+            >
+              {subject}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
