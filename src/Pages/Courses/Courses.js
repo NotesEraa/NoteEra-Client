@@ -75,6 +75,9 @@ function Courses() {
       } catch (error) {
         console.error('Error fetching subjects:', error);
       }
+    } else {
+      // Optionally, you can display a message to the user if not all options are selected.
+      console.error('Please select college, year, and type');
     }
   };
 
@@ -122,13 +125,15 @@ function Courses() {
           <button id="submitBtn" onClick={fetchSubjects}>Submit</button>
         </div>
 
-        <div className="subjects-container">
-          {subjects.map((subject, index) => (
-            <div key={index} className="subject-rectangle" onClick={() => openSubjectLink(subject.link)}>
-              {subject.name}
-            </div>
-          ))}
-        </div>
+        {selectedCollege && selectedYear && selectedType && (
+          <div className="subjects-container">
+            {subjects.map((subject, index) => (
+              <div key={index} className="subject-rectangle" onClick={() => openSubjectLink(subject.link)}>
+                {subject.name}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
