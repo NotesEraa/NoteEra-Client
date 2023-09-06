@@ -71,6 +71,7 @@ function Courses() {
       try {
         const response = await axios.get(link);
         const subjectsData = response.data;
+        console.log(subjectsData);
         setSubjects(subjectsData);
       } catch (error) {
         console.error('Error fetching subjects:', error);
