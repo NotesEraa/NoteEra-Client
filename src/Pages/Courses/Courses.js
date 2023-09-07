@@ -3,6 +3,8 @@ import './Courses.css';
 import axios from 'axios';
 import Select from 'react-select';
 
+
+/* eslint-disable react-hooks/exhaustive-deps */
 function Courses() {
 
   const [isLoadingColleges, setIsLoadingColleges] = useState(true);
@@ -27,7 +29,7 @@ function Courses() {
     setTimeout(() => {
       setIsLoadingColleges(false);
       clearInterval(loadingInterval);
-    }, 9000); // Adjust the duration as needed
+    }, 1000); // Adjust the duration as needed
 
     return () => {
       clearInterval(loadingInterval);
