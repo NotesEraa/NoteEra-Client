@@ -9,11 +9,11 @@
   }
 
 .loading-indicator {
-  font-size: 24px; /* Adjust the font size as needed */
-  text-align: center; /* Center align the text */
-  padding: 20px; /* Add padding for spacing */
-  background-color: rgba(255, 255, 255); /* Semi-transparent background */
-  position: fixed; /* Fixed position to cover the entire viewport */
+  font-size: 24px; 
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255);
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -21,7 +21,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Ensure it appears above other elements */
+  z-index: 9999; 
+}
+
+.loading-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 24px;
+}
+
+.loading-message {
+  opacity: 0;
+  transform: translateY(50px); /* Initial position for the animation */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.loading-message.active {
+  opacity: 1;
+  transform: translateY(0); /* Final position for the animation */
 }
 
 .newslatter_box{
