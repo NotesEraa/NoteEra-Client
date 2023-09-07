@@ -7,6 +7,23 @@
     align-items: center;
     flex-wrap: wrap;
   }
+
+.loading-indicator {
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: center; /* Center align the text */
+  padding: 20px; /* Add padding for spacing */
+  background-color: rgba(255, 255, 255); /* Semi-transparent background */
+  position: fixed; /* Fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it appears above other elements */
+}
+
 .newslatter_box{
     background-color: #705792;
     box-shadow: 10px 10px 10px #382045;
