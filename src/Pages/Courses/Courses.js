@@ -23,13 +23,13 @@ function Courses() {
       setCurrentMessageIndex((prevIndex) =>
         prevIndex === loadingMessages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 1500);
+    }, 3000);
 
     // Simulate loading by setting a timeout
     setTimeout(() => {
       setIsLoadingColleges(false);
       clearInterval(loadingInterval);
-    }, 1000); // Adjust the duration as needed
+    }, 2000); // Adjust the duration as needed
 
     return () => {
       clearInterval(loadingInterval);
