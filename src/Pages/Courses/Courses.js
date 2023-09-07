@@ -4,6 +4,8 @@ import axios from 'axios';
 import Select from 'react-select';
 
 function Courses() {
+
+  const [isLoadingColleges, setIsLoadingColleges] = useState(true);
   const [colleges, setColleges] = useState([]);
   const [years, setYears] = useState([]);
   const [types, setTypes] = useState([]);
@@ -24,6 +26,9 @@ function Courses() {
       })
       .catch(error => {
         console.error('Error fetching colleges:', error);
+      })
+      .finally(() => {
+        setIsLoadingColleges(false); 
       });
   }, []);
 
@@ -101,55 +106,61 @@ function Courses() {
   return (
     <div className='main-body'>
       <div className="container">
-        <h1>Get Your Notes Here!</h1>
-        <div id="dropdown-container">
-          <div className="dropdown">
-            <label>College:</label>
-            <Select
-              value={selectedCollege}
-              onChange={handleCollegeChange}
-              options={colleges}
-              placeholder="Select College"
-            />
-          </div>
-
-          <div className="dropdown">
-            <label>Year:</label>
-            <Select
-              value={selectedYear}
-              onChange={handleYearChange}
-              options={years}
-              placeholder="Select Year"
-            />
-          </div>
-
-          <div className="dropdown">
-            <label>Type:</label>
-            <Select
-              value={selectedType}
-              onChange={handleTypeChange}
-              options={types}
-              placeholder="Select Type"
-            />
-          </div>
-        </div>
-
-        <div className="button-div">
-          <button id="submitBtn" onClick={fetchSubjects}>Submit</button>
-        </div>
-
-        {/* Display subjects in rectangular containers */}
-        <div className="subjects-container">
-          {subjects.map((subject, index) => (
-            <div
-              key={index}
-              className="subject-rectangle"
-              onClick={() => openSubjectLink(subject)}
-            >
-              {subject}
+      {isLoadingColleges ? (
+            <div className="loading-indicator">Loading data...</div>
+        ) : (
+        <>
+          <h1>Get Your Notes Here!</h1>
+          <div id="dropdown-container">
+            <div className="dropdown">
+              <label>College:</label>
+              <Select
+                value={selectedCollege}
+                onChange={handleCollegeChange}
+                options={colleges}
+                placeholder="Select College"
+              />
             </div>
-          ))}
-        </div>
+  
+            <div className="dropdown">
+              <label>Year:</label>
+              <Select
+                value={selectedYear}
+                onChange={handleYearChange}
+                options={years}
+                placeholder="Select Year"
+              />
+            </div>
+  
+            <div className="dropdown">
+              <label>Type:</label>
+              <Select
+                value={selectedType}
+                onChange={handleTypeChange}
+                options={types}
+                placeholder="Select Type"
+              />
+            </div>
+          </div>
+  
+          <div className="button-div">
+            <button id="submitBtn" onClick={fetchSubjects}>Submit</button>
+          </div>
+  
+          
+          <div className="subjects-container">
+            {subjects.map((subject, index) => (
+              <div
+                key={index}
+                className="subject-rectangle"
+                onClick={() => openSubjectLink(subject)}
+              >
+                {subject}
+              </div>
+            ))}
+          </div>
+        </>
+        )}
       </div>
     </div>
   );
