@@ -448,16 +448,6 @@ export default function Home() {
                      
                         </li>
                    
-                        
-   
-                  <li role="presentation">
-                    <button data-bs-toggle="tab" data-bs-target="#teb_design" type="button" role="tab"
-                      aria-selected="false">
-                      <i className="fas fa-palette"></i>
-                      <span>Database</span>
-                    </button>
-                     
-                        </li>
 
 
 
@@ -753,6 +743,198 @@ export default function Home() {
 
                     </div>
                   </div>
+                <div className="tab-pane fade" id="teb_database" role="tabpanel">
+                    <div className="row">
+                      <div className="col col-lg-5">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="https://www.linkedin.com/in/sujal-soni/" data-cursor-text="View">
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693754196/Assets2/Sujal1238_zcemf2.jpg" alt="NotesEra – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Senior Developer</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">3rd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Technology</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Future</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Enrichment</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="https://www.linkedin.com/in/sujal-soni/">
+                              Sujal Soni: Diligent Learner, Full Stack Web Developer
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="https://www.linkedin.com/in/sujal-soni/">
+                              <span className="btn_text">LinkedIn</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div className="col col-lg-5">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/" data-cursor-text="View">
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751653/Assets2/ArthGupta_qmkzfi.png" alt="NotesEra – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Senior Developer</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">3rd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Technology</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Future</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Evolvement</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/">
+                                Arth Gupta: Elevating Tech Solutions Excellently
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="https://www.linkedin.com/in/arth-gupta-a85b4a210/">
+                              <span className="btn_text">LinkedIn</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col col-lg-5">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="https://www.instagram.com/jasneet2003/" data-cursor-text="View">
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751700/Assets2/Jasneet_icemp5.png" alt="NotesEra – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Developer</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">3rd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Gamer</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Vlogger</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Creator</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="https://www.instagram.com/jasneet2003/">
+                              Jasneet Singh Saini: I Create Content and craft elegant Frontend
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="https://www.linkedin.com/in/jasneet-singh-saini-473638214/">
+                              <span className="btn_text">LinkedIn</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col col-lg-5">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/" data-cursor-text="View">
+                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751642/Assets2/AAradhyaTiwari_rghpyx.png" alt="Collab – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Developer</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">3rd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Technology</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Future</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Evolvement</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/">
+                                Aradhya Tiwari: Crafting Digital Innovations
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/">
+                              <span className="btn_text">Linkedin</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
 
 
 
