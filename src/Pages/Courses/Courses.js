@@ -6,6 +6,34 @@ import Select from 'react-select';
 function Courses() {
 
   const [isLoadingColleges, setIsLoadingColleges] = useState(true);
+  const [loadingMessages] = useState([
+    'Hang Tight',
+    'Loading Data',
+    'Fetching Subjects',
+    'Connecting the Links',
+    'Preparing the Layout',
+    'Embedding Styles',
+  ]);
+  const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
+
+  useEffect(() => {
+    const loadingInterval = setInterval(() => {
+      setCurrentMessageIndex((prevIndex) =>
+        prevIndex === loadingMessages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 1500);
+
+    // Simulate loading by setting a timeout
+    setTimeout(() => {
+      setIsLoadingColleges(false);
+      clearInterval(loadingInterval);
+    }, 9000); // Adjust the duration as needed
+
+    return () => {
+      clearInterval(loadingInterval);
+    };
+  }, []);
+
   const [colleges, setColleges] = useState([]);
   const [years, setYears] = useState([]);
   const [types, setTypes] = useState([]);
@@ -107,7 +135,20 @@ function Courses() {
     <div className='main-body'>
       <div className="container">
       {isLoadingColleges ? (
-            <div className="loading-indicator">Loading data...</div>
+            <div className='loading-indicator'>
+            <div className='loading-text'>
+              {loadingMessages.map((message, index) => (
+                <div
+                  key={index}
+                  className={`loading-message ${
+                    index === currentMessageIndex ? 'active' : ''
+                  }`}
+                >
+                  {message}
+                </div>
+              ))}
+            </div>
+          </div>
         ) : (
         <>
           <h1>Get Your Notes Here!</h1>
