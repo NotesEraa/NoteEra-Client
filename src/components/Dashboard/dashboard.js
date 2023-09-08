@@ -18,18 +18,21 @@ const Dashboard = () => {
 
   // Function to handle data deletion
   const handleDelete = async (id) => {
-    try {
-      // Make a DELETE request to your server to delete the data entry
-      await axios.delete(`https://notesera-backend.onrender.com/data/${id}`);
-  
-      // Remove the deleted data entry from the local state (dataList)
-      const updatedList = dataList.filter((data) => data._id !== id);
-      setDataList(updatedList);
-      
-      
-    } catch (error) {
-      // Handle errors, e.g., display an error message
-      console.error('Error deleting data:', error);
+    const confirmed = window.confirm("Are you sure you want to delete the data?");
+    if (confirmed){
+      try {
+        // Make a DELETE request to your server to delete the data entry
+        await axios.delete(`https://notesera-backend.onrender.com/data/${id}`);
+    
+        // Remove the deleted data entry from the local state (dataList)
+        const updatedList = dataList.filter((data) => data._id !== id);
+        setDataList(updatedList);
+        
+        
+      } catch (error) {
+        // Handle errors, e.g., display an error message
+        console.error('Error deleting data:', error);
+      }
     }
   };
 
