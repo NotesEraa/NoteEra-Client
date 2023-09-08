@@ -378,7 +378,7 @@ export default function Home() {
           {/* <!-- Counter Section - End
             ================================================== -->
 
-          <!-- Courses Section - Start
+            <!-- Courses Section - Start
             ================================================== --> */}
           <section className="courses_section section_space_lg">
             <div className="container">
@@ -413,16 +413,21 @@ export default function Home() {
                       <i className="fas fa-camera"></i>
                       <span>Technicals</span>
                     </button>
-                        </li>
-                 <li role="presentation">
-  <button data-bs-toggle="tab" data-bs-target="#teb_database" type="button" role="tab" aria-selected="false">
-    <i className="fas fa-database"></i>
-    <span>Database</span>
-  </button>
-</li>
-
-                        
-                  
+                  </li>
+                  <li role="presentation">
+                    <button data-bs-toggle="tab" data-bs-target="#teb_database" type="button" role="tab"
+                      aria-selected="false">
+                      <i className="fas fa-database"></i>
+                      <span>Database</span>
+                    </button>
+                  </li>
+                  <li role="presentation">
+                    <button data-bs-toggle="tab" data-bs-target="#teb_management" type="button" role="tab"
+                      aria-selected="false">
+                      <i className="fa-solid fa-person"></i>
+                      <span>Management</span>
+                    </button>
+                  </li>
                   <li role="presentation">
                     <button data-bs-toggle="tab" data-bs-target="#teb_programming" type="button" role="tab"
                       aria-selected="false">
@@ -437,21 +442,20 @@ export default function Home() {
                       <span>Media</span>
                     </button>
                   </li>
-                        
-   
+                  <li role="presentation">
+                    <button data-bs-toggle="tab" data-bs-target="#teb_elite" type="button" role="tab"
+                      aria-selected="false">
+                      <i className="fas fa-star"></i>
+                      <span>Team Elite</span>
+                    </button>
+                  </li>
                   <li role="presentation">
                     <button data-bs-toggle="tab" data-bs-target="#teb_design" type="button" role="tab"
                       aria-selected="false">
                       <i className="fas fa-palette"></i>
                       <span>Consultant</span>
                     </button>
-                     
-                        </li>
-                   
-
-
-
-                        
+                  </li>
                 </ul>
                 <div className="tab-content">
                   <div className="tab-pane fade show active" id="teb_hr" role="tabpanel">
@@ -461,7 +465,7 @@ export default function Home() {
                           <div className="item_image">
                             <a href="https://instagram.com/ayushsaxena_29?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
                               data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751653/Assets2/AyushSaxena_is1eix.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Ayush_Saxena.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -508,7 +512,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/sakshijha.ai/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751776/Assets2/SakshiJha_qizkb3.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Sakshi_Jha.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -549,17 +553,18 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
-
-
                     </div>
                   </div>
+
+
                   <div className="tab-pane fade" id="teb_photography" role="tabpanel">
                     <div className="row">
+                    
                       <div className="col col-lg-5">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.linkedin.com/in/sujal-soni/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693754196/Assets2/Sujal1238_zcemf2.jpg" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Sujal_Soni.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -607,7 +612,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751653/Assets2/ArthGupta_qmkzfi.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Arth_Gupta.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -649,11 +654,13 @@ export default function Home() {
                         </div>
                       </div>
 
+                
+
                       <div className="col col-lg-5">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/jasneet2003/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751700/Assets2/Jasneet_icemp5.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Jasneet_Singh_Saini.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -695,11 +702,12 @@ export default function Home() {
                         </div>
                       </div>
 
+
                       <div className="col col-lg-5">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751642/Assets2/AAradhyaTiwari_rghpyx.png" alt="Collab – Online Learning Platform" />
+                              <img src="Assets2/Aradhya_Tiwari.jpg" alt="Collab – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -743,19 +751,25 @@ export default function Home() {
 
                     </div>
                   </div>
-                <div className="tab-pane fade" id="teb_database" role="tabpanel">
+
+
+
+
+                  
+                  <div className="tab-pane fade" id="teb_database" role="tabpanel">
                     <div className="row">
-                      <div className="col col-lg-5">
+                    
+                      <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
-                            <a href="https://www.linkedin.com/in/sujal-soni/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693754196/Assets2/Sujal1238_zcemf2.jpg" alt="NotesEra – Online Learning Platform" />
+                            <a href="Add Image" data-cursor-text="View">
+                              <img src="Assets2/Lokesh_Vishwakarma.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
                             <div className="d-flex align-items-center justify-content-between mb-3">
                               <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Senior Developer</a></li>
+                                <li><a href="#!">Database Lead</a></li>
                               </ul>
                               <div className="item_price">
                                 <span className="sale_price">3rd Year</span>
@@ -764,24 +778,24 @@ export default function Home() {
                             <ul className="meta_info_list unordered_list">
                               <li>
                                 <i className="fas fa-chart-bar"></i>
-                                <span>Technology</span>
+                                <span>Productivity</span>
                               </li>
                               <li>
                                 <i className="fas fa-clock"></i>
-                                <span>Future</span>
+                                <span>Organized</span>
                               </li>
                               <li>
                                 <i className="fas fa-star"></i>
-                                <span>Enrichment</span>
+                                <span>Structured</span>
                               </li>
                             </ul>
                             <h3 className="item_title">
-                              <a href="https://www.linkedin.com/in/sujal-soni/">
-                              Sujal Soni: Diligent Learner, Full Stack Web Developer
+                              <a href="Add Link">
+                              Lokesh Vishwakarma: Your Database Manager
                               </a>
                             </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/sujal-soni/">
-                              <span className="btn_text">LinkedIn</span>
+                            <a className="btn_unfill" href="Add Link">
+                              <span className="btn_text">Add Link</span>
                               <span className="btn_icon">
                                 <i className="fas fa-long-arrow-right"></i>
                                 <i className="fas fa-long-arrow-right"></i>
@@ -793,17 +807,17 @@ export default function Home() {
 
 
 
-                      <div className="col col-lg-5">
+                      <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
-                            <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751653/Assets2/ArthGupta_qmkzfi.png" alt="NotesEra – Online Learning Platform" />
+                            <a href="https://instagram.com/mr_singh_jiii?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+                              <img src="Assets2/Kulvinder_Singh.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
                             <div className="d-flex align-items-center justify-content-between mb-3">
                               <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Senior Developer</a></li>
+                                <li><a href="#!">Database Lead</a></li>
                               </ul>
                               <div className="item_price">
                                 <span className="sale_price">3rd Year</span>
@@ -812,24 +826,24 @@ export default function Home() {
                             <ul className="meta_info_list unordered_list">
                               <li>
                                 <i className="fas fa-chart-bar"></i>
-                                <span>Technology</span>
+                                <span>Productivity</span>
                               </li>
                               <li>
                                 <i className="fas fa-clock"></i>
-                                <span>Future</span>
+                                <span>Organized</span>
                               </li>
                               <li>
                                 <i className="fas fa-star"></i>
-                                <span>Evolvement</span>
+                                <span>Structured</span>
                               </li>
                             </ul>
                             <h3 className="item_title">
-                              <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/">
-                                Arth Gupta: Elevating Tech Solutions Excellently
+                              <a href="https://instagram.com/mr_singh_jiii?igshid=MmU2YjMzNjRlOQ==">
+                                Kulvinder Singh: Your Database Manager
                               </a>
                             </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/arth-gupta-a85b4a210/">
-                              <span className="btn_text">LinkedIn</span>
+                            <a className="btn_unfill" href="https://instagram.com/mr_singh_jiii?igshid=MmU2YjMzNjRlOQ==">
+                              <span className="btn_text">Instagram</span>
                               <span className="btn_icon">
                                 <i className="fas fa-long-arrow-right"></i>
                                 <i className="fas fa-long-arrow-right"></i>
@@ -839,17 +853,19 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="col col-lg-5">
+                
+
+                      <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
-                            <a href="https://www.instagram.com/jasneet2003/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751700/Assets2/Jasneet_icemp5.png" alt="NotesEra – Online Learning Platform" />
+                            <a href="https://instagram.com/ganuanvesha_30?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+                              <img src="Assets2/Anvesha_Ganu.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
                             <div className="d-flex align-items-center justify-content-between mb-3">
                               <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Developer</a></li>
+                                <li><a href="#!">Database Team</a></li>
                               </ul>
                               <div className="item_price">
                                 <span className="sale_price">3rd Year</span>
@@ -858,24 +874,24 @@ export default function Home() {
                             <ul className="meta_info_list unordered_list">
                               <li>
                                 <i className="fas fa-chart-bar"></i>
-                                <span>Gamer</span>
+                                <span>Productivity</span>
                               </li>
                               <li>
                                 <i className="fas fa-clock"></i>
-                                <span>Vlogger</span>
+                                <span>Organized</span>
                               </li>
                               <li>
                                 <i className="fas fa-star"></i>
-                                <span>Creator</span>
+                                <span>Structured</span>
                               </li>
                             </ul>
                             <h3 className="item_title">
-                              <a href="https://www.instagram.com/jasneet2003/">
-                              Jasneet Singh Saini: I Create Content and craft elegant Frontend
+                              <a href="https://instagram.com/ganuanvesha_30?igshid=MmU2YjMzNjRlOQ==">
+                              Anvesha Ganu: Empty!!!
                               </a>
                             </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/jasneet-singh-saini-473638214/">
-                              <span className="btn_text">LinkedIn</span>
+                            <a className="btn_unfill" href="https://instagram.com/ganuanvesha_30?igshid=MmU2YjMzNjRlOQ==">
+                              <span className="btn_text">Instagram</span>
                               <span className="btn_icon">
                                 <i className="fas fa-long-arrow-right"></i>
                                 <i className="fas fa-long-arrow-right"></i>
@@ -885,17 +901,18 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="col col-lg-5">
+
+                      <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
-                            <a href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751642/Assets2/AAradhyaTiwari_rghpyx.png" alt="Collab – Online Learning Platform" />
+                            <a href="https://www.linkedin.com/in/umang-patanwala-96b032251" data-cursor-text="View">
+                              <img src="Assets2/Umang_Patanwala.jpg" alt="Collab – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
                             <div className="d-flex align-items-center justify-content-between mb-3">
                               <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Developer</a></li>
+                                <li><a href="#!">Database Team</a></li>
                               </ul>
                               <div className="item_price">
                                 <span className="sale_price">3rd Year</span>
@@ -904,23 +921,23 @@ export default function Home() {
                             <ul className="meta_info_list unordered_list">
                               <li>
                                 <i className="fas fa-chart-bar"></i>
-                                <span>Technology</span>
+                                <span>Productivity</span>
                               </li>
                               <li>
                                 <i className="fas fa-clock"></i>
-                                <span>Future</span>
+                                <span>Organized</span>
                               </li>
                               <li>
                                 <i className="fas fa-star"></i>
-                                <span>Evolvement</span>
+                                <span>Structured</span>
                               </li>
                             </ul>
                             <h3 className="item_title">
-                              <a href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/">
-                                Aradhya Tiwari: Crafting Digital Innovations
+                              <a href="https://www.linkedin.com/in/umang-patanwala-96b032251">
+                              Umang Patanwala: Empty!!!
                               </a>
                             </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/">
+                            <a className="btn_unfill" href="https://www.linkedin.com/in/umang-patanwala-96b032251">
                               <span className="btn_text">Linkedin</span>
                               <span className="btn_icon">
                                 <i className="fas fa-long-arrow-right"></i>
@@ -931,8 +948,159 @@ export default function Home() {
                         </div>
                       </div>
 
+
+
+                      <div className="col col-lg-4">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+                              <img src="Assets2/Rishabh_Maheswari_.jpg" alt="Collab – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Database Team</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">3rd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Productivity</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Organized</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Structured</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==">
+                              Rishabh Maheswari: Empty!!!
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==">
+                              <span className="btn_text">Instagram</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div className="col col-lg-4">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+                              <img src="Assets2/Anoushka_Ananda.jpg" alt="Collab – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Database Team</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">3rd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Productivity</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Organized</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Structured</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==">
+                              Anoushka Ananda: Empty!!!
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==">
+                              <span className="btn_text">Instagram</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
+
+
+
+
+                  <div className="tab-pane fade" id="teb_management" role="tabpanel">
+                    <div className="row">
+                    
+                      <div className="col col-lg-4">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+                              <img src="Assets2/Ajinkya_Bhoite_.jpg" alt="NotesEra – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Manager</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">3rd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Empty!</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Empty!</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Empty!</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==">
+                              Ajinkya Bhoite: Empty!!!
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==">
+                              <span className="btn_text">Instagram</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
 
 
 
@@ -946,7 +1114,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/sebas_j_tian/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751787/Assets2/JerinThomas_clyf4h.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Jerin_Thomas.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -993,7 +1161,7 @@ export default function Home() {
                           <div className="item_image">
                             <a href="https://www.instagram.com/_d.a.a.n.i.y.a.a.l_/?igshid=MmU2YjMzNjRlOQ%3D%3D"
                               data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751771/Assets2/DaaniyaalAbbasi_wer64h.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Daaniyal_Abbasi.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -1047,7 +1215,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/aditii_003/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751649/Assets2/AditiDalal_ufiyay.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Aditi_Dalal.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -1088,12 +1256,13 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
+                      
 
                       <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/_ananya.rai_/" data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751650/Assets2/AnanyaRai_vp5yl6.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Ananya_Rai.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -1125,6 +1294,55 @@ export default function Home() {
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://www.instagram.com/_ananya.rai_/">
+                              <span className="btn_text">View Course</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>     
+                  </div>
+
+
+
+                  <div className="tab-pane fade" id="teb_elite" role="tabpanel">
+                    <div className="row">
+                    
+                      <div className="col col-lg-4">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="Add Link" data-cursor-text="View">
+                              <img src="Assets2/Devang_Pathak.jpg" alt="NotesEra – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Manager</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">3rd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Adaptability</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Authenticity</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="Adaptability">
+                              Devang Pathak: Empty!!!
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="Add Link">
                               <span className="btn_text">Instagram</span>
                               <span className="btn_icon">
                                 <i className="fas fa-long-arrow-right"></i>
@@ -1135,9 +1353,149 @@ export default function Home() {
                         </div>
                       </div>
 
+                      <div className="col col-lg-4">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="Add Link" data-cursor-text="View">
+                              <img src="Assets2/Shrasti_Gupta.jpg" alt="NotesEra – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Manager</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">2nd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Empty!</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Empty!</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Empty!</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="Add Data">
+                              Shrasti Gupta: Empty!!!
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="Add Data">
+                              <span className="btn_text">Instagram</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
 
+                      <div className="col col-lg-4">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="https://instagram.com/shivamsinghbais_?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+                              <img src="Assets2/Shivam_Singh_Bais.jpg" alt="NotesEra – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Manager</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">2nd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Empty!</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Empty!</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Empty!</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="https://instagram.com/shivamsinghbais_?igshid=MmU2YjMzNjRlOQ==">
+                              Shivam Singh Bais: Empty!!!
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="https://instagram.com/shivamsinghbais_?igshid=MmU2YjMzNjRlOQ==">
+                              <span className="btn_text">Instagram</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col col-lg-4">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="https://instagram.com/krishna_.agrawal_?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+                              <img src="Assets2/Krishna_Agarwal_.jpg" alt="NotesEra – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Manager</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">3rd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Empty!</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Empty!</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Empty!</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="https://instagram.com/krishna_.agrawal_?igshid=MmU2YjMzNjRlOQ==">
+                              Krishna Agarwal: Empty!!!
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="https://instagram.com/krishna_.agrawal_?igshid=MmU2YjMzNjRlOQ==">
+                              <span className="btn_text">Instagram</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
+
+
+
+
                   <div className="tab-pane fade" id="teb_design" role="tabpanel">
                     <div className="row">
                       <div className="col col-lg-4">
@@ -1145,7 +1503,7 @@ export default function Home() {
                           <div className="item_image">
                             <a href="https://www.instagram.com/unfilteredhawk/?igshid=MmU2YjMzNjRlOQ%3D%3D"
                               data-cursor-text="View">
-                              <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751645/Assets2/AnnirughSharma_xwt67g.png" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Aniruddh_Sharma.jpg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -1188,9 +1546,102 @@ export default function Home() {
                         </div>
                       </div>
 
+                      <div className="col col-lg-4">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="https://www.linkedin.com/in/amala-sebastian-177397214"
+                              data-cursor-text="View">
+                              <img src="Assets2/Amala_Sebastian.jpg" alt="NotesEra – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Mentor</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">4th Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Enthusiasm</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Knowledge</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Guidance</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="https://www.linkedin.com/in/amala-sebastian-177397214">
+                                Amala Sebastian: The guiding light of Notes-Era
+                              </a>
+                            </h3>
+                            <a className="btn_unfill"
+                              href="https://www.linkedin.com/in/amala-sebastian-177397214">
+                              <span className="btn_text">LinkedIn</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
 
 
-
+                      <div className="col col-lg-4">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="Add Link"
+                              data-cursor-text="View">
+                              <img src="Assets2/Itish_Jain.jpg" alt="NotesEra – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Technical Consultant</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">4th Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Enthusiasm</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Knowledge</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Guidance</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="Add Link">
+                                Itish Jain: Empty!!! Add Links as well
+                              </a>
+                            </h3>
+                            <a className="btn_unfill"
+                              href="Add Link">
+                              <span className="btn_text">Add Link</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
