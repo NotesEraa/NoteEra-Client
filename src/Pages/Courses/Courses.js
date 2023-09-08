@@ -18,24 +18,6 @@ function Courses() {
   ]);
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
 
-  useEffect(() => {
-    const loadingInterval = setInterval(() => {
-      setCurrentMessageIndex((prevIndex) =>
-        prevIndex === loadingMessages.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 500);
-
-    // Simulate loading by setting a timeout
-    setTimeout(() => {
-      setIsLoadingColleges(false);
-      clearInterval(loadingInterval);
-    }, 2000); // Adjust the duration as needed
-
-    return () => {
-      clearInterval(loadingInterval);
-    };
-  }, []);
-
   const [colleges, setColleges] = useState([]);
   const [years, setYears] = useState([]);
   const [types, setTypes] = useState([]);
@@ -44,23 +26,37 @@ function Courses() {
   const [selectedYear, setSelectedYear] = useState(null);
   const [selectedType, setSelectedType] = useState(null);
 
+  const fetchColleges = async () => {
+    try {
+      const response = await axios.get(
+        'https://notesera-backend.onrender.com/data/all/colleges'
+      );
+      const collegeData = response.data.map((college) => ({
+        value: college,
+        label: college,
+      }));
+      setColleges(collegeData);
+      setIsLoadingColleges(false); // Set loading to false when data is loaded
+    } catch (error) {
+      console.error('Error fetching colleges:', error);
+    }
+  };
+
   useEffect(() => {
+    const loadingInterval = setInterval(() => {
+      setCurrentMessageIndex((prevIndex) =>
+        prevIndex === loadingMessages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 1500);
+
     // Fetch college data from the API
-    axios.get('https://notesera-backend.onrender.com/data/all/colleges')
-      .then(response => {
-        const collegeData = response.data.map(college => ({
-          value: college,
-          label: college,
-        }));
-        setColleges(collegeData);
-      })
-      .catch(error => {
-        console.error('Error fetching colleges:', error);
-      })
-      .finally(() => {
-        setIsLoadingColleges(false); 
-      });
+    fetchColleges();
+
+    return () => {
+      clearInterval(loadingInterval);
+    };
   }, []);
+
 
   const handleCollegeChange = (selectedOption) => {
     setSelectedCollege(selectedOption);
