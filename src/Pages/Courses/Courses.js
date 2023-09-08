@@ -23,7 +23,7 @@ function Courses() {
       setCurrentMessageIndex((prevIndex) =>
         prevIndex === loadingMessages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 500);
 
     // Simulate loading by setting a timeout
     setTimeout(() => {
