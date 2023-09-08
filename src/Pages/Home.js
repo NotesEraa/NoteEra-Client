@@ -612,7 +612,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/" data-cursor-text="View">
-                              <img src="Assets2/Arth_Gupta.jpg" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Arth_Gupta.jpeg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
@@ -660,7 +660,7 @@ export default function Home() {
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.instagram.com/jasneet2003/" data-cursor-text="View">
-                              <img src="Assets2/Jasneet_Singh_Saini.jpg" alt="NotesEra – Online Learning Platform" />
+                              <img src="Assets2/Jasneet_Singh_Saini.jpeg" alt="NotesEra – Online Learning Platform" />
                             </a>
                           </div>
                           <div className="item_content">
