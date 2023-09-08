@@ -1961,7 +1961,7 @@ export default function Home() {
                     <div className="carousel_item">
                       <div className="testimonial_item">
                         <div className="testimonial_image">
-                          <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751783/Assets2/testimonial1_dnot1b.jpg" alt="NotesEra – Online Learning Platform" />
+                          <img src="Assets2/Durva.jpg" alt="NotesEra – Online Learning Platform" />
                         </div>
                         <div className="testimonial_content">
                           <ul className="rating_star unordered_list">
@@ -1986,7 +1986,7 @@ export default function Home() {
                     <div className="carousel_item">
                       <div className="testimonial_item">
                         <div className="testimonial_image">
-                          <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751792/Assets2/testimonial2_ighuyx.jpg" alt="NotesEra – Online Learning Platform" />
+                          <img src="Assets2/Hardik_Gupta.jpg" alt="NotesEra – Online Learning Platform" />
                         </div>
                         <div className="testimonial_content">
                           <ul className="rating_star unordered_list">
@@ -2014,7 +2014,7 @@ export default function Home() {
                     <div className="carousel_item">
                       <div className="testimonial_item">
                         <div className="testimonial_image">
-                          <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751791/Assets2/testimonial3_jnlyrq.jpg" alt="NotesEra – Online Learning Platform" />
+                          <img src="Assets2/Kanishk_Jain.jpg" alt="NotesEra – Online Learning Platform" />
                         </div>
                         <div className="testimonial_content">
                           <ul className="rating_star unordered_list">
@@ -2039,7 +2039,7 @@ export default function Home() {
                     <div className="carousel_item">
                       <div className="testimonial_item">
                         <div className="testimonial_image">
-                          <img src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751788/Assets2/testimonial4_zsozig.jpg" alt="NotesEra – Online Learning Platform"/>
+                          <img src="Assets2/Mahik_Makariya_.jpg" alt="NotesEra – Online Learning Platform"/>
                         </div>
                         <div className="testimonial_content">
                           <ul className="rating_star unordered_list">
