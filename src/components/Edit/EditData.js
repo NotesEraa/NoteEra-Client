@@ -91,6 +91,7 @@ const EditData = () => {
             <option value="4">4</option>
           </select>
         </div>
+        <br/>      
         <div className="form-group">
           <label htmlFor="type">Type:</label>
           <select
@@ -107,6 +108,7 @@ const EditData = () => {
             <option value="End Sem">End Sem</option>
           </select>
         </div>
+        <br/> 
         <div className="form-group">
           <label htmlFor="subject">Subject:</label>
           <input
@@ -117,6 +119,7 @@ const EditData = () => {
             required
           />
         </div>
+        <br/>
         <div className="form-group">
           <label htmlFor="link">Link:</label>
           <input
