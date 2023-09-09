@@ -424,7 +424,7 @@ export default function Home() {
                   <li role="presentation">
                     <button data-bs-toggle="tab" data-bs-target="#teb_management" type="button" role="tab"
                       aria-selected="false">
-                      <i className="fas fa-book"></i>
+                      <i className="fa-solid fa-book"></i>
                       <span>Management</span>
                     </button>
                   </li>
