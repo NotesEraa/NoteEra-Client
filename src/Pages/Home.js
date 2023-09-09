@@ -1628,7 +1628,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="Add Link">
-                                Itish Jain: The guiding light of Notes-Era
+                                Itish Jain:"Silence!!! Okay, as i was saying......."
                               </a>
                             </h3>
                             <a className="btn_unfill"
