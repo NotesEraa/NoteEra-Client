@@ -1628,12 +1628,12 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="Add Link">
-                                Itish Jain: Empty!!! Add Links as well
+                                Itish Jain: The guiding light of Notes-Era
                               </a>
                             </h3>
                             <a className="btn_unfill"
                               href="Add Link">
-                              <span className="btn_text">Add Link</span>
+                              <span className="btn_text">Linkedin</span>
                               <span className="btn_icon">
                                 <i className="fas fa-long-arrow-right"></i>
                                 <i className="fas fa-long-arrow-right"></i>
