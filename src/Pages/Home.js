@@ -1084,7 +1084,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==">
-                              Ajinkya Bhoite: Empty!!!
+                              Ajinkya Bhoite: Desire becomes surrender. Surrender becomes Power.
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==">
@@ -1142,7 +1142,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="https://www.instagram.com/sebas_j_tian/">
-                                Jerin Thomas: You Talk with me, You DIE!
+                                Jerin Thomas: Less talk more work!
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://www.instagram.com/sebas_j_tian/">
@@ -1321,7 +1321,7 @@ export default function Home() {
                           <div className="item_content">
                             <div className="d-flex align-items-center justify-content-between mb-3">
                               <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Manager</a></li>
+                                <li><a href="#!">Team Elite</a></li>
                               </ul>
                               <div className="item_price">
                                 <span className="sale_price">3rd Year</span>
@@ -1339,7 +1339,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="Adaptability">
-                              Devang Pathak: Empty!!!
+                              Devang Pathak:"Let me handle the troublesome stuff"
                               </a>
                             </h3>
                             <a className="btn_unfill" href="Add Link">
@@ -1363,7 +1363,7 @@ export default function Home() {
                           <div className="item_content">
                             <div className="d-flex align-items-center justify-content-between mb-3">
                               <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Manager</a></li>
+                                <li><a href="#!">Team Elite</a></li>
                               </ul>
                               <div className="item_price">
                                 <span className="sale_price">2nd Year</span>
@@ -1372,20 +1372,20 @@ export default function Home() {
                             <ul className="meta_info_list unordered_list">
                               <li>
                                 <i className="fas fa-chart-bar"></i>
-                                <span>Empty!</span>
+                                <span>Authenticity</span>
                               </li>
                               <li>
                                 <i className="fas fa-clock"></i>
-                                <span>Empty!</span>
+                                <span>Dedication</span>
                               </li>
                               <li>
                                 <i className="fas fa-star"></i>
-                                <span>Empty!</span>
+                                <span>Adaptability</span>
                               </li>
                             </ul>
                             <h3 className="item_title">
                               <a href="Add Data">
-                              Shrasti Gupta: Empty!!!
+                              Shrasti Gupta: No more watermarks!!
                               </a>
                             </h3>
                             <a className="btn_unfill" href="Add Data">
@@ -1409,7 +1409,7 @@ export default function Home() {
                           <div className="item_content">
                             <div className="d-flex align-items-center justify-content-between mb-3">
                               <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Manager</a></li>
+                                <li><a href="#!">Team Elite</a></li>
                               </ul>
                               <div className="item_price">
                                 <span className="sale_price">2nd Year</span>
@@ -1418,20 +1418,20 @@ export default function Home() {
                             <ul className="meta_info_list unordered_list">
                               <li>
                                 <i className="fas fa-chart-bar"></i>
-                                <span>Empty!</span>
+                                <span>Authenticity</span>
                               </li>
                               <li>
                                 <i className="fas fa-clock"></i>
-                                <span>Empty!</span>
+                                <span>Adaptability</span>
                               </li>
                               <li>
                                 <i className="fas fa-star"></i>
-                                <span>Empty!</span>
+                                <span>Dedication</span>
                               </li>
                             </ul>
                             <h3 className="item_title">
                               <a href="https://instagram.com/shivamsinghbais_?igshid=MmU2YjMzNjRlOQ==">
-                              Shivam Singh Bais: Empty!!!
+                              Shivam Singh Bais: Follow me children!
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://instagram.com/shivamsinghbais_?igshid=MmU2YjMzNjRlOQ==">
@@ -1455,7 +1455,7 @@ export default function Home() {
                           <div className="item_content">
                             <div className="d-flex align-items-center justify-content-between mb-3">
                               <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Manager</a></li>
+                                <li><a href="#!">Team Elite</a></li>
                               </ul>
                               <div className="item_price">
                                 <span className="sale_price">3rd Year</span>
@@ -1464,20 +1464,20 @@ export default function Home() {
                             <ul className="meta_info_list unordered_list">
                               <li>
                                 <i className="fas fa-chart-bar"></i>
-                                <span>Empty!</span>
+                                <span>Adaptability</span>
                               </li>
                               <li>
                                 <i className="fas fa-clock"></i>
-                                <span>Empty!</span>
+                                <span>Authenticity</span>
                               </li>
                               <li>
                                 <i className="fas fa-star"></i>
-                                <span>Empty!</span>
+                                <span>Adaptability</span>
                               </li>
                             </ul>
                             <h3 className="item_title">
                               <a href="https://instagram.com/krishna_.agrawal_?igshid=MmU2YjMzNjRlOQ==">
-                              Krishna Agarwal: Empty!!!
+                              Krishna Agarwal: Your everyday bad boy!!
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://instagram.com/krishna_.agrawal_?igshid=MmU2YjMzNjRlOQ==">
@@ -1531,7 +1531,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="https://www.instagram.com/unfilteredhawk/?igshid=MmU2YjMzNjRlOQ%3D%3D">
-                                Anirudh Sharma: Iam the Guy you're looking for!
+                                Anirudh Sharma: I'm the Guy you're looking for!
                               </a>
                             </h3>
                             <a className="btn_unfill"
