@@ -1922,7 +1922,42 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              
+              <div className="col col-lg-4">
+                  <div className="pricing_card  bg_dark text-center tilt">
+                    <h3 className="card_heading">mega bootcamp</h3>
+                    <div className="pricing_wrap">
+                      <span className="price_value"><sup>₹</sup>159</span>
+                      <small className="d-block">Special Offer!</small>
+                    </div>
+                    <hr/>
+                    <ul className="info_list unordered_list_block text-start">
+                      <li>
+                        <i className="fas fa-caret-right"></i>
+                        <span>15 days python Mega bootcamp</span>
+                      </li>
+                      <li/>
+                        <i className="fas fa-caret-right"></i>
+                        <span>Notes+Assignments</span>
+                {/* <!--                   </li>
+                                  <li>
+                                    <i className="fas fa-caret-right"></i>
+                                <span></span> -->
+                <!--                   </li>
+                                  <li>
+                                    <i className="fas fa-caret-right"></i> -->
+                <!--              <span>End Semster Exam Packages</span> --> 
+                <!--                   </li> -->  */}
+                    </ul>
+                    <div className="btn_wrap pb-0">
+                      <a className="btn border_dark" href="#!">
+                        <span>
+                          <small>Soon </small>
+                          <small>Soon</small>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="deco_item shape_img_1" data-parallax='{"y" : 130, "smoothness": 6}'>
                 <img src="assets/images/shape/shape_img_4.png" alt="NotesEra – Online Learning Platform" />
