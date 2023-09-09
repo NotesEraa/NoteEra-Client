@@ -887,7 +887,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="https://instagram.com/ganuanvesha_30?igshid=MmU2YjMzNjRlOQ==">
-                              Anvesha Ganu: Empty!!!
+                              Anvesha Ganu: Give me info and I'll give you knowledge.
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://instagram.com/ganuanvesha_30?igshid=MmU2YjMzNjRlOQ==">
@@ -934,7 +934,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="https://www.linkedin.com/in/umang-patanwala-96b032251">
-                              Umang Patanwala: Empty!!!
+                              Umang Patanwala: Walking database
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://www.linkedin.com/in/umang-patanwala-96b032251">
@@ -982,7 +982,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==">
-                              Rishabh Maheswari: Empty!!!
+                              Rishabh Maheswari: Your friendly neighborhood info-man
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==">
@@ -1030,7 +1030,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==">
-                              Anoushka Ananda: Empty!!!
+                              Anoushka Ananda: Let there be light!!
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==">
