@@ -795,7 +795,7 @@ export default function Home() {
                               </a>
                             </h3>
                             <a className="btn_unfill" href="Add Link">
-                              <span className="btn_text">Add Link</span>
+                              <span className="btn_text">Instagram</span>
                               <span className="btn_icon">
                                 <i className="fas fa-long-arrow-right"></i>
                                 <i className="fas fa-long-arrow-right"></i>
@@ -1666,7 +1666,7 @@ export default function Home() {
                       our valuable resources and courses. Your success story begins with us. Unlock your potential today.
                     </p>
                     <div className="btn_wrap pb-0">
-                      <a className="btn btn_primary" href="coursesdropdown.html">
+                      <a className="btn btn_primary" href="/courses">
                         <span>
                           <small>Explore Notes</small>
                           <small>Explore Notes</small>
@@ -1750,7 +1750,7 @@ export default function Home() {
                       </li>
                     </ul>
                     <div className="btn_wrap pb-0">
-                      <a className="btn btn_dark" href="coursesdropdown.html">
+                      <a className="btn btn_dark" href="/courses">
                         <span>
                           <small>Get Your Assignments</small>
                           <small>Get Your Assignments</small>
