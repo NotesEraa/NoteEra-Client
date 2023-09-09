@@ -1922,63 +1922,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              <div className="col col-lg-4">
-                  <div className="pricing_card text-center bg_dark tilt">
-              {/* <!--                 <div className="card_badge">For 1st Year Only</div> --> */}
-                    <h3 className="card_heading">Standard Plan</h3>
-                    <div className="pricing_wrap">
-                      <span className="price_value"><sup>₹</sup>69</span>
-                      <small className="d-block">Special Offer !</small>
-                    </div>
-                    <hr/>
-                    <ul className="info_list unordered_list_block text-start">
-                      <li>
-                        <i className="fas fa-caret-right"></i>
-                        <span>10 Days Basic C-Programming Bootcamp for First Year Students.
-                                              </span>  </li>
-                                            <center>(OR)</center>
-                    <li>    <span>10 Days Basic JAVA Programming Bootcamp for Second Year Students.
-                                              </span>
-                      </li>
-                      <li>
-                        <i className="fas fa-caret-right"></i>
-                        <span>Live Classes+Doubt Sessions</span>   {/* Refer */}
-                      </li>
-                      <li>
-                        <i className="fas fa-caret-right"></i>
-                        <span>Lectures recording (Valid for only 3 Months).</span>
-                      </li>
-                      <li>
-                        <i className="fas fa-caret-right"></i>
-                        <span>VIVA Questions</span>
-                      </li>
-                      <li>
-                        <i className="fas fa-caret-right"></i>
-                        <span>Notes+Assignments</span>
-                      </li>
-                      <li>
-                        <i className="fas fa-caret-right"></i>
-                        <span>Logic Building</span>
-                      </li>
-                      <li>
-                        <i className="fas fa-caret-right"></i>
-                        <span>Resume Building</span>
-                      </li>
-                      <li>
-                        <i className="fas fa-caret-right"></i>
-                        <span>Certificates ISO Certified  </span>
-                      </li>
-                    </ul>
-                    <div className="btn_wrap pb-0">
-                      <a className="btn btn_primary" href="https://chat.whatsapp.com/BrEZj88N463Io4JLJnZA2v">
-                        <span>
-                          <small>Register Now</small>
-                          <small>Register Now</small>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              
               </div>
               <div className="deco_item shape_img_1" data-parallax='{"y" : 130, "smoothness": 6}'>
                 <img src="assets/images/shape/shape_img_4.png" alt="NotesEra – Online Learning Platform" />
