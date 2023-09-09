@@ -1609,7 +1609,7 @@ export default function Home() {
                                 <li><a href="#!">Technical Consultant</a></li>
                               </ul>
                               <div className="item_price">
-                                <span className="sale_price">4th Year</span>
+                                <span className="sale_price">3rd Year</span>
                               </div>
                             </div>
                             <ul className="meta_info_list unordered_list">
