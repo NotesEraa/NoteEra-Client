@@ -1934,7 +1934,7 @@ export default function Home() {
                     <ul className="info_list unordered_list_block text-start">
                       <li>
                         <i className="fas fa-caret-right"></i>
-                        <span>15 Days python MEGA boocamp
+                        <span>15 Days python MEGA bootcamp
                                               </span>  </li>
                       <li>
                         <i className="fas fa-caret-right"></i>
