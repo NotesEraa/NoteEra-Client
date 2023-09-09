@@ -2098,6 +2098,7 @@ export default function Home() {
                     <form name="submit-to-google-sheet">
                       <div className="form_item m-0">
                         <input type="email" name="email" placeholder="Your Email" />
+                         <br/>
                         <button type="submit-btn" className="btn btn_dark">
                           <span>
                             <small>Subscribe</small>
