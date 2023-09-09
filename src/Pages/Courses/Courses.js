@@ -9,12 +9,16 @@ function Courses() {
 
   const [isLoadingColleges, setIsLoadingColleges] = useState(true);
   const [loadingMessages] = useState([
-    'Hang Tight',
-    'Loading Data',
-    'Fetching Subjects',
-    'Connecting the Links',
-    'Preparing the Layout',
-    'Embedding Styles',
+        "Loading your data, one piece at a time...⬇️",
+        "Exploring subjects, just a moment longer...👨🏻‍💻",
+        "Building connections for you...🖇️",
+        "Crafting the perfect layout...🖌️",
+        "Sorting your notes for quick access...📝",
+        "Getting ready for your assignments...📄",
+        "Hold on, we're almost there...🧗‍♀️",
+        "Preparing for the ultimate end-semester challenge? 📖",
+        "Adding some style to your experience 🎨",
+        "Gearing up for Mid-Semester Tests...👨‍🎓",
   ]);
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
 
