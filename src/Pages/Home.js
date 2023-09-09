@@ -1806,8 +1806,8 @@ export default function Home() {
                     <div className="btn_wrap pb-0">
                       <a className="btn border_dark" href="#!">
                         <span>
-                          <small>Register Now </small>
-                          <small>Register Now </small>
+                          <small>Soon </small>
+                          <small>Soon</small>
                         </span>
                       </a>
                     </div>
