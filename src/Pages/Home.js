@@ -1922,37 +1922,58 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              <div className="col col-lg-4">
-                  <div className="pricing_card  bg_dark text-center tilt">
-                    <h3 className="card_heading">mega bootcamp</h3>
+                <div className="col col-lg-4">
+                  <div className="pricing_card text-center bg_dark tilt">
+              {/* <!--                 <div className="card_badge">For 1st Year Only</div> --> */}
+                    <h3 className="card_heading">Mega Plan</h3>
                     <div className="pricing_wrap">
                       <span className="price_value"><sup>₹</sup>159</span>
-                      <small className="d-block">Special Offer!</small>
+                      <small className="d-block">Special Offer !</small>
                     </div>
                     <hr/>
                     <ul className="info_list unordered_list_block text-start">
                       <li>
                         <i className="fas fa-caret-right"></i>
-                        <span>15 days python Mega bootcamp</span>
-                      </li>
-                      <li/>
+                        <span>15 Days python MEGA boocamp
+                                              </span>  </li>
+                      <li>
                         <i className="fas fa-caret-right"></i>
-                        <span>Notes+Assignments</span>
-                {/* <!--                   </li>
-                                  <li>
-                                    <i className="fas fa-caret-right"></i>
-                                <span></span> -->
-                <!--                   </li>
-                                  <li>
-                                    <i className="fas fa-caret-right"></i> -->
-                <!--              <span>End Semster Exam Packages</span> --> 
-                <!--                   </li> -->  */}
+                        <span>PYTHON from scratch</span>   {/* Refer */}
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right"></i>
+                        <span>Live Classes+Doubt Sessions</span>   {/* Refer */}
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right"></i>
+                        <span>2 practical projects </span>   {/* Refer */}
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right"></i>
+                        <span>Lectures recording (for 1 year)  .</span>
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right"></i>
+                        <span>GIT/GITHUB mastery</span>
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right"></i>
+                        <span>linkdin Growing tips</span>
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right"></i>
+                        <span>Life time code access</span>
+                      </li>
+                      <li>
+                        <i className="fas fa-caret-right"></i>
+                        <span>Certificates ISO Certified  </span>
+                      </li>
                     </ul>
                     <div className="btn_wrap pb-0">
-                      <a className="btn border_dark" href="#!">
+                      <a className="btn btn_primary" href="https://chat.whatsapp.com/BrEZj88N463Io4JLJnZA2v">
                         <span>
-                          <small>Soon </small>
-                          <small>Soon</small>
+                          <small>Register Now</small>
+                          <small>Register Now</small>
                         </span>
                       </a>
                     </div>
