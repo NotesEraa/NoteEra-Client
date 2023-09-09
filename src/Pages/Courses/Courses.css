@@ -178,16 +178,23 @@ margin: 0 20px;
 }
 
 #submitBtn{
-    background-color: #CE4257; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-  }
+  background-color: #CE4257; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#submitBtn:hover{
+  color: #CE4257;
+  border: 2px solid #CE4257;
+  background-color: whitesmoke;
+  font-weight: 700;
+}
 
   .button-div{
     text-align: center;
