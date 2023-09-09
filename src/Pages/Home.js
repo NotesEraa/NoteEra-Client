@@ -1922,7 +1922,6 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
               <div className="col col-lg-4">
                   <div className="pricing_card text-center bg_dark tilt">
               {/* <!--                 <div className="card_badge">For 1st Year Only</div> --> */}
@@ -1980,7 +1979,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-
+              </div>
               <div className="deco_item shape_img_1" data-parallax='{"y" : 130, "smoothness": 6}'>
                 <img src="assets/images/shape/shape_img_4.png" alt="NotesEra – Online Learning Platform" />
               </div>
