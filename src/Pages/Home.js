@@ -1787,7 +1787,7 @@ export default function Home() {
                     <ul className="info_list unordered_list_block text-start">
                       <li>
                         <i className="fas fa-caret-right"></i>
-                        <span>DSA in C++ / DSA in Java / Basic C-Programming for 1st Sem Students.
+                        <span>DSA in C++ / Basic C-Programming for 1st Sem Students.
                                 Any one bootcamp lectures recording (valid for only 3 Months).</span>
                       </li>
                       <li/>
@@ -1877,7 +1877,7 @@ export default function Home() {
                     <ul className="info_list unordered_list_block text-start">
                       <li>
                         <i className="fas fa-caret-right"></i>
-                        <span>DSA in JAVA / DSA in C++ (Any One Bootcamp) 15 Days Bootcamp</span>
+                        <span> DSA in C++  15 Days Bootcamp</span>
                       </li>
                       <li>
                         <i className="fas fa-caret-right"></i>
