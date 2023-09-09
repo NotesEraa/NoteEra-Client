@@ -1827,7 +1827,7 @@ export default function Home() {
                         <i className="fas fa-caret-right"></i>
                         <span>10 Days Basic C-Programming Bootcamp for First Year Students.
                                               </span>
-                                     <p> OR </p>
+                                            <center>(OR)</center>
                         <span>10 Days Basic C-Programming Bootcamp for First Year Students.
                                               </span>
                       </li>
