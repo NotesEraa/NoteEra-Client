@@ -9,16 +9,16 @@ function Courses() {
 
   const [isLoadingColleges, setIsLoadingColleges] = useState(true);
   const [loadingMessages] = useState([
-        "Loading your data, one piece at a time...⬇️",
-        "Exploring subjects, just a moment longer...👨🏻‍💻",
-        "Building connections for you...🖇️",
-        "Crafting the perfect layout...🖌️",
-        "Sorting your notes for quick access...📝",
-        "Getting ready for your assignments...📄",
-        "Hold on, we're almost there...🧗‍♀️",
-        "Preparing for the ultimate end-semester challenge? 📖",
-        "Adding some style to your experience 🎨",
-        "Gearing up for Mid-Semester Tests...👨‍🎓",
+        "Loading your data, one piece at a time... &#x2193;&#xFE0F;",
+        "Exploring subjects, just a moment longer... &#x1F468;&#x200D;&#x1F4BB;",
+        "Building connections for you... &#x1F587;",
+        "Crafting the perfect layout... &#x1F58C;",
+        "Sorting your notes for quick access... &#x1F4DD;",
+        "Getting ready for your assignments... &#x1F4C4;",
+        "Hold on, we're almost there... &#x1F9D7;&#x200D;&#x2642;&#xFE0F;",
+        "Preparing for the ultimate end-semester challenge? &#x1F4D6;",
+        "Adding some style to your experience &#x1F3A8;",
+        "Gearing up for Mid-Semester Tests... &#x1F468;&#x200D;&#x1F393;&#xFE0F;",
   ]);
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
 
@@ -133,6 +133,28 @@ function Courses() {
   };
 
 
+  const customSelectStyles = {
+    control: (provided) => ({
+      ...provided,
+      borderRadius: '8px', // Customize border radius
+      borderColor: '#FFD32B', // Customize border color
+      boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', // Customize box shadow
+      '&:hover': {
+        borderColor: '#e0cd04', // Customize hover border color
+      },
+    }),
+    option: (provided, state) => ({
+      ...provided,
+      backgroundColor: state.isSelected ? '#AF69EE' : 'white', // Customize selected option background color
+      color: state.isSelected ? 'white' : 'black', // Customize selected option text color
+      '&:hover': {
+        backgroundColor: '#AF69EE', // Customize hover background color
+        color: 'white', // Customize hover text color
+      },
+    }),
+  };
+
+
   return (
     <div className='main-body'>
       <div className="container">
@@ -156,32 +178,35 @@ function Courses() {
           <h1>Get Your Notes Here!</h1>
           <div id="dropdown-container">
             <div className="dropdown">
-              <label>College:</label>
+              {/* <label>College:</label> */}
               <Select
                 value={selectedCollege}
                 onChange={handleCollegeChange}
                 options={colleges}
                 placeholder="Select College"
+                styles={customSelectStyles}
               />
             </div>
   
             <div className="dropdown">
-              <label>Year:</label>
+              {/* <label>Year:</label> */}
               <Select
                 value={selectedYear}
                 onChange={handleYearChange}
                 options={years}
                 placeholder="Select Year"
+                styles={customSelectStyles}
               />
             </div>
   
             <div className="dropdown">
-              <label>Type:</label>
+              {/* <label>Type:</label> */}
               <Select
                 value={selectedType}
                 onChange={handleTypeChange}
                 options={types}
                 placeholder="Select Type"
+                styles={customSelectStyles}
               />
             </div>
           </div>
