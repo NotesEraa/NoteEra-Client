@@ -1825,7 +1825,8 @@ export default function Home() {
                     <ul className="info_list unordered_list_block text-start">
                       <li>
                         <i className="fas fa-caret-right"></i>
-                        <span>10 Days Basic C-Programming Bootcamp for First Year Students. </span>
+                        <span>10 Days Basic C-Programming Bootcamp for First Year Students.
+                              10 Days Basic JAVA Programming Bootcamp for Second Year Students.</span>
                       </li>
                       <li>
                         <i className="fas fa-caret-right"></i>
