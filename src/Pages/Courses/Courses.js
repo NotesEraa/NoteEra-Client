@@ -9,16 +9,16 @@ function Courses() {
 
   const [isLoadingColleges, setIsLoadingColleges] = useState(true);
   const [loadingMessages] = useState([
-        "Loading your data, one piece at a time...",
-        "Exploring subjects, just a moment longer...",
-        "Building connections for you...",
-        "Crafting the perfect layout...",
-        "Sorting your notes for quick access...",
-        "Getting ready for your assignments...",
-        "Hold on, we're almost there...",
-        "Preparing for the ultimate end-semester challenge?",
-        "Adding some style to your experience",
-        "Gearing up for Mid-Semester Tests...",
+        "Loading your data, one piece at a time... &#x2193;",
+        "Exploring subjects, just a moment longer... &#x1F468;&#x200D;&#x1F4BB;",
+        "Building connections for you... &#x1F587;",
+        "Crafting the perfect layout... &#x1F58C;",
+        "Sorting your notes for quick access... &#x1F4DD;",
+        "Getting ready for your assignments... &#x1F4C4;",
+        "Hold on, we're almost there... &#x1F9D7;&#x200D;&#x2642;",
+        "Preparing for the ultimate end-semester challenge? &#x1F4D6;",
+        "Adding some style to your experience &#x1F3A8;",
+        "Gearing up for Mid-Semester Tests... &#x1F468;&#x200D;&#x1F393;",
   ]);
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
 
@@ -167,8 +167,8 @@ function Courses() {
                   className={`loading-message ${
                     index === currentMessageIndex ? 'active' : ''
                   }`}
+                  dangerouslySetInnerHTML={{ __html: message }}
                 >
-                  {message}
                 </div>
               ))}
             </div>
