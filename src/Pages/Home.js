@@ -1828,7 +1828,7 @@ export default function Home() {
                         <span>10 Days Basic C-Programming Bootcamp for First Year Students.
                                               </span>  </li>
                                             <center>(OR)</center>
-                    <li>    <span>10 Days Basic C-Programming Bootcamp for First Year Students.
+                    <li>    <span>10 Days Basic JAVA Programming Bootcamp for First Year Students.
                                               </span>
                       </li>
                       <li>
