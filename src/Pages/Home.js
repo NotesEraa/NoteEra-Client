@@ -1934,7 +1934,7 @@ export default function Home() {
                     <ul className="info_list unordered_list_block text-start">
                       <li>
                         <i className="fas fa-caret-right"></i>
-                        <span>15 Days python MEGA bootcamp
+                        <span>15 Days Python MEGA bootcamp
                                               </span>  </li>
                       <li>
                         <i className="fas fa-caret-right"></i>
@@ -1946,7 +1946,7 @@ export default function Home() {
                       </li>
                       <li>
                         <i className="fas fa-caret-right"></i>
-                        <span>2 practical projects </span>   {/* Refer */}
+                        <span>2 Practical projects </span>   {/* Refer */}
                       </li>
                       <li>
                         <i className="fas fa-caret-right"></i>
@@ -1958,7 +1958,7 @@ export default function Home() {
                       </li>
                       <li>
                         <i className="fas fa-caret-right"></i>
-                        <span>linkdin Growing tips</span>
+                        <span>Linkedin Growing tips</span>
                       </li>
                       <li>
                         <i className="fas fa-caret-right"></i>
