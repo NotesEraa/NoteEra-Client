@@ -1923,7 +1923,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col col-lg-4">
+                <div className="col-lg-6 offset-lg-3">
                   <div className="pricing_card text-center bg_dark tilt">
               {/* <!--                 <div className="card_badge">For 1st Year Only</div> --> */}
                     <h3 className="card_heading">Mega Plan</h3>
