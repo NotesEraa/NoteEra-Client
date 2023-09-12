@@ -759,7 +759,7 @@ export default function Home() {
                   <div className="tab-pane fade" id="teb_database" role="tabpanel">
                     <div className="row">
                     
-                      {/* <div className="col col-lg-4">
+                      { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="Add Image" data-cursor-text="View">
@@ -803,11 +803,11 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div> */}
+                      </div> }
 
 
 
-                      {/* <div className="col col-lg-4">
+                      { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://instagram.com/mr_singh_jiii?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
@@ -851,7 +851,7 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div> */}
+                      </div> }
 
                 
 
@@ -950,7 +950,7 @@ export default function Home() {
 
 
 
-                      {/* <div className="col col-lg-4">
+                      { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
@@ -994,7 +994,7 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div> */}
+                      </div> }
 
 
 
@@ -1052,7 +1052,7 @@ export default function Home() {
                   <div className="tab-pane fade" id="teb_management" role="tabpanel">
                     <div className="row">
                     
-                      {/* <div className="col col-lg-4">
+                      { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
@@ -1096,7 +1096,7 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div> */}
+                      </div> }
 
                     </div>
                   </div>
@@ -1400,7 +1400,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                      {/* <div className="col col-lg-4">
+                      { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://instagram.com/shivamsinghbais_?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
@@ -1444,7 +1444,7 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div> */}
+                      </div> }
 
                       <div className="col col-lg-4">
                         <div className="course_card">
@@ -1547,7 +1547,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                    {/* <div className="col col-lg-4">
+                    { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.linkedin.com/in/amala-sebastian-177397214"
@@ -1593,7 +1593,7 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div>        */}
+                      </div>        }
 
 
                       <div className="col col-lg-4">
