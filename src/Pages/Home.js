@@ -1071,15 +1071,15 @@ export default function Home() {
                             <ul className="meta_info_list unordered_list">
                               <li>
                                 <i className="fas fa-chart-bar"></i>
-                                <span>Empty!</span>
+                                <span>Leadership</span>
                               </li>
                               <li>
                                 <i className="fas fa-clock"></i>
-                                <span>Empty!</span>
+                                <span>Communication</span>
                               </li>
                               <li>
                                 <i className="fas fa-star"></i>
-                                <span>Empty!</span>
+                                <span>Decision-making </span>
                               </li>
                             </ul>
                             <h3 className="item_title">
