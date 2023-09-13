@@ -424,7 +424,7 @@ export default function Home() {
                   <li role="presentation">
                     <button data-bs-toggle="tab" data-bs-target="#teb_management" type="button" role="tab"
                       aria-selected="false">
-                      <i className="fa-solid fa-book"></i>
+                      <i className="fas fa-book"></i>
                       <span>Management</span>
                     </button>
                   </li>
@@ -759,7 +759,7 @@ export default function Home() {
                   <div className="tab-pane fade" id="teb_database" role="tabpanel">
                     <div className="row">
                     
-                      {/* <div className="col col-lg-4">
+                      { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="Add Image" data-cursor-text="View">
@@ -803,11 +803,11 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div> */}
+                      </div> }
 
 
 
-                      {/* <div className="col col-lg-4">
+                      { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://instagram.com/mr_singh_jiii?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
@@ -851,7 +851,7 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div> */}
+                      </div> }
 
                 
 
@@ -950,7 +950,7 @@ export default function Home() {
 
 
 
-                      {/* <div className="col col-lg-4">
+                      { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
@@ -994,7 +994,7 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div> */}
+                      </div> }
 
 
 
@@ -1052,7 +1052,7 @@ export default function Home() {
                   <div className="tab-pane fade" id="teb_management" role="tabpanel">
                     <div className="row">
                     
-                      {/* <div className="col col-lg-4">
+                      { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
@@ -1071,15 +1071,15 @@ export default function Home() {
                             <ul className="meta_info_list unordered_list">
                               <li>
                                 <i className="fas fa-chart-bar"></i>
-                                <span>Empty!</span>
+                                <span>Leadership</span>
                               </li>
                               <li>
                                 <i className="fas fa-clock"></i>
-                                <span>Empty!</span>
+                                <span>Communication</span>
                               </li>
                               <li>
                                 <i className="fas fa-star"></i>
-                                <span>Empty!</span>
+                                <span>Decision-making </span>
                               </li>
                             </ul>
                             <h3 className="item_title">
@@ -1096,7 +1096,7 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div> */}
+                      </div> }
 
                     </div>
                   </div>
@@ -1400,7 +1400,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                      {/* <div className="col col-lg-4">
+                      { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://instagram.com/shivamsinghbais_?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
@@ -1444,7 +1444,7 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div> */}
+                      </div> }
 
                       <div className="col col-lg-4">
                         <div className="course_card">
@@ -1547,7 +1547,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                    {/* <div className="col col-lg-4">
+                    { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.linkedin.com/in/amala-sebastian-177397214"
@@ -1593,7 +1593,7 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div>        */}
+                      </div>        }
 
 
                       <div className="col col-lg-4">
@@ -1923,7 +1923,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col col-lg-4">
+                <div className="col-lg-6 offset-lg-3">
                   <div className="pricing_card text-center bg_dark tilt">
               {/* <!--                 <div className="card_badge">For 1st Year Only</div> --> */}
                     <h3 className="card_heading">Mega Plan</h3>

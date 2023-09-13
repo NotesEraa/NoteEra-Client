@@ -51,7 +51,7 @@ function Courses() {
       setCurrentMessageIndex((prevIndex) =>
         prevIndex === loadingMessages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 1500);
+    }, 800);
 
     // Fetch college data from the API
     fetchColleges();
