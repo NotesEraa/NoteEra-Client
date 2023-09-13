@@ -1862,7 +1862,7 @@ export default function Home() {
                       </li>
                     </ul>
                     <div className="btn_wrap pb-0">
-                      <a className="btn btn_primary" href="https://chat.whatsapp.com/BrEZj88N463Io4JLJnZA2v">
+                      <a className="btn btn_primary" href="https://docs.google.com/forms/d/e/1FAIpQLSf9tazhrqFzZ_EYh-nPGgVaOjEXxIbkRajOaY8nRteXivCq3Q/viewform?usp=sf_link">
                         <span>
                           <small>Register Now</small>
                           <small>Register Now</small>
@@ -1914,7 +1914,7 @@ export default function Home() {
                       </li>
                     </ul>
                     <div className="btn_wrap pb-0">
-                      <a className="btn border_dark" href="#!">
+                      <a className="btn border_dark" href="https://docs.google.com/forms/d/e/1FAIpQLSf9tazhrqFzZ_EYh-nPGgVaOjEXxIbkRajOaY8nRteXivCq3Q/viewform?usp=sf_link">
                         <span>
                           <small>Register Now</small>
                           <small>Register Now</small>
@@ -1971,7 +1971,7 @@ export default function Home() {
                       </li>
                     </ul>
                     <div className="btn_wrap pb-0">
-                      <a className="btn btn_primary" href="https://chat.whatsapp.com/BrEZj88N463Io4JLJnZA2v">
+                      <a className="btn btn_primary" href="https://docs.google.com/forms/d/e/1FAIpQLSf9tazhrqFzZ_EYh-nPGgVaOjEXxIbkRajOaY8nRteXivCq3Q/viewform?usp=sf_link">
                         <span>
                           <small>Register Now</small>
                           <small>Register Now</small>
