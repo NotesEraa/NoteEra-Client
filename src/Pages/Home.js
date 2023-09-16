@@ -1030,7 +1030,7 @@ export default function Home() {
                             </ul>
                             <h3 className="item_title">
                               <a href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==">
-                              Anoushka Ananda: Let there be light!!
+                            Anoushka Anand : Let there be light!!
                               </a>
                             </h3>
                             <a className="btn_unfill" href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==">
