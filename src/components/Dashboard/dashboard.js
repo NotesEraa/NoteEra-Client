@@ -15,6 +15,23 @@ const Dashboard = () => {
   const [yearFilter, setYearFilter] = useState('');
   const [typeFilter, setTypeFilter] = useState('');
 
+  // Security feature
+  const [securityKey, setSecurityKey] = useState('');
+  const [authorized, setAuthorized] = useState(false);
+
+  const handleSecurityKeyChange = (event) => {
+    setSecurityKey(event.target.value);
+  };
+
+  const checkSecurityKey = () => {
+    if (securityKey === 'NOtEs#125') {
+      setAuthorized(true);
+    } else {
+      setAuthorized(false);
+      alert('Please enter correct Security Key!!');
+    }
+  };
+
 
   // Function to handle data deletion
   const handleDelete = async (id) => {
@@ -96,40 +113,57 @@ const Dashboard = () => {
   );
 
   return (
-    <div className="user-dashboard1">
-      <h2>User Dashboard</h2>
-      <button className='addData' onClick={() => navigate('/login9874Notes/dashboard/add-data')}>Add Data</button>
- 
-      <br />
-      <br />
-
-      {/* Filter boxes */}
-      <h2>Filter your Data</h2>
-      <div className="filters1">
-        <input
-          type="text"
-          placeholder="College"
-          value={collegeFilter}
-          onChange={(e) => setCollegeFilter(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Year"
-          value={yearFilter}
-          onChange={(e) => setYearFilter(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Type"
-          value={typeFilter}
-          onChange={(e) => setTypeFilter(e.target.value)}
-        />
-        {/* Add filter functionality here */}
+    <div>
+    {authorized ? (
+      <div className="user-dashboard1">
+        <h2>User Dashboard</h2>
+        <button className='addData' onClick={() => navigate('/login9874Notes/dashboard/add-data')}>Add Data</button>
+   
+        <br />
+        <br />
+  
+        {/* Filter boxes */}
+        <h2>Filter your Data</h2>
+        <div className="filters1">
+          <input
+            type="text"
+            placeholder="College"
+            value={collegeFilter}
+            onChange={(e) => setCollegeFilter(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Year"
+            value={yearFilter}
+            onChange={(e) => setYearFilter(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Type"
+            value={typeFilter}
+            onChange={(e) => setTypeFilter(e.target.value)}
+          />
+          {/* Add filter functionality here */}
+        </div>
+  
+        <div className="data-card-container1">
+          {dataCards}
+        </div>
       </div>
-
-      <div className="data-card-container1">
-        {dataCards}
-      </div>
+      ) : (
+        <div className="login-form2">
+          <h1>Enter Security Key</h1>
+          <input
+            type="password"
+            placeholder="Security Key"
+            value={securityKey}
+            onChange={handleSecurityKeyChange}
+            className="security-key-input1" // Unique class name
+          />
+          <br/>
+          <button onClick={checkSecurityKey} className="submit-button10">Submit</button>
+        </div>
+    )}
     </div>
   );
 };
