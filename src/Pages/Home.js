@@ -703,51 +703,7 @@ export default function Home() {
                       </div>
 
 
-                      <div className="col col-lg-5">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/" data-cursor-text="View">
-                              <img src="Assets2/Aradhya_Tiwari.jpg" alt="Collab – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Developer</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Technology</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Future</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Evolvement</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/">
-                                Aradhya Tiwari: Crafting Digital Innovations
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/">
-                              <span className="btn_text">Linkedin</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                      
 
                     </div>
                   </div>
