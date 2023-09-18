@@ -4937,4 +4937,58 @@ Responsive For Mobile & Tablet Devices
 /* Banner End
 ================================================== */
 
-/* style={{marginRight:'70px', textAlign:'left'}} */
+/* Pop-Up */
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.popup-content {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: relative;
+  width: 400px;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.popup-register-button {
+  margin-top: 20px;
+  background-color: #AF69EE;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.popup-register-button:hover{
+  background-color: white;
+  color: #fcca00;
+  text-decoration: none;
+}
+
+.popup-register-button:hover {
+  background-color: #0056b3;
+}
+
