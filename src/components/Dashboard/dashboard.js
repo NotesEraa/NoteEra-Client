@@ -23,8 +23,20 @@ const Dashboard = () => {
     setSecurityKey(event.target.value);
   };
 
+      // Check if the user has already been authenticated in the past
+    useEffect(() => {
+      const isAuthenticated = localStorage.getItem('authenticated');
+  
+      if (isAuthenticated === 'true') {
+        setAuthorized(true);
+      } else {
+        setAuthorized(false);
+      }
+    }, []);
+
   const checkSecurityKey = () => {
     if (securityKey === 'NOtEs#125') {
+      localStorage.setItem('authenticated', 'true');
       setAuthorized(true);
     } else {
       setAuthorized(false);
