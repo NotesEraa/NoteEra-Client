@@ -924,7 +924,7 @@ export default function Home() {
                       </div>
 
 
-
+                         <! --
                       { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
@@ -969,8 +969,8 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div> }
-
+                      </div> }    
+                                       
 
 
                       <div className="col col-lg-4">
@@ -1522,7 +1522,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                    { <div className="col col-lg-4">
+           /* <!--         { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
                             <a href="https://www.linkedin.com/in/amala-sebastian-177397214"
@@ -1568,7 +1568,7 @@ export default function Home() {
                             </a>
                           </div>
                         </div>
-                      </div>        }
+                      </div>        }  --> */}
 
 
                       <div className="col col-lg-4">
