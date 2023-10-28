@@ -906,7 +906,7 @@ export default function Home() {
                       </div>
 
 
-                         <! --
+                       
                       { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
