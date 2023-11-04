@@ -5,7 +5,24 @@ import { InView } from 'react-intersection-observer';
 export default function Home() {
   const [sectionInView, setSectionInView] = useState(false);
 
-  
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    // Function to show the popup after a delay
+    const showPopupAfterDelay = () => {
+      setTimeout(() => {
+        setShowPopup(true);
+      }, 10000); // 10 seconds delay (10000 milliseconds)
+    };
+
+    // Call the function to start the countdown when the component mounts
+    showPopupAfterDelay();
+  }, []);
+
+  // Function to close the popup
+  const closePopup = () => {
+    setShowPopup(false);
+  };
   useEffect(() => {
     const sectionObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
