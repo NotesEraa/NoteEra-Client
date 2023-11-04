@@ -2328,7 +2328,17 @@ export default function Home() {
           </div>
         </footer>
       </div>
-          
+       {showPopup && (
+        <div className="popup-container">
+          <div className="popup-content">
+            <span className="popup-close" onClick={closePopup}>
+              &times;
+            </span>
+            <img src='Assets2/se_cn_bunddle.png' alt='Notes-Era MST bunddle'/>
+            <button><a href="https://drive.google.com/drive/folders/1xsifVJsGQXLVxaZulSYfO8i_AzFBkmta" className="popup-register-button">3rd Year SE/CN MST bundle</a></button>
+          </div>
+        </div>
+      )} 
     </>
   );
 }
