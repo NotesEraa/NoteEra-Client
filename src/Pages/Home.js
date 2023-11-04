@@ -2354,7 +2354,7 @@ export default function Home() {
               &times;
             </span>
             <img src='Assets2/se_cn_bunddle.png' alt='Notes-Era MST bunddle'/>
-            <button><a href="https://drive.google.com/drive/folders/1xsifVJsGQXLVxaZulSYfO8i_AzFBkmta" className="popup-register-button" > 3rd Year SE/CN MST bundle</a></button>
+            <button><a href="https://drive.google.com/drive/folders/1xsifVJsGQXLVxaZulSYfO8i_AzFBkmta" className="popup-register-button"  target="_blank"> 3rd Year SE/CN MST bundle</a></button>
           </div>
         </div>
       )} 
