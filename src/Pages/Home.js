@@ -145,14 +145,12 @@ export default function Home() {
                         </a>
                       </li>
                       <li>
-                        <a className="btn btn_primary" onClick=()=>{
-        setShowPopup(true);
-      }>
+                        <button className="btn btn_primary" onClick={()=>{setShowPopup(true);}}>
                           <span>
                             <small>MST bundle !!</small>
                             <small>SE/CN MST2</small>
                           </span>
-                        </a>
+                        </button>
                       </li>
                       </li>
                     </ul>
