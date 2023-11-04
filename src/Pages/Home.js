@@ -6,7 +6,9 @@ export default function Home() {
   const [sectionInView, setSectionInView] = useState(false);
 
   const [showPopup, setShowPopup] = useState(false);
-
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  };
   useEffect(() => {
     // Function to show the popup after a delay
     const showPopupAfterDelay = () => {
@@ -2354,7 +2356,9 @@ export default function Home() {
               &times;
             </span>
             <img src='Assets2/se_cn_bunddle.png' alt='Notes-Era MST bunddle'/>
-            <button><a href="https://drive.google.com/drive/folders/1xsifVJsGQXLVxaZulSYfO8i_AzFBkmta" className="popup-register-button"  target="_blank"> 3rd Year SE/CN MST bundle</a></button>
+            <button
+        role="link"
+        onClick={() => openInNewTab("https://drive.google.com/drive/folders/1xsifVJsGQXLVxaZulSYfO8i_AzFBkmta")} className='popup-register-button'>SE/CN MST Bundle !!</button>
           </div>
         </div>
       )} 
