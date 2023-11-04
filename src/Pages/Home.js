@@ -145,10 +145,13 @@ export default function Home() {
                         </a>
                       </li>
                       <li>
-                        <a className="video_play_btn text-white popup_video" href="https://www.youtube.com/embed/ly36kn0ug4k">
-                          <span className="icon" data-magnetic><i className="fas fa-play"></i></span>
-                          <span className="text">Watch video</span>
+                        <a className="btn btn_primary" onClick={!showPopup}>
+                          <span>
+                            <small>MST bundle !!</small>
+                            <small>SE/CN MST2</small>
+                          </span>
                         </a>
+                      </li>
                       </li>
                     </ul>
                   </div>
@@ -2352,7 +2355,7 @@ export default function Home() {
               &times;
             </span>
             <img src='Assets2/se_cn_bunddle.png' alt='Notes-Era MST bunddle'/>
-            <button><a href="https://drive.google.com/drive/folders/1xsifVJsGQXLVxaZulSYfO8i_AzFBkmta" className="popup-register-button" target="_blank">3rd Year SE/CN MST bundle</a></button>
+            <button><a href="https://drive.google.com/drive/folders/1xsifVJsGQXLVxaZulSYfO8i_AzFBkmta" className="popup-register-button" target="_blank" > 3rd Year SE/CN MST bundle</a></button>
           </div>
         </div>
       )} 
