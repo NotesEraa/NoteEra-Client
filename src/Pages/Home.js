@@ -2358,7 +2358,7 @@ export default function Home() {
             <img src='Assets2/MST_Bundle.jpeg' alt='Notes-Era MST bunddle'/>
             <button
         role="link"
-        onClick={() => openInNewTab("https://drive.google.com/drive/folders/1xsifVJsGQXLVxaZulSYfO8i_AzFBkmta")} className='popup-register-button'>FMEA/DAA MST Bundle !!</button>
+        onClick={() => openInNewTab("https://drive.google.com/drive/folders/1xsifVJsGQXLVxaZulSYfO8i_AzFBkmta")} className='popup-register-button'>Electives MST Bundle !!</button>
           </div>
         </div>
       )} 
