@@ -150,7 +150,7 @@ export default function Home() {
                         <button className="btn btn_primary" onClick={()=>{setShowPopup(true)}}>
                           <span>
                             <small>MST bundle !!</small>
-                            <small>DAA/FMEA MST2</small>
+                            <small>Electives MST2</small>
                           </span>
                         </button>
                       </li>
