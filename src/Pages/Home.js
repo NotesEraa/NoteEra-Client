@@ -2355,7 +2355,7 @@ export default function Home() {
             <span className="popup-close" onClick={closePopup}>
               &times;
             </span>
-            <img src='Assets2/fmea.png' alt='Notes-Era MST bunddle'/>
+            <img src='Assets2/MST_Bundle.jpeg' alt='Notes-Era MST bunddle'/>
             <button
         role="link"
         onClick={() => openInNewTab("https://drive.google.com/drive/folders/1xsifVJsGQXLVxaZulSYfO8i_AzFBkmta")} className='popup-register-button'>FMEA/DAA MST Bundle !!</button>
