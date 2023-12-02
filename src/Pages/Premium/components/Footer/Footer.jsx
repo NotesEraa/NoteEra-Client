@@ -11,7 +11,7 @@ const Footer = () => {
           className={`${footer.content} d-flex flex-column gap-4 flex-md-row flex-wrap align-items-center justify-content-between`}
         >
           <a href="/">
-            <img src="/Assests2/darkLogo.png" alt="NotesEra Logo" width={110} height={40} />
+            <img src="/Assets2/darkLogo.png" alt="NotesEra Logo" width={110} height={40} />
           </a>
           <PrimaryButton isLink={true} link="mailto:noteseraa@gmail.com">Contact Us For More Details</PrimaryButton>
           <div className={`${footer.socials}`}>
