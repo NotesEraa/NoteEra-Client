@@ -18,7 +18,7 @@ export default function Home() {
     };
 
     // Call the function to start the countdown when the component mounts
-    showPopupAfterDelay();
+    // showPopupAfterDelay();
   }, []);
 
   // Function to close the popup
@@ -147,12 +147,12 @@ export default function Home() {
                         </a>
                       </li>
                       <li>
-                        <button className="btn btn_primary" onClick={()=>{setShowPopup(true)}}>
+                        <a href="/premium" className="btn btn_premium">
                           <span>
-                            <small>MST bundle !!</small>
-                            <small>Electives MST2</small>
+                            <small>Notes-Era Premium</small>
+                            <small>Notes-Era Premium</small>
                           </span>
-                        </button>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -581,6 +581,52 @@ export default function Home() {
 
                   <div className="tab-pane fade" id="teb_photography" role="tabpanel">
                     <div className="row">
+                       <div className="col col-lg-5">
+                        <div className="course_card">
+                          <div className="item_image">
+                            <a href="https://www.linkedin.com/in/sanskarsoni9/" data-cursor-text="View">
+                              <img src="Assets2/Sanskar_Soni.jpg" alt="NotesEra – Online Learning Platform" />
+                            </a>
+                          </div>
+                          <div className="item_content">
+                            <div className="d-flex align-items-center justify-content-between mb-3">
+                              <ul className="item_category_list unordered_list">
+                                <li><a href="#!">Senior Developer</a></li>
+                              </ul>
+                              <div className="item_price">
+                                <span className="sale_price">3rd Year</span>
+                              </div>
+                            </div>
+                            <ul className="meta_info_list unordered_list">
+                              <li>
+                                <i className="fas fa-chart-bar"></i>
+                                <span>Technology</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-clock"></i>
+                                <span>Development</span>
+                              </li>
+                              <li>
+                                <i className="fas fa-star"></i>
+                                <span>Liberated</span>
+                              </li>
+                            </ul>
+                            <h3 className="item_title">
+                              <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/">
+                                Sanskar Soni: Make it work, Make it right, Make it fast
+                              </a>
+                            </h3>
+                            <a className="btn_unfill" href="https://www.linkedin.com/in/sanskarsoni9/">
+                              <span className="btn_text">LinkedIn</span>
+                              <span className="btn_icon">
+                                <i className="fas fa-long-arrow-right"></i>
+                                <i className="fas fa-long-arrow-right"></i>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
                     
                       <div className="col col-lg-5">
                         <div className="course_card">
@@ -736,8 +782,7 @@ export default function Home() {
                   
                   <div className="tab-pane fade" id="teb_database" role="tabpanel">
                     <div className="row">
-                                
-
+                    
                       { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
@@ -979,14 +1024,60 @@ export default function Home() {
 
 
 
-
-                  // <div className="tab-pane fade" id="teb_management" role="tabpanel">
-                  //   <div className="row">
+                  <div className="tab-pane fade" id="teb_management" role="tabpanel">
+                    <div className="row">
                     
-                  //     Management Folks to be placed here
+                      { 
+                      //   <div className="col col-lg-4">
+                      //   <div className="course_card">
+                      //     <div className="item_image">
+                      //       <a href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+                      //         <img src="Assets2/Ajinkya_Bhoite_.jpg" alt="NotesEra – Online Learning Platform" />
+                      //       </a>
+                      //     </div>
+                      //     <div className="item_content">
+                      //       <div className="d-flex align-items-center justify-content-between mb-3">
+                      //         <ul className="item_category_list unordered_list">
+                      //           <li><a href="#!">Manager</a></li>
+                      //         </ul>
+                      //         <div className="item_price">
+                      //           <span className="sale_price">3rd Year</span>
+                      //         </div>
+                      //       </div>
+                      //       <ul className="meta_info_list unordered_list">
+                      //         <li>
+                      //           <i className="fas fa-chart-bar"></i>
+                      //           <span>Leadership</span>
+                      //         </li>
+                      //         <li>
+                      //           <i className="fas fa-clock"></i>
+                      //           <span>Communication</span>
+                      //         </li>
+                      //         <li>
+                      //           <i className="fas fa-star"></i>
+                      //           <span>Decision-making </span>
+                      //         </li>
+                      //       </ul>
+                      //       <h3 className="item_title">
+                      //         <a href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==">
+                      //         Ajinkya Bhoite: Desire becomes surrender. Surrender becomes Power.
+                      //         </a>
+                      //       </h3>
+                      //       <a className="btn_unfill" href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==">
+                      //         <span className="btn_text">Instagram</span>
+                      //         <span className="btn_icon">
+                      //           <i className="fas fa-long-arrow-right"></i>
+                      //           <i className="fas fa-long-arrow-right"></i>
+                      //         </span>
+                      //       </a>
+                      //     </div>
+                      //   </div>
+                      // </div> 
+                      }
 
-                  //   </div>
-                  // </div>
+                    </div>
+                  </div>
+
 
 
 
@@ -997,7 +1088,6 @@ export default function Home() {
 
                   <div className="tab-pane fade" id="teb_programming" role="tabpanel">
                     <div className="row">
-                        
                       <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
@@ -1043,7 +1133,7 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
-                        
+
                     </div>
                   </div>
 
@@ -1151,7 +1241,7 @@ export default function Home() {
 
                   <div className="tab-pane fade" id="teb_elite" role="tabpanel">
                     <div className="row">
-
+                    
 
                       <div className="col col-lg-4">
                         <div className="course_card">
@@ -1198,20 +1288,15 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
-
-                        
                     </div>
                   </div>
 
 
 
 
-                        
-
                   <div className="tab-pane fade" id="teb_design" role="tabpanel">
                     <div className="row">
                       
-
                         {  /* <!--         { <div className="col col-lg-4">
                         <div className="course_card">
                           <div className="item_image">
@@ -1308,11 +1393,8 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
-                                
                     </div>
                   </div>
-
-                                
                 </div>
               </div>
             </div>
@@ -2046,9 +2128,12 @@ export default function Home() {
               &times;
             </span>
             <img src='Assets2/MST_Bundle.jpeg' alt='Notes-Era MST bunddle'/>
-            <button
-        role="link"
-        onClick={() => openInNewTab("https://drive.google.com/drive/folders/1xsifVJsGQXLVxaZulSYfO8i_AzFBkmta")} className='popup-register-button'>MST Bundle !!</button>
+            <a href="/premium" className="btn btn_premium mt-4">
+              <span>
+                <small>Notes-Era Premium</small>
+                <small>Notes-Era Premium</small>
+              </span>
+            </a>
           </div>
         </div>
       )} 
