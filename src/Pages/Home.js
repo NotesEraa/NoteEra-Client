@@ -1025,8 +1025,8 @@ export default function Home() {
 
 
 
-                  <div className="tab-pane fade" id="teb_management" role="tabpanel">
-                    <div className="row">
+                  // <div className="tab-pane fade" id="teb_management" role="tabpanel">
+                  //   <div className="row">
                     
                       { 
                       //   <div className="col col-lg-4">
@@ -1076,8 +1076,8 @@ export default function Home() {
                       // </div> 
                       }
 
-                    </div>
-                  </div>
+                  //   </div>
+                  // </div>
 
 
 
