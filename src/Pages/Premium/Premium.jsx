@@ -76,7 +76,7 @@ const Premium = () => {
           </section>
 
           {/* <!-- Contents Section --> */}
-          {subjects
+          {subjects.length
             ? (
               <section id="premiums" className={`${premium.contents} container`}>
                 <div className="row">
