@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const backendUrl = "http://localhost:3000/api";
+const backendUrl = "https://easy-cyan-dugong-kilt.cyclic.app/api";
+// const backendUrl = "http://localhost:3000/api";
 
 const fetchSubjects = async ({ yearValue, programmeValue, branchValue }) => {
   try {
