@@ -88,6 +88,7 @@ const Premium = () => {
               }}
             >
               <iframe
+                title="SE Notes"
                 style={{
                   position: "absolute",
                   border: "none",
