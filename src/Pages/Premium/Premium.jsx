@@ -49,7 +49,9 @@ const Premium = () => {
                 "Unlock the Era of Premium Learning with Notes-Era: Elevate Your
                 Knowledge, <span>Embrace</span> Success."
               </p>
-              <PrimaryButton isLink={true} link="/premium#premiums" target="">Get Started</PrimaryButton>
+              <PrimaryButton isLink={true} link="/premium#premiums" target="">
+                Get Started
+              </PrimaryButton>
             </div>
             <div className={premium.heroImgContainer}>
               <img
@@ -75,10 +77,47 @@ const Premium = () => {
             </p>
           </section>
 
+          <section className={`${premium.notes} container`}>
+            <h1>Software Engineering Notes</h1>
+            <div
+              style={{
+                position: "relative",
+                paddingTop: "max(60%,324px)",
+                width: "100%",
+                height: 0,
+              }}
+            >
+              <iframe
+                title="SE Notes"
+                style={{
+                  position: "absolute",
+                  border: "none",
+                  width: "100%",
+                  height: "100%",
+                  left: "0%",
+                  top: "3%",
+                }}
+                src="https://online.fliphtml5.com/quzrg/tntb/"
+                seamless="seamless"
+                scrolling="no"
+                frameborder="0"
+                allowTransparency="true"
+                allowFullscreen="true"
+              >
+              </iframe>
+            </div>
+          </section>
           {/* <!-- Contents Section --> */}
+
+          <section className="announcement">
+            <h1>More Subjects Coming Soon...</h1>
+          </section>
           {subjects?.length
             ? (
-              <section id="premiums" className={`${premium.contents} container`}>
+              <section
+                id="premiums"
+                className={`${premium.contents} container`}
+              >
                 <div className="row">
                   {subjects.map((subject, index) =>
                     index === subjects.length - 1 && subject.length % 2 === 1
