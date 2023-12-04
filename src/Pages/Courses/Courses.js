@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Courses.css';
 import axios from 'axios';
 import Select from 'react-select';
-import Skeleton,{SkeletonTheme} from 'react-loading-skeleton';
+import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css'
 /* eslint-disable react-hooks/exhaustive-deps */
 function Courses() {

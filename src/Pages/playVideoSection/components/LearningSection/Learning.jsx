@@ -5,12 +5,16 @@ import axios from "axios";
 import { useState,useEffect } from "react";
 const Learning=(props)=>{
     const [getData,setGetData]= useState([])
+    const fetchdata =()=>{
+        if(props.id){
+            axios.get(`https://noteseravideobackend.onrender.com/video/${props.id}/units`).then(res=>{
+            console.log(res.data)
+            setGetData(res.data)})
+        }
+    }
     useEffect(()=>{
-    axios.get(`https://noteseravideobackend.onrender.com/video/${props.id}/units`).then(res=>{
-        console.log(res.data)
-        setGetData(res.data)
+        fetchdata();
     })
-    },[])
     const[linkdata,setLinkData]=useState(null)
     const handlelink =(link)=>{
         setLinkData(link);
