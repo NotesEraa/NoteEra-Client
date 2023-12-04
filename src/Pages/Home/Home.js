@@ -85,7 +85,7 @@ export default function Home() {
                 </nav>
               </div>
               <div className="col col-lg-3 col-5">
-                <ul className="header_btns_group unordered_list">
+                <ul className="header_btns_group unordered_list_end">
                   <li className="d-lg-none">
                     {/* <button className="mobile_menu_btn" type="button" data-bs-toggle="collapse"
                       data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false"
