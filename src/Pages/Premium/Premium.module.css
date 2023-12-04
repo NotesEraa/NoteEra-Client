@@ -75,11 +75,12 @@
 }
 
 .hero h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 800;
-  line-height: 4.75rem;
+  line-height: 3.75rem;
   margin-left: -4px;
   margin-bottom: 0.9rem;
+  text-wrap: nowrap;
 }
 
 .hero p {
@@ -96,9 +97,13 @@
 @media screen and (min-width: 992px) {
   .hero img {
     min-width: 26rem;
+    line-height: 4.75rem;
   }
 }
 @media screen and (min-width: 576px) {
+  .hero h2 {
+    font-size: 5rem;
+  }
   .hero img {
     min-width: 24rem;
   }
@@ -128,10 +133,24 @@
 
 .notes {
   margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .notes h1 {
   color: var(--primary-f-color);
-  font-size: 2;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.notes a, .notes button {
+  margin-top: 3rem;
+}
+
+.announcement h1 {
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 /* Contents Section */

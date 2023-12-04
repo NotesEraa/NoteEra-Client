@@ -12,6 +12,7 @@ import BrightEllipse from "./components/Ellipses/BrightEllipse";
 
 import premium from "./Premium.module.css";
 import Spinner from "./components/Spinner/Spinner";
+import SecondaryButton from "./components/SecondaryButton/SecondaryButton";
 
 const Premium = () => {
   const [subjects, setSubjects] = useState(null);
@@ -106,10 +107,13 @@ const Premium = () => {
               >
               </iframe>
             </div>
+            <SecondaryButton isLink={true} link="/" target="_blank">
+              View In Drive
+            </SecondaryButton>
           </section>
           {/* <!-- Contents Section --> */}
 
-          <section className="announcement">
+          <section className={premium.announcement}>
             <h1>More Subjects Coming Soon...</h1>
           </section>
           {subjects?.length
