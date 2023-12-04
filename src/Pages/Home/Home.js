@@ -236,12 +236,6 @@ export default function Home() {
                 <div className="col col-lg-6">
                   {/* <!-- Button will hide on Mobile Device --> */}
                   <div className="btn_wrap pt-0 d-none d-lg-flex justify-content-end">
-                    <Link to='/courses'>
-                      <span>
-                        <small>Explore Notes</small>
-                        <small>Explore Notes</small>
-                      </span>
-                      </Link>
                   </div>
 
                   <div className="row">
