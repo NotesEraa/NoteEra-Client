@@ -55,7 +55,7 @@ const VideoForm = (props) => {
     const submitFormHandler=(event)=>{
         event.preventDefault();
         console.log(inputCollegeName,inputDepartment,inputSubjectName,inputTopicName,inputTopicUri,inputUnitName)
-        if(inputSubjectName===" "||inputTopicName===" "||inputTopicUri===" "){
+        if(inputSubjectName===" "||inputTopicName===" "||inputTopicUri===" "||inputCollegeName===" "||inputDepartment===" "||inputUnitName===" "||inputYear===null){
             setErrorHandling(true)
         }
         else{
