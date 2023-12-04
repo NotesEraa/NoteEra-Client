@@ -460,6 +460,7 @@ hr {
   color: black;
   border-color: gold;
   background-color: gold;
+  margin-left: 15.27px;
 }
 .btn_premium:hover {
   color: black;
@@ -591,9 +592,9 @@ hr {
 .unordered_list > li,
 .unordered_list_end > li,
 .unordered_list_center > li {
-  float: left;
   list-style: none;
   display: inline-block;
+  justify-content: center;
 }
 
 .unordered_list {
