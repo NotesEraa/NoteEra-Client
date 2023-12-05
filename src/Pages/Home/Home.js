@@ -401,774 +401,772 @@ export default function Home() {
           {/* <!-- Counter Section - End
             ================================================== -->
 
-            <!-- Courses Section - Start
+            <!-- Courses Section - Start    (Teams Section)
             ================================================== --> */}
-          <section className="courses_section section_space_lg">
-            <div className="container">
-              <div className="section_heading">
-                <div className="row align-items-center justify-content-lg-between">
-                  <div className="col col-lg-6">
-                    <h2 className="heading_text mb-0">
-                      Introducing Our Dedicated Team
-                    </h2>
-                  </div>
-                  <div className="col col-lg-5">
-                    <p className="heading_description mb-0 text-lg-end">
-                      Our diligent team is committed to providing educational support and guidance to enhance learning
-                      experiences.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          // <section className="courses_section section_space_lg">
+          //   <div className="container">
+          //     <div className="section_heading">
+          //       <div className="row align-items-center justify-content-lg-between">
+          //         <div className="col col-lg-6">
+          //           <h2 className="heading_text mb-0">
+          //             Introducing Our Dedicated Team
+          //           </h2>
+          //         </div>
+          //         <div className="col col-lg-5">
+          //           <p className="heading_description mb-0 text-lg-end">
+          //             Our diligent team is committed to providing educational support and guidance to enhance learning
+          //             experiences.
+          //           </p>
+          //         </div>
+          //       </div>
+          //     </div>
 
-              <div className="tabs_wrapper">
-                <ul className="nav" role="tablist">
-                  <li role="presentation">
-                    <button className="active" data-bs-toggle="tab" data-bs-target="#teb_hr" type="button" role="tab"
-                      aria-selected="true">
-                      <i className="fas fa-users"></i>
-                      <span>Founders</span>
-                    </button>
-                  </li>
-                  <li role="presentation">
-                    <button data-bs-toggle="tab" data-bs-target="#teb_photography" type="button" role="tab"
-                      aria-selected="false">
-                      <i className="fas fa-camera"></i>
-                      <span>Technicals</span>
-                    </button>
-                  </li>
-                  <li role="presentation">
-                    <button data-bs-toggle="tab" data-bs-target="#teb_database" type="button" role="tab"
-                      aria-selected="false">
-                      <i className="fas fa-database"></i>
-                      <span>Database</span>
-                    </button>
-                  </li>
-                  <li role="presentation">
-                    <button data-bs-toggle="tab" data-bs-target="#teb_management" type="button" role="tab"
-                      aria-selected="false">
-                      <i className="fas fa-book"></i>
-                      <span>Management</span>
-                    </button>
-                  </li>
-                  <li role="presentation">
-                    <button data-bs-toggle="tab" data-bs-target="#teb_programming" type="button" role="tab"
-                      aria-selected="false">
-                      <i className="fas fa-chart-network"></i>
-                      <span>Content</span>
-                    </button>
-                  </li>
-                  <li role="presentation">
-                    <button data-bs-toggle="tab" data-bs-target="#teb_marketing" type="button" role="tab"
-                      aria-selected="false">
-                      <i className="fas fa-lightbulb-on"></i>
-                      <span>Media</span>
-                    </button>
-                  </li>
-                  <li role="presentation">
-                    <button data-bs-toggle="tab" data-bs-target="#teb_elite" type="button" role="tab"
-                      aria-selected="false">
-                      <i className="fas fa-star"></i>
-                      <span>Team Elite</span>
-                    </button>
-                  </li>
-                </ul>
-                <div className="tab-content">
-                  <div className="tab-pane fade show active" id="teb_hr" role="tabpanel">
-                    <div className="row">
-                      <div className="col col-lg-5">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://instagram.com/ayushsaxena_29?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
-                              data-cursor-text="View">
-                              <img src="Assets2/Ayush_Saxena.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Founder</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
+          //     <div className="tabs_wrapper">
+          //       <ul className="nav" role="tablist">
+          //         <li role="presentation">
+          //           <button className="active" data-bs-toggle="tab" data-bs-target="#teb_hr" type="button" role="tab"
+          //             aria-selected="true">
+          //             <i className="fas fa-users"></i>
+          //             <span>Founders</span>
+          //           </button>
+          //         </li>
+          //         <li role="presentation">
+          //           <button data-bs-toggle="tab" data-bs-target="#teb_photography" type="button" role="tab"
+          //             aria-selected="false">
+          //             <i className="fas fa-camera"></i>
+          //             <span>Technicals</span>
+          //           </button>
+          //         </li>
+          //         <li role="presentation">
+          //           <button data-bs-toggle="tab" data-bs-target="#teb_database" type="button" role="tab"
+          //             aria-selected="false">
+          //             <i className="fas fa-database"></i>
+          //             <span>Database</span>
+          //           </button>
+          //         </li>
+          //         <li role="presentation">
+          //           <button data-bs-toggle="tab" data-bs-target="#teb_management" type="button" role="tab"
+          //             aria-selected="false">
+          //             <i className="fas fa-book"></i>
+          //             <span>Management</span>
+          //           </button>
+          //         </li>
+          //         <li role="presentation">
+          //           <button data-bs-toggle="tab" data-bs-target="#teb_programming" type="button" role="tab"
+          //             aria-selected="false">
+          //             <i className="fas fa-chart-network"></i>
+          //             <span>Content</span>
+          //           </button>
+          //         </li>
+          //         <li role="presentation">
+          //           <button data-bs-toggle="tab" data-bs-target="#teb_marketing" type="button" role="tab"
+          //             aria-selected="false">
+          //             <i className="fas fa-lightbulb-on"></i>
+          //             <span>Media</span>
+          //           </button>
+          //         </li>
+          //         <li role="presentation">
+          //           <button data-bs-toggle="tab" data-bs-target="#teb_elite" type="button" role="tab"
+          //             aria-selected="false">
+          //             <i className="fas fa-star"></i>
+          //             <span>Team Elite</span>
+          //           </button>
+          //         </li>
+          //       </ul>
+          //       <div className="tab-content">
+          //         <div className="tab-pane fade show active" id="teb_hr" role="tabpanel">
+          //           <div className="row">
+          //             <div className="col col-lg-5">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://instagram.com/ayushsaxena_29?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
+          //                     data-cursor-text="View">
+          //                     <img src="Assets2/Ayush_Saxena.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Founder</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
 
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Originator</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Optimism</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Visionary</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://instagram.com/ayushsaxena_29?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">
-                                Ayush Saxena: The Mastermind of Notes-Era
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/ayush-saxena-3684b2218/">
-                              <span className="btn_text">LinkedIn</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Originator</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Optimism</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Visionary</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://instagram.com/ayushsaxena_29?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">
+          //                       Ayush Saxena: The Mastermind of Notes-Era
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://www.linkedin.com/in/ayush-saxena-3684b2218/">
+          //                     <span className="btn_text">LinkedIn</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
 
-                      <div className="col col-lg-5">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://www.instagram.com/sakshijha.ai/" data-cursor-text="View">
-                              <img src="Assets2/Sakshi_Jha.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Co-Founder</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Modernity</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Resilience</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Initiator</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.instagram.com/sakshijha.ai/">
-                                Sakshi Jha: A Complete Package of Positive Energy
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/sakshi-sonam-jha-98519b223/">
-                              <span className="btn_text">LinkedIn</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col col-lg-5">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="Add Link"
-                              data-cursor-text="View">
-                              <img src="Assets2/Itish_Jain.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Co-Founder</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Enthusiasm</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Knowledge</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Guidance</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.linkedin.com/in/itish-jain-a3479822a/">
-                                Itish Jain:"Solving Tomorrow, Together in Peace"
-                              </a>
-                            </h3>
-                            <a className="btn_unfill"
-                              href="https://www.linkedin.com/in/itish-jain-a3479822a/">
-                              <span className="btn_text">Linkedin</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+          //             <div className="col col-lg-5">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://www.instagram.com/sakshijha.ai/" data-cursor-text="View">
+          //                     <img src="Assets2/Sakshi_Jha.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Co-Founder</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Modernity</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Resilience</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Initiator</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.instagram.com/sakshijha.ai/">
+          //                       Sakshi Jha: A Complete Package of Positive Energy
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://www.linkedin.com/in/sakshi-sonam-jha-98519b223/">
+          //                     <span className="btn_text">LinkedIn</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
+          //             <div className="col col-lg-5">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="Add Link"
+          //                     data-cursor-text="View">
+          //                     <img src="Assets2/Itish_Jain.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Co-Founder</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Enthusiasm</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Knowledge</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Guidance</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.linkedin.com/in/itish-jain-a3479822a/">
+          //                       Itish Jain:"Solving Tomorrow, Together in Peace"
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill"
+          //                     href="https://www.linkedin.com/in/itish-jain-a3479822a/">
+          //                     <span className="btn_text">Linkedin</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
 
-                      <div className="col col-lg-5">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="Add Link"
-                              data-cursor-text="View">
-                              <img src="Assets2/Aradhya_Tiwari.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Co-Founder</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Technology</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Knowledge</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>focus</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/">
-                                Aradhya Tiwari:"Cultivating Connectivity, Nurturing Peace"
-                              </a>
-                            </h3>
-                            <a className="btn_unfill"
-                              href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/">
-                              <span className="btn_text">Linkedin</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          //             <div className="col col-lg-5">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="Add Link"
+          //                     data-cursor-text="View">
+          //                     <img src="Assets2/Aradhya_Tiwari.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Co-Founder</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Technology</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Knowledge</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>focus</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/">
+          //                       Aradhya Tiwari:"Cultivating Connectivity, Nurturing Peace"
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill"
+          //                     href="https://www.linkedin.com/in/aradhya-tiwari-7ab767144/">
+          //                     <span className="btn_text">Linkedin</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
+          //           </div>
+          //         </div>
 
 
-                  <div className="tab-pane fade" id="teb_photography" role="tabpanel">
-                    <div className="row">
+          //         <div className="tab-pane fade" id="teb_photography" role="tabpanel">
+          //           <div className="row">
                     
-                      <div className="col col-lg-5">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://www.linkedin.com/in/sujal-soni/" data-cursor-text="View">
-                              <img src="Assets2/Sujal_Soni.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Senior Developer</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Technology</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Future</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Enrichment</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.linkedin.com/in/sujal-soni/">
-                              Sujal Soni: Diligent Learner, Full Stack Web Developer
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/sujal-soni/">
-                              <span className="btn_text">LinkedIn</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+          //             <div className="col col-lg-5">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://www.linkedin.com/in/sujal-soni/" data-cursor-text="View">
+          //                     <img src="Assets2/Sujal_Soni.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Senior Developer</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Technology</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Future</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Enrichment</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.linkedin.com/in/sujal-soni/">
+          //                     Sujal Soni: Diligent Learner, Full Stack Web Developer
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://www.linkedin.com/in/sujal-soni/">
+          //                     <span className="btn_text">LinkedIn</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
 
-                      <div className="col col-lg-5">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://www.linkedin.com/in/sanskarsoni9/" data-cursor-text="View">
-                              <img src="Assets2/Sanskar_Soni.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Senior Developer</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Technology</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Development</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Liberated</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/">
-                                Sanskar Soni: Make it work, Make it right, Make it fast
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/sanskarsoni9/">
-                              <span className="btn_text">LinkedIn</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+          //             <div className="col col-lg-5">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://www.linkedin.com/in/sanskarsoni9/" data-cursor-text="View">
+          //                     <img src="Assets2/Sanskar_Soni.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Senior Developer</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Technology</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Development</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Liberated</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/">
+          //                       Sanskar Soni: Make it work, Make it right, Make it fast
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://www.linkedin.com/in/sanskarsoni9/">
+          //                     <span className="btn_text">LinkedIn</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
 
 
-                      <div className="col col-lg-5">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/" data-cursor-text="View">
-                              <img src="Assets2/Arth_Gupta.jpeg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Senior Developer</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Technology</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Future</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Evolvement</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/">
-                                Arth Gupta: Elevating Tech Solutions Excellently
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/arth-gupta-a85b4a210/">
-                              <span className="btn_text">LinkedIn</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+          //             <div className="col col-lg-5">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/" data-cursor-text="View">
+          //                     <img src="Assets2/Arth_Gupta.jpeg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Senior Developer</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Technology</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Future</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Evolvement</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.linkedin.com/in/arth-gupta-a85b4a210/">
+          //                       Arth Gupta: Elevating Tech Solutions Excellently
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://www.linkedin.com/in/arth-gupta-a85b4a210/">
+          //                     <span className="btn_text">LinkedIn</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
 
                 
 
-                      <div className="col col-lg-5">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://www.instagram.com/jasneet2003/" data-cursor-text="View">
-                              <img src="Assets2/Jasneet_Singh_Saini.jpeg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Developer</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Gamer</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Vlogger</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Creator</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.instagram.com/jasneet2003/">
-                              Jasneet Singh Saini: I Create Content and craft elegant Frontend
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/jasneet-singh-saini-473638214/">
-                              <span className="btn_text">LinkedIn</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+          //             <div className="col col-lg-5">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://www.instagram.com/jasneet2003/" data-cursor-text="View">
+          //                     <img src="Assets2/Jasneet_Singh_Saini.jpeg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Developer</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Gamer</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Vlogger</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Creator</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.instagram.com/jasneet2003/">
+          //                     Jasneet Singh Saini: I Create Content and craft elegant Frontend
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://www.linkedin.com/in/jasneet-singh-saini-473638214/">
+          //                     <span className="btn_text">LinkedIn</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
 
 
                       
 
-                    </div>
-                  </div>
+          //           </div>
+          //         </div>
 
 
 
 
                   
-                  <div className="tab-pane fade" id="teb_database" role="tabpanel">
-                    <div className="row">
+          //         <div className="tab-pane fade" id="teb_database" role="tabpanel">
+          //           <div className="row">
                     
                       
 
 
-                      { <div className="col col-lg-4">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://instagram.com/mr_singh_jiii?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
-                              <img src="Assets2/Kulvinder_Singh.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Database Lead</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Productivity</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Organized</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Structured</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://instagram.com/mr_singh_jiii?igshid=MmU2YjMzNjRlOQ==">
-                                Kulvinder Singh: Your Database Manager
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://instagram.com/mr_singh_jiii?igshid=MmU2YjMzNjRlOQ==">
-                              <span className="btn_text">Instagram</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div> }
+          //             { <div className="col col-lg-4">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://instagram.com/mr_singh_jiii?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+          //                     <img src="Assets2/Kulvinder_Singh.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Database Lead</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Productivity</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Organized</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Structured</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://instagram.com/mr_singh_jiii?igshid=MmU2YjMzNjRlOQ==">
+          //                       Kulvinder Singh: Your Database Manager
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://instagram.com/mr_singh_jiii?igshid=MmU2YjMzNjRlOQ==">
+          //                     <span className="btn_text">Instagram</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div> }
 
                 
 
-                      <div className="col col-lg-4">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://instagram.com/ganuanvesha_30?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
-                              <img src="Assets2/Anvesha_Ganu.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Database Team</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Productivity</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Organized</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Structured</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://instagram.com/ganuanvesha_30?igshid=MmU2YjMzNjRlOQ==">
-                              Anvesha Ganu: Give me info and I'll give you knowledge.
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://instagram.com/ganuanvesha_30?igshid=MmU2YjMzNjRlOQ==">
-                              <span className="btn_text">Instagram</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+          //             <div className="col col-lg-4">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://instagram.com/ganuanvesha_30?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+          //                     <img src="Assets2/Anvesha_Ganu.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Database Team</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Productivity</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Organized</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Structured</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://instagram.com/ganuanvesha_30?igshid=MmU2YjMzNjRlOQ==">
+          //                     Anvesha Ganu: Give me info and I'll give you knowledge.
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://instagram.com/ganuanvesha_30?igshid=MmU2YjMzNjRlOQ==">
+          //                     <span className="btn_text">Instagram</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
 
 
-                      <div className="col col-lg-4">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://www.linkedin.com/in/umang-patanwala-96b032251" data-cursor-text="View">
-                              <img src="Assets2/Umang_Patanwala.jpg" alt="Collab – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Database Team</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Productivity</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Organized</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Structured</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.linkedin.com/in/umang-patanwala-96b032251">
-                              Umang Patanwala: Walking database
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://www.linkedin.com/in/umang-patanwala-96b032251">
-                              <span className="btn_text">Linkedin</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+          //             <div className="col col-lg-4">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://www.linkedin.com/in/umang-patanwala-96b032251" data-cursor-text="View">
+          //                     <img src="Assets2/Umang_Patanwala.jpg" alt="Collab – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Database Team</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Productivity</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Organized</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Structured</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.linkedin.com/in/umang-patanwala-96b032251">
+          //                     Umang Patanwala: Walking database
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://www.linkedin.com/in/umang-patanwala-96b032251">
+          //                     <span className="btn_text">Linkedin</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
 
 
                        
-                      { <div className="col col-lg-4">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
-                              <img src="Assets2/Rishabh_Maheswari_.jpg" alt="Collab – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Database Team</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Productivity</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Organized</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Structured</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==">
-                              Rishabh Maheswari: Your friendly neighborhood info-man
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==">
-                              <span className="btn_text">Instagram</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div> }    
+          //             { <div className="col col-lg-4">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+          //                     <img src="Assets2/Rishabh_Maheswari_.jpg" alt="Collab – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Database Team</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Productivity</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Organized</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Structured</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==">
+          //                     Rishabh Maheswari: Your friendly neighborhood info-man
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://instagram.com/rg_maheshwari_1006?igshid=MmU2YjMzNjRlOQ==">
+          //                     <span className="btn_text">Instagram</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div> }    
                                        
 
 
-                      <div className="col col-lg-4">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
-                              <img src="Assets2/Anoushka_Ananda.jpg" alt="Collab – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Database Team</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Productivity</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Organized</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Structured</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==">
-                            Anoushka Anand : Let there be light!!
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==">
-                              <span className="btn_text">Instagram</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          //             <div className="col col-lg-4">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+          //                     <img src="Assets2/Anoushka_Ananda.jpg" alt="Collab – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Database Team</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Productivity</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Organized</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Structured</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==">
+          //                   Anoushka Anand : Let there be light!!
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://instagram.com/anoushka18_?igshid=MmU2YjMzNjRlOQ==">
+          //                     <span className="btn_text">Instagram</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
+          //           </div>
+          //         </div>
 
 
 
 
-                  <div className="tab-pane fade" id="teb_management" role="tabpanel">
-                    <div className="row">
+          //         <div className="tab-pane fade" id="teb_management" role="tabpanel">
+          //           <div className="row">
                     
-                      { <div className="col col-lg-4">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
-                              <img src="Assets2/Ajinkya_Bhoite_.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Manager</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Leadership</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Communication</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Decision-making </span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==">
-                              Ajinkya Bhoite: Desire becomes surrender. Surrender becomes Power.
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==">
-                              <span className="btn_text">Instagram</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div> }
+          //             { <div className="col col-lg-4">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+          //                     <img src="Assets2/Ajinkya_Bhoite_.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Manager</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Leadership</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Communication</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Decision-making </span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==">
+          //                     Ajinkya Bhoite: Desire becomes surrender. Surrender becomes Power.
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://instagram.com/ajinkyabh2203?igshid=MmU2YjMzNjRlOQ==">
+          //                     <span className="btn_text">Instagram</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div> }
 
-                    </div>
-                  </div>
-
-
+          //           </div>
+          //         </div>
 
 
 
@@ -1176,261 +1174,263 @@ export default function Home() {
 
 
 
-                  <div className="tab-pane fade" id="teb_programming" role="tabpanel">
-                    <div className="row">
-                      <div className="col col-lg-4">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://www.instagram.com/sebas_j_tian/" data-cursor-text="View">
-                              <img src="Assets2/Jerin_Thomas.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Content Lead</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Introvert</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Scary</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Gangster</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.instagram.com/sebas_j_tian/">
-                                Jerin Thomas: Less talk more work!
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://www.instagram.com/sebas_j_tian/">
-                              <span className="btn_text">Instagram</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="col col-lg-4">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://www.instagram.com/_d.a.a.n.i.y.a.a.l_/?igshid=MmU2YjMzNjRlOQ%3D%3D"
-                              data-cursor-text="View">
-                              <img src="Assets2/Daaniyal_Abbasi.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Content Team</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Growth</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Focus</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Beginnings</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.instagram.com/_d.a.a.n.i.y.a.a.l_/?igshid=MmU2YjMzNjRlOQ%3D%3D">
-                                Daaniyal Abbasi: A Complete Guide to Content Creation
-                              </a>
-                            </h3>
-                            <a className="btn_unfill"
-                              href="https://www.instagram.com/_d.a.a.n.i.y.a.a.l_/?igshid=MmU2YjMzNjRlOQ%3D%3D">
-                              <span className="btn_text">Instagram</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
 
+          //         <div className="tab-pane fade" id="teb_programming" role="tabpanel">
+          //           <div className="row">
+          //             <div className="col col-lg-4">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://www.instagram.com/sebas_j_tian/" data-cursor-text="View">
+          //                     <img src="Assets2/Jerin_Thomas.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Content Lead</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Introvert</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Scary</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Gangster</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.instagram.com/sebas_j_tian/">
+          //                       Jerin Thomas: Less talk more work!
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://www.instagram.com/sebas_j_tian/">
+          //                     <span className="btn_text">Instagram</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
+
+          //             <div className="col col-lg-4">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://www.instagram.com/_d.a.a.n.i.y.a.a.l_/?igshid=MmU2YjMzNjRlOQ%3D%3D"
+          //                     data-cursor-text="View">
+          //                     <img src="Assets2/Daaniyal_Abbasi.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Content Team</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Growth</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Focus</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Beginnings</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.instagram.com/_d.a.a.n.i.y.a.a.l_/?igshid=MmU2YjMzNjRlOQ%3D%3D">
+          //                       Daaniyal Abbasi: A Complete Guide to Content Creation
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill"
+          //                     href="https://www.instagram.com/_d.a.a.n.i.y.a.a.l_/?igshid=MmU2YjMzNjRlOQ%3D%3D">
+          //                     <span className="btn_text">Instagram</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
+          //           </div>
+          //         </div>
 
 
-                  <div className="tab-pane fade" id="teb_marketing" role="tabpanel">
-                    <div className="row">
-                      <div className="col col-lg-4">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://www.instagram.com/aditii_003/" data-cursor-text="View">
-                              <img src="Assets2/Aditi_Dalal.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Social Media Lead</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Energy</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Creativity</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Attention</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.instagram.com/aditii_003/">
-                                Aditi Dalal: Your Social Media Manager
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://www.instagram.com/aditii_003/">
-                              <span className="btn_text">Instagram</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+
+
+          //         <div className="tab-pane fade" id="teb_marketing" role="tabpanel">
+          //           <div className="row">
+          //             <div className="col col-lg-4">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://www.instagram.com/aditii_003/" data-cursor-text="View">
+          //                     <img src="Assets2/Aditi_Dalal.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Social Media Lead</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Energy</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Creativity</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Attention</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.instagram.com/aditii_003/">
+          //                       Aditi Dalal: Your Social Media Manager
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://www.instagram.com/aditii_003/">
+          //                     <span className="btn_text">Instagram</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
                       
 
-                      <div className="col col-lg-4">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://www.instagram.com/_ananya.rai_/" data-cursor-text="View">
-                              <img src="Assets2/Ananya_Rai.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Social Media Team</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Energy</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Creativity</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Attention </span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://www.instagram.com/_ananya.rai_/">
-                                Ananya Rai: A girl with long Hair!
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://www.instagram.com/_ananya.rai_/">
-                              <span className="btn_text">Instagram</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>     
-                  </div>
+          //             <div className="col col-lg-4">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://www.instagram.com/_ananya.rai_/" data-cursor-text="View">
+          //                     <img src="Assets2/Ananya_Rai.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Social Media Team</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Energy</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Creativity</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Attention </span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://www.instagram.com/_ananya.rai_/">
+          //                       Ananya Rai: A girl with long Hair!
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://www.instagram.com/_ananya.rai_/">
+          //                     <span className="btn_text">Instagram</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
+          //           </div>     
+          //         </div>
 
 
 
-                  <div className="tab-pane fade" id="teb_elite" role="tabpanel">
-                    <div className="row">
+          //         <div className="tab-pane fade" id="teb_elite" role="tabpanel">
+          //           <div className="row">
                       
 
-                      <div className="col col-lg-4">
-                        <div className="course_card">
-                          <div className="item_image">
-                            <a href="https://instagram.com/krishna_.agrawal_?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
-                              <img src="Assets2/Krishna_Agarwal_.jpg" alt="NotesEra – Online Learning Platform" />
-                            </a>
-                          </div>
-                          <div className="item_content">
-                            <div className="d-flex align-items-center justify-content-between mb-3">
-                              <ul className="item_category_list unordered_list">
-                                <li><a href="#!">Team Elite</a></li>
-                              </ul>
-                              <div className="item_price">
-                                <span className="sale_price">3rd Year</span>
-                              </div>
-                            </div>
-                            <ul className="meta_info_list unordered_list">
-                              <li>
-                                <i className="fas fa-chart-bar"></i>
-                                <span>Adaptability</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-clock"></i>
-                                <span>Authenticity</span>
-                              </li>
-                              <li>
-                                <i className="fas fa-star"></i>
-                                <span>Adaptability</span>
-                              </li>
-                            </ul>
-                            <h3 className="item_title">
-                              <a href="https://instagram.com/krishna_.agrawal_?igshid=MmU2YjMzNjRlOQ==">
-                              Krishna Agarwal: Your everyday bad boy!!
-                              </a>
-                            </h3>
-                            <a className="btn_unfill" href="https://instagram.com/krishna_.agrawal_?igshid=MmU2YjMzNjRlOQ==">
-                              <span className="btn_text">Instagram</span>
-                              <span className="btn_icon">
-                                <i className="fas fa-long-arrow-right"></i>
-                                <i className="fas fa-long-arrow-right"></i>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          //             <div className="col col-lg-4">
+          //               <div className="course_card">
+          //                 <div className="item_image">
+          //                   <a href="https://instagram.com/krishna_.agrawal_?igshid=MmU2YjMzNjRlOQ==" data-cursor-text="View">
+          //                     <img src="Assets2/Krishna_Agarwal_.jpg" alt="NotesEra – Online Learning Platform" />
+          //                   </a>
+          //                 </div>
+          //                 <div className="item_content">
+          //                   <div className="d-flex align-items-center justify-content-between mb-3">
+          //                     <ul className="item_category_list unordered_list">
+          //                       <li><a href="#!">Team Elite</a></li>
+          //                     </ul>
+          //                     <div className="item_price">
+          //                       <span className="sale_price">3rd Year</span>
+          //                     </div>
+          //                   </div>
+          //                   <ul className="meta_info_list unordered_list">
+          //                     <li>
+          //                       <i className="fas fa-chart-bar"></i>
+          //                       <span>Adaptability</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-clock"></i>
+          //                       <span>Authenticity</span>
+          //                     </li>
+          //                     <li>
+          //                       <i className="fas fa-star"></i>
+          //                       <span>Adaptability</span>
+          //                     </li>
+          //                   </ul>
+          //                   <h3 className="item_title">
+          //                     <a href="https://instagram.com/krishna_.agrawal_?igshid=MmU2YjMzNjRlOQ==">
+          //                     Krishna Agarwal: Your everyday bad boy!!
+          //                     </a>
+          //                   </h3>
+          //                   <a className="btn_unfill" href="https://instagram.com/krishna_.agrawal_?igshid=MmU2YjMzNjRlOQ==">
+          //                     <span className="btn_text">Instagram</span>
+          //                     <span className="btn_icon">
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                       <i className="fas fa-long-arrow-right"></i>
+          //                     </span>
+          //                   </a>
+          //                 </div>
+          //               </div>
+          //             </div>
+          //           </div>
+          //         </div>
+          //       </div>
+          //     </div>
+          //   </div>
+          // </section>
           {/* <!-- Courses Section - End
             ================================================== -->
 
