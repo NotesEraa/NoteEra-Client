@@ -2,6 +2,7 @@ import './videologin.css';
 import { useState} from 'react';
 import axios from 'axios';
 import { useNavigate} from 'react-router-dom';
+import Cookies from 'js-cookie';
 const VideoLogin=()=>{
     const navigate =useNavigate();
     const[emailInput,setEmailInput]=useState(null);
@@ -20,13 +21,13 @@ const VideoLogin=()=>{
             setErrorMsg(true)
         }
         else{
-            axios.post("https://noteseravideobackend.onrender.com/authlogin/admin",{
-                username:emailInput,
+            axios.post("https://noteseravideobackend.onrender.com/authlogin/login",{
+                email:emailInput,
                 password:passwordInput
             }).then(res=>{
-                console.log(res.status);
-                localStorage.setItem('userdata',res.data.find_user._id)
-                navigate("/video/dashboard");
+                console.log(res.data.token);
+                Cookies.set('token',res.data.token);
+                navigate("/choosedashboard");
                 setErrorMsg(false)
             }).catch(err=>{
                 if(err.response.status===401){

@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
-
 import Home from './Pages/Home/Home.js';
 import Courses from './Pages/Courses/Courses.js';
 import SignUp from './Pages/SignUp/SignUp';
@@ -18,6 +17,8 @@ import VideoLogin from './Pages/VideoDashboard/videoLogin/VideoLogin.jsx';
 import VideoDashboard from './Pages/VideoDashboard/dashboard/VideoDashboard.jsx';
 import { checkAuthLoader } from './utils/auth.js';
 import Premium from './Pages/Premium/Premium.jsx';
+import NotesLogin from './components/NotesLogin/NotesLogin.jsx';
+import SelectDashboard from './Pages/BlankPage/Selectdashboard.jsx';
 
 // import axios from 'axios';
 
@@ -43,16 +44,24 @@ function App() {
     element:<Login />
   },
   {
+    path:"/noteslogin",
+    element:<NotesLogin/>
+  },
+  
+  {
     path:"/login9874Notes/dashboard",
-    element:<Dashboard />
+    element:<Dashboard />,
+    loader:checkAuthLoader
   },
   {
     path:"/login9874Notes/dashboard/add-data" ,
-    element:<AddData />
+    element:<AddData />,
+    loader:checkAuthLoader
   },
   {
     path:"/login9874Notes/dashboard/edit-data/:id" ,
-    element:<EditData />
+    element:<EditData />,
+    loader:checkAuthLoader
   },
   {
     path:"/videologin" ,
@@ -61,6 +70,11 @@ function App() {
   {
     path:"/video/dashboard" ,
     element:<VideoDashboard/>,
+    loader:checkAuthLoader
+  },
+  {
+    path:"/choosedashboard" ,
+    element:<SelectDashboard/>,
     loader:checkAuthLoader
   },
   {

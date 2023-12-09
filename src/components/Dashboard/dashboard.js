@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 import './Dashboard.css'; // You can create a CSS file for Dashboard styling
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
+import Button from '../UI/button';
+import Cookies from 'js-cookie';
 const Dashboard = () => {
   const navigate = useNavigate();
   
@@ -16,36 +17,11 @@ const Dashboard = () => {
   const [typeFilter, setTypeFilter] = useState('');
 
   // Security feature
-  const [securityKey, setSecurityKey] = useState('');
-  const [authorized, setAuthorized] = useState(false);
-
-  const handleSecurityKeyChange = (event) => {
-    setSecurityKey(event.target.value);
-  };
-
-      // Check if the user has already been authenticated in the past
-    useEffect(() => {
-      const isAuthenticated = localStorage.getItem('authenticated');
-  
-      if (isAuthenticated === 'true') {
-        setAuthorized(true);
-      } else {
-        setAuthorized(false);
-      }
-    }, []);
-
-  const checkSecurityKey = () => {
-    if (securityKey === 'NOtEs#125') {
-      localStorage.setItem('authenticated', 'true');
-      setAuthorized(true);
-    } else {
-      setAuthorized(false);
-      alert('Please enter correct Security Key!!');
-    }
-  };
-
-
   // Function to handle data deletion
+  const handleback=()=>{
+    Cookies.remove('token');
+    navigate('/');
+  }
   const handleDelete = async (id) => {
     const confirmed = window.confirm("Are you sure you want to delete the data?");
     if (confirmed){
@@ -126,11 +102,10 @@ const Dashboard = () => {
 
   return (
     <div>
-    {authorized ? (
       <div className="user-dashboard1">
         <h2>User Dashboard</h2>
         <button className='addData' onClick={() => navigate('/login9874Notes/dashboard/add-data')}>Add Data</button>
-   
+        <Button onClick={handleback}>back/logout</Button>
         <br />
         <br />
   
@@ -162,21 +137,7 @@ const Dashboard = () => {
           {dataCards}
         </div>
       </div>
-      ) : (
-        <div className="login-form2">
-          <h1>Enter Security Key</h1>
-          <input
-            type="password"
-            placeholder="Security Key"
-            value={securityKey}
-            onChange={handleSecurityKeyChange}
-            className="security-key-input1" // Unique class name
-          />
-          <br/>
-          <button onClick={checkSecurityKey} className="submit-button10">Submit</button>
-        </div>
-    )}
-    </div>
+      </div>
   );
 };
 

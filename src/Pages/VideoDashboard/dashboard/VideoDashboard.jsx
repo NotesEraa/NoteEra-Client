@@ -9,6 +9,7 @@ import VideoForm from "../../../components/videoForm/VideoForm";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import EditTopic from "../../../components/videoForm/EditTopicForm";
+import Cookies from "js-cookie";
 const VideoDashboard = () => {
   const navigate = useNavigate();
   const [edittopicpopup, setedittopicpopup] = useState(false);
@@ -52,7 +53,7 @@ const VideoDashboard = () => {
     settopicuri(topicuri);
   };
   const logout = () => {
-    localStorage.removeItem("userdata");
+    Cookies.remove('token');
     navigate("/videologin");
   };
   return (
