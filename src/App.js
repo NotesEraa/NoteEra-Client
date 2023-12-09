@@ -17,7 +17,6 @@ import VideoLogin from './Pages/VideoDashboard/videoLogin/VideoLogin.jsx';
 import VideoDashboard from './Pages/VideoDashboard/dashboard/VideoDashboard.jsx';
 import { checkAuthLoader } from './utils/auth.js';
 import Premium from './Pages/Premium/Premium.jsx';
-import NotesLogin from './components/NotesLogin/NotesLogin.jsx';
 import SelectDashboard from './Pages/BlankPage/Selectdashboard.jsx';
 
 // import axios from 'axios';
@@ -42,12 +41,7 @@ function App() {
   {
     path:"/login9874Notes",
     element:<Login />
-  },
-  {
-    path:"/noteslogin",
-    element:<NotesLogin/>
-  },
-  
+  },  
   {
     path:"/login9874Notes/dashboard",
     element:<Dashboard />,
