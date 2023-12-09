@@ -6,7 +6,7 @@ const SelectDashboard=()=>{
     const navigate = useNavigate();
     const handleBack=()=>{
         Cookies.remove('token');
-        navigate('/');
+        navigate('/videologin');
     }
     return<Card>
         <Button onClick={()=>{navigate('/login9874Notes/dashboard')}}>NOTES DASHBOARD</Button>
