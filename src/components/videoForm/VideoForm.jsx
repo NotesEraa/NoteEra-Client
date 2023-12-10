@@ -4,7 +4,9 @@ import Button from "../UI/button";
 import { useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
+import { useNavigate } from "react-router-dom";
 const VideoForm = (props) => {
+  const navigate = useNavigate();
     const [errorHandle,setErrorHandling]=useState(false);
     const[inputCollegeName,setInputCollegeName]=useState('');
     const[inputYear,setInputYear]=useState(null);
@@ -80,6 +82,7 @@ const VideoForm = (props) => {
                 error='problem in adding data please try again!! '
                 console.log(err);
                 setErrorHandling(true);
+                navigate('/hacker-Samajne-wale-ke-liye-msg');
             })
         }
     }

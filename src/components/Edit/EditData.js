@@ -63,6 +63,7 @@ const EditData = () => {
       })
       .catch((error) => {
         console.error('Error updating data:', error);
+        navigate('/hacker-Samajne-wale-ke-liye-msg');
       });
   };
 

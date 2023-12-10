@@ -3,7 +3,9 @@ import Button from "../UI/button";
 import { useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
+import { useNavigate } from "react-router-dom";
 const EditTopic =(props)=>{
+    const navigate =useNavigate();
     const[inputTopicName,setInputTopicName]=useState(props.topicname);
     const[inputTopicUri,setInputTopicUri]=useState(props.topicuri);
     const inputTopicNameHandler=(event)=>{
@@ -32,6 +34,7 @@ const EditTopic =(props)=>{
             window.location.reload(false);
         }).catch(err=>{
             alert('error in changing detail');
+            navigate('/hacker-Samajne-wale-ke-liye-msg');
         })
     }
     return<Modal hideCard = {props.hideCard}>

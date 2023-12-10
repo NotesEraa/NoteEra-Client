@@ -48,6 +48,7 @@ const VideoDashboard = () => {
       })
       .catch((err) => {
         alert("error occured while deleting the topic");
+        navigate('/hacker-Samajne-wale-ke-liye-msg');
       });
   };
   const edittopicHandler = (topicid, topicname, topicuri) => {

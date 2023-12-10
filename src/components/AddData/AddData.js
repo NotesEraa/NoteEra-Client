@@ -65,6 +65,7 @@ const AddData = () => {
     } catch (error) {
       // Handle errors
       console.error('Error adding data:', error);
+      navigate('/hacker-Samajne-wale-ke-liye-msg');
     }
   };
 

@@ -17,6 +17,7 @@ import VideoLogin from './Pages/VideoDashboard/videoLogin/VideoLogin.jsx';
 import VideoDashboard from './Pages/VideoDashboard/dashboard/VideoDashboard.jsx';
 import Premium from './Pages/Premium/Premium.jsx';
 import{checkNotesAuthLoader,checkVideoAuthLoader} from './utils/auth.js';
+import HackerBhai from './Pages/BlankPage/HackerBhai.js';
 // import axios from 'axios';
 
 
@@ -39,6 +40,10 @@ function App() {
   {
     path:"/noteslogin",
     element:<Login />
+  },
+  {
+    path:'/hacker-Samajne-wale-ke-liye-msg',
+    element:<HackerBhai/>
   },  
   {
     path:"/noteslogin/dashboard",
