@@ -6,7 +6,7 @@ const HackerBhai =()=>{
     return<>
     <h1>"beta masti nahi kerte chup chap padai likhai kero .. love from Notes-era  </h1>
     <h3> next time try mat kerna ip block kerte bhi aati hai exam time me code mat kerwa mujhse !!</h3>
-    <Button onclick={()=>{
+    <Button onClick={()=>{
         Cookies.remove('notestoken');
         Cookies.remove('token');
         navigate('/');
