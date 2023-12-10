@@ -63,7 +63,7 @@ const VideoForm = (props) => {
         }
         // "Cannot destructure property 'email' of 'req.user' as it is null."
         else{
-            axios.post("https://noteseravideobackend.onrender.com/videoroute/add",{
+            axios.post("https://noteseravideobackend.onrender.com/video/add",{
                 collegename:inputCollegeName,
                 year:inputYear,
                 department:inputDepartment,
