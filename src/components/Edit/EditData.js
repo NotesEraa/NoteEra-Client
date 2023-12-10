@@ -59,7 +59,7 @@ const EditData = () => {
         // Handle success, e.g., redirect to a success page or show a success message
         console.log('Data updated successfully!', response.data.message);
         window.alert("Data Updated Successfully");
-        navigate('/login9874Notes/dashboard');
+        navigate('/noteslogin/dashboard');
       })
       .catch((error) => {
         console.error('Error updating data:', error);
