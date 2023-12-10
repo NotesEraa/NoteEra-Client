@@ -4,8 +4,7 @@ import React, { useEffect, useState } from 'react';
 import './AddData.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
-
+import Cookies from 'js-cookie';
 const AddData = () => {
 
   const navigate = useNavigate();
@@ -55,7 +54,11 @@ const AddData = () => {
       // } else {
       //   window.alert('Invalid Passkey');
       // }
-      await axios.post('https://notesera-backend.onrender.com/data/add', formData);
+      await axios.post('https://notesera-backend.onrender.com/data/add', formData,{
+        headers: {
+          Authorization: `Bearer ${Cookies.get("notestoken")}`,
+        },
+      });
       setFormData(initialFormData);
       window.alert('Data added successfully');
       
@@ -136,7 +139,7 @@ const AddData = () => {
         <button type="submit">Submit</button>
       </form>
       <br/>
-      <p className="Back-Link"><a href="/login9874Notes/dashboard"> ← Back to Dashboard</a></p>
+      <p className="Back-Link"><a href="/noteslogin/dashboard"> ← Back to Dashboard</a></p>
     </div>
   );
 };

@@ -19,7 +19,7 @@ const Dashboard = () => {
   // Security feature
   // Function to handle data deletion
   const handleback=()=>{
-    Cookies.remove('token');
+    Cookies.remove('notestoken');
     navigate('/');
   }
   const handleDelete = async (id) => {
@@ -27,7 +27,12 @@ const Dashboard = () => {
     if (confirmed){
       try {
         // Make a DELETE request to your server to delete the data entry
-        await axios.delete(`https://notesera-backend.onrender.com/data/${id}`);
+        await axios.delete(`https://notesera-backend.onrender.com/data/${id}`,
+        {
+          headers: {
+            Authorization: `Bearer ${Cookies.get("notestoken")}`,
+          }
+        });
     
         // Remove the deleted data entry from the local state (dataList)
         const updatedList = dataList.filter((data) => data._id !== id);
@@ -91,7 +96,7 @@ const Dashboard = () => {
           <p>Link: {data.link}</p>
         </div>
         <div className="card-actions1">
-          <button className="edit-button1" onClick={() => navigate(`/login9874Notes/dashboard/edit-data/${data._id}`)}>Edit</button>
+          <button className="edit-button1" onClick={() => navigate(`/noteslogin/dashboard/edit-data/${data._id}`)}>Edit</button>
           <button className="delete-button1" onClick={() => handleDelete(data._id)}>Delete</button>
         </div>
       </div>
@@ -104,7 +109,7 @@ const Dashboard = () => {
     <div>
       <div className="user-dashboard1">
         <h2>User Dashboard</h2>
-        <button className='addData' onClick={() => navigate('/login9874Notes/dashboard/add-data')}>Add Data</button>
+        <button className='addData' onClick={() => navigate('/noteslogin/dashboard/add-data')}>Add Data</button>
         <Button onClick={handleback}>back/logout</Button>
         <br />
         <br />

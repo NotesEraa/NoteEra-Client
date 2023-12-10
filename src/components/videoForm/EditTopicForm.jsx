@@ -2,6 +2,7 @@ import Modal from "../UI/Modal";
 import Button from "../UI/button";
 import { useState } from "react";
 import axios from "axios";
+import Cookies from "js-cookie";
 const EditTopic =(props)=>{
     const[inputTopicName,setInputTopicName]=useState(props.topicname);
     const[inputTopicUri,setInputTopicUri]=useState(props.topicuri);
@@ -22,7 +23,11 @@ const EditTopic =(props)=>{
         axios.put(`https://noteseravideobackend.onrender.com/video/edittopic/${props.topicid}`,{
             topicname:inputTopicName,
             topicuri:inputTopicUri
-        }).then(res=>{
+        },{
+            headers:{
+              Authorization:`Bearer ${Cookies.get('token')}`,
+            }
+          }).then(res=>{
             alert("topic values changed");
             window.location.reload(false);
         }).catch(err=>{

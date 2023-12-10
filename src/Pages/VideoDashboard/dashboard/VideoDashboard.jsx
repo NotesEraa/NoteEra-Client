@@ -35,7 +35,12 @@ const VideoDashboard = () => {
     console.log(topicid, courseid);
     axios
       .delete(
-        `https://noteseravideobackend.onrender.com/video/deletetopic/${topicid}/${courseid}`
+        `https://noteseravideobackend.onrender.com/video/deletetopic/${topicid}/${courseid}`,
+        {
+          headers: {
+            Authorization: `Bearer ${Cookies.get("token")}`,
+          },
+        }
       )
       .then((res) => {
         alert("deleted topic succussfully!!");
@@ -53,7 +58,7 @@ const VideoDashboard = () => {
     settopicuri(topicuri);
   };
   const logout = () => {
-    Cookies.remove('token');
+    Cookies.remove("token");
     navigate("/videologin");
   };
   return (
@@ -73,7 +78,10 @@ const VideoDashboard = () => {
       <Button onClick={showCartHandler}>Add Data</Button>
       {!isdataavaliable && (
         <div className="searchimage">
-          <img src="https://res.cloudinary.com/dpnibtyoj/image/upload/v1701519756/searchimage_tq7c2d.png" alt="searchimage" />
+          <img
+            src="https://res.cloudinary.com/dpnibtyoj/image/upload/v1701519756/searchimage_tq7c2d.png"
+            alt="searchimage"
+          />
         </div>
       )}
       {isdataavaliable && (

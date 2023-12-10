@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './EditData.css'; // Import your CSS stylesimport axios from 'axios';
-
+import Cookies from 'js-cookie';
 import axios from 'axios';
 
 const EditData = () => {
@@ -50,7 +50,11 @@ const EditData = () => {
     };
 
     // Make an API call to update the data
-    axios.put(`https://notesera-backend.onrender.com/data/${id}`, updatedData)
+    axios.put(`https://notesera-backend.onrender.com/data/${id}`, updatedData,{
+      headers: {
+        Authorization: `Bearer ${Cookies.get("notestoken")}`,
+      }
+    })
       .then((response) => {
         // Handle success, e.g., redirect to a success page or show a success message
         console.log('Data updated successfully!', response.data.message);

@@ -25,9 +25,16 @@ const VideoLogin=()=>{
                 email:emailInput,
                 password:passwordInput
             }).then(res=>{
-                console.log(res.data.token);
-                Cookies.set('token',res.data.token);
-                navigate("/choosedashboard");
+                console.log(res.data);
+                if(res.data.token){
+                    Cookies.set('token',res.data.token);
+                    Cookies.set('email',res.data.email);
+                }
+                else if(res.data.refreshtoken){
+                    Cookies.set('token',res.data.refreshtoken);
+                    Cookies.set('email',res.data.email);
+                }
+                navigate("/video/dashboard");
                 setErrorMsg(false)
             }).catch(err=>{
                 if(err.response.status===401){

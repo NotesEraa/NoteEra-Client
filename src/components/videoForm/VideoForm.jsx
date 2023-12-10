@@ -3,6 +3,7 @@ import Modal from "../UI/Modal";
 import Button from "../UI/button";
 import { useState } from "react";
 import axios from "axios";
+import Cookies from "js-cookie";
 const VideoForm = (props) => {
     const [errorHandle,setErrorHandling]=useState(false);
     const[inputCollegeName,setInputCollegeName]=useState('');
@@ -58,8 +59,9 @@ const VideoForm = (props) => {
         if(inputSubjectName===" "||inputTopicName===" "||inputTopicUri===" "||inputCollegeName===" "||inputDepartment===" "||inputUnitName===" "||inputYear===null){
             setErrorHandling(true)
         }
+        // "Cannot destructure property 'email' of 'req.user' as it is null."
         else{
-            axios.post("https://noteseravideobackend.onrender.com/video/add",{
+            axios.post("https://noteseravideobackend.onrender.com/videoroute/add",{
                 collegename:inputCollegeName,
                 year:inputYear,
                 department:inputDepartment,
@@ -67,6 +69,10 @@ const VideoForm = (props) => {
                 unitname:inputUnitName,
                 topicname:inputTopicName,
                 topicuri:inputTopicUri
+            },{
+              headers:{
+                Authorization:`Bearer ${Cookies.get('token')}`,
+              }
             }).then(res=>{
                 console.log(res.status);
                 setTimeout(function(){alert("successfully added!!")},1000)

@@ -15,10 +15,8 @@ import Privacypolicy from './Pages/privacypolicy/Privacypolicy.jsx';
 import Termsandconditions from './Pages/TermsAndConditions/Terms.jsx';
 import VideoLogin from './Pages/VideoDashboard/videoLogin/VideoLogin.jsx';
 import VideoDashboard from './Pages/VideoDashboard/dashboard/VideoDashboard.jsx';
-import { checkAuthLoader } from './utils/auth.js';
 import Premium from './Pages/Premium/Premium.jsx';
-import SelectDashboard from './Pages/BlankPage/Selectdashboard.jsx';
-
+import{checkNotesAuthLoader,checkVideoAuthLoader} from './utils/auth.js';
 // import axios from 'axios';
 
 
@@ -39,23 +37,23 @@ function App() {
     element:<SignUp />
   },
   {
-    path:"/login9874Notes",
+    path:"/noteslogin",
     element:<Login />
   },  
   {
-    path:"/login9874Notes/dashboard",
+    path:"/noteslogin/dashboard",
     element:<Dashboard />,
-    loader:checkAuthLoader
+    loader:checkNotesAuthLoader
   },
   {
-    path:"/login9874Notes/dashboard/add-data" ,
+    path:"/noteslogin/dashboard/add-data" ,
     element:<AddData />,
-    loader:checkAuthLoader
+    loader:checkNotesAuthLoader
   },
   {
-    path:"/login9874Notes/dashboard/edit-data/:id" ,
+    path:"/noteslogin/dashboard/edit-data/:id" ,
     element:<EditData />,
-    loader:checkAuthLoader
+    loader:checkNotesAuthLoader
   },
   {
     path:"/videologin" ,
@@ -64,12 +62,7 @@ function App() {
   {
     path:"/video/dashboard" ,
     element:<VideoDashboard/>,
-    loader:checkAuthLoader
-  },
-  {
-    path:"/choosedashboard" ,
-    element:<SelectDashboard/>,
-    loader:checkAuthLoader
+    loader:checkVideoAuthLoader
   },
   {
     path:"/videosection" ,
