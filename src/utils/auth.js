@@ -6,19 +6,21 @@ export function getVideoAuthToken(){
     return token;
 }
 
-export function checkVideoAuthLoader(){
+export async function checkVideoAuthLoader(){
     const token = getVideoAuthToken();
-    axios.get("https://noteseravideobackend.onrender.com/authlogin/checkvalidity",{
+    try{
+    const getvalue = await axios.get("https://noteseravideobackend.onrender.com/authlogin/checkvalidity",{
         headers:{
             Authorization :`Bearer ${token}`
         }
-    }).then(res=>{
-        console.log(res)
-        return null
-    }).catch(err=>{
-        console.log(err)
+    })}
+    catch(error){
         return redirect('/hacker-Samajne-wale-ke-liye-msg')
-    })
+    }
+    if(!getvalue){
+        return redirect('/hacker-Samajne-wale-ke-liye-msg')
+    }
+    return null
 }
 
 export function getNotesAuthToken(){
