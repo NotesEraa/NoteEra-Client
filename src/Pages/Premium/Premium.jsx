@@ -98,7 +98,7 @@ const Premium = () => {
                   left: "0%",
                   top: "3%",
                 }}
-                src="https://online.fliphtml5.com/conct/tenw/"
+                src="https://online.fliphtml5.com/conct/xfwe/"
                 seamless="seamless"
                 scrolling="no"
                 frameborder="0"
@@ -107,7 +107,7 @@ const Premium = () => {
               >
               </iframe>
             </div>
-            <SecondaryButton isLink={true} link="https://drive.google.com/file/d/1wQsqw8YJsQAntcuigkrvT-VPgLjYCoTT/view "target="_blank">
+            <SecondaryButton isLink={true} link="https://drive.google.com/file/d/1jYYrWGZtSu5Dh5jGT0RDm9E4GwJhjJbD/view?usp=drive_link "target="_blank">
               View In Drive
             </SecondaryButton>
           </section>
