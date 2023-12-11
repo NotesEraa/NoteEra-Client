@@ -2408,7 +2408,7 @@ export default function Home() {
             <span className="popup-close" onClick={closePopup}>
               &times;
             </span>
-            <img src="Assets2/Premiums.jpeg" alt="Notes-Era MST bunddle" />
+            <img src="https://res.cloudinary.com/dpnibtyoj/image/upload/v1702269087/fmea-poster_pyu8ou.png" alt="Notes-Era MST bunddle" />
             <a href="/premium" className="btn btn_premium mt-4">
               <span>
                 <small>Notes-Era Premium</small>
