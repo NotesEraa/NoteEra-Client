@@ -8,8 +8,9 @@ export function getVideoAuthToken(){
 
 export async function checkVideoAuthLoader(){
     const token = getVideoAuthToken();
+    let getvalue;
     try{
-    const getvalue = await axios.get("https://noteseravideobackend.onrender.com/authlogin/checkvalidity",{
+     getvalue = await axios.get("https://noteseravideobackend.onrender.com/authlogin/checkvalidity",{
         headers:{
             Authorization :`Bearer ${token}`
         }
