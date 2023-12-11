@@ -11,6 +11,7 @@ const HackerBhai =()=>{
         Cookies.remove('token');
         navigate('/');
     }}>hello bhai please back hojao ab  </Button>
+    <img src="https://res.cloudinary.com/dpnibtyoj/image/upload/v1702260881/goli_beta_masti_nahi_lbs74e.jpg" alt ="goli beta masti nahi" height={500}/>
     </>
 }
 export default HackerBhai;
