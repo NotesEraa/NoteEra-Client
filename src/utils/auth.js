@@ -29,10 +29,20 @@ export function getNotesAuthToken(){
     return token;
 }
 
-export function checkNotesAuthLoader(){
+export async function checkNotesAuthLoader(){
     const token = getNotesAuthToken();
-    if(!token){
-        return redirect('/noteslogin');
+    let getvalue;
+    try{
+     getvalue = await axios.get("https://notesera-backend.onrender.com/auth/checkvalidity",{
+        headers:{
+            Authorization :`Bearer ${token}`
+        }
+    })}
+    catch(error){
+        return redirect('/hacker-Samajne-wale-ke-liye-msg')
+    }
+    if(!getvalue){
+        return redirect('/hacker-Samajne-wale-ke-liye-msg')
     }
     return null
 }
