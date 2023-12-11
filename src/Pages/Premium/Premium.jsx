@@ -79,7 +79,7 @@ const Premium = () => {
           </section>
 
           <section className={`${premium.notes} container`}>
-            <h1>Software Engineering Notes</h1>
+            <h1>Fundamentals of Managment ,economics and accountancy  Quick shorts</h1>
             <div
               style={{
                 position: "relative",
@@ -98,7 +98,7 @@ const Premium = () => {
                   left: "0%",
                   top: "3%",
                 }}
-                src="https://online.fliphtml5.com/quzrg/tntb/"
+                src="https://online.fliphtml5.com/conct/tenw/"
                 seamless="seamless"
                 scrolling="no"
                 frameborder="0"
@@ -107,7 +107,7 @@ const Premium = () => {
               >
               </iframe>
             </div>
-            <SecondaryButton isLink={true} link="/" target="_blank">
+            <SecondaryButton isLink={true} link="https://drive.google.com/file/d/1wQsqw8YJsQAntcuigkrvT-VPgLjYCoTT/view "target="_blank">
               View In Drive
             </SecondaryButton>
           </section>
