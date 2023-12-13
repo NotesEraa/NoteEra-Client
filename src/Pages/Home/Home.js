@@ -181,12 +181,17 @@ export default function Home() {
                           </span>
                         </Link>
                       </li>
-                      <Link to="/premium" className="btn btn_premium">
+                      {/* <Link to="/premium" className="btn btn_premium"> */}
+                      <a
+                      className="btn btn_premium"
+                      href="https://drive.google.com/drive/folders/1ankWGZ9Y5PV2-Cf-DnZNDXkFJ2CABa35"
+                    >
                         <span>
-                          <small>Notesera Premium</small>
-                          <small>Noterera Premium</small>
+                          <small>DAA Notes</small>
+                          <small>DAA Notes</small>
                         </span>
-                      </Link>
+                        </a>
+                      {/* </Link> */}
                       <li>
                         {
                           /* <button className="btn btn_primary" onClick={()=>{setShowPopup(true)}}>
