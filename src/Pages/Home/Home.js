@@ -6,26 +6,27 @@ import "./Home.css";
 export default function Home() {
   const [sectionInView, setSectionInView] = useState(false);
 
-  const [showPopup, setShowPopup] = useState(false);
-  // const openInNewTab = (url) => {
-  //   window.open(url, "_blank", "noreferrer");
+  // const [showPopup, setShowPopup] = useState(false);
+  // // const openInNewTab = (url) => {
+  // //   window.open(url, "_blank", "noreferrer");
+  // // };
+  // useEffect(() => {
+  //   // Function to show the popup after a delay
+  //   const showPopupAfterDelay = () => {
+  //     setTimeout(() => {
+  //       setShowPopup(true);
+  //     }, 10000); // 10 seconds delay (10000 milliseconds)
+  //   };
+
+  //   // Call the function to start the countdown when the component mounts
+  //   showPopupAfterDelay();
+  // }, []);
+
+  // // Function to close the popup
+  // const closePopup = () => {
+  //   setShowPopup(false);
   // };
-  useEffect(() => {
-    // Function to show the popup after a delay
-    const showPopupAfterDelay = () => {
-      setTimeout(() => {
-        setShowPopup(true);
-      }, 10000); // 10 seconds delay (10000 milliseconds)
-    };
-
-    // Call the function to start the countdown when the component mounts
-    showPopupAfterDelay();
-  }, []);
-
-  // Function to close the popup
-  const closePopup = () => {
-    setShowPopup(false);
-  };
+  
   useEffect(() => {
     const sectionObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -2407,22 +2408,22 @@ export default function Home() {
           </div>
         </footer>
       </div>
-      {showPopup && (
-        <div className="popup-container">
-          <div className="popup-content">
-            <span className="popup-close" onClick={closePopup}>
-              &times;
-            </span>
-            <img src="https://res.cloudinary.com/dpnibtyoj/image/upload/v1702269087/fmea-poster_pyu8ou.png" alt="Notes-Era MST bunddle" />
-            <a href="/premium" className="btn btn_premium mt-4">
-              <span>
-                <small>Notes-Era Premium</small>
-                <small>Notes-Era Premium</small>
-              </span>
-            </a>
-          </div>
-        </div>
-      )}
+      // {showPopup && (
+      //   <div className="popup-container">
+      //     <div className="popup-content">
+      //       <span className="popup-close" onClick={closePopup}>
+      //         &times;
+      //       </span>
+      //       <img src="https://res.cloudinary.com/dpnibtyoj/image/upload/v1702269087/fmea-poster_pyu8ou.png" alt="Notes-Era MST bunddle" />
+      //       <a href="/premium" className="btn btn_premium mt-4">
+      //         <span>
+      //           <small>Notes-Era Premium</small>
+      //           <small>Notes-Era Premium</small>
+      //         </span>
+      //       </a>
+      //     </div>
+      //   </div>
+      // )}
     </>
   );
 }
