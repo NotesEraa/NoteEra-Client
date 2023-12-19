@@ -209,10 +209,10 @@ export default function Home() {
                     <div className="banner_image_1 decoration_wrap">
                       // <div className="image_wrap">
                       //   <img
-                      //     src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751695/Assets2/banner_gwfmq2.png"
-                      //     alt="Notes-Era – Online Learning Platform"
-                      //   />
-                      // </div>
+                          src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751695/Assets2/banner_gwfmq2.png"
+                          alt="Notes-Era – Online Learning Platform"
+                        />
+                      </div>
                       <div className="satisfied_student">
                         <h3 className="wrap_title">4000+ Satisfied Student</h3>
                         <ul className="students_thumbnail unordered_list_center">
@@ -2408,7 +2408,7 @@ export default function Home() {
           </div>
         </footer>
       </div>
-      // {showPopup && (
+      {/* // {showPopup && (
       //   <div className="popup-container">
       //     <div className="popup-content">
       //       <span className="popup-close" onClick={closePopup}>
@@ -2423,7 +2423,7 @@ export default function Home() {
       //       </a>
       //     </div>
       //   </div>
-      // )}
+      )} */}
     </>
   );
 }
