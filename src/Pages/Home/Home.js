@@ -186,12 +186,12 @@ export default function Home() {
                       <a
                       className="btn btn_premium"
                       href="https://drive.google.com/drive/folders/14HEj1KVgvOyaZKKIW4vWkjcTsQqVonjd "
-                    >
+                     >
                         <span>
                           <small> AI / DS / IWT Notes</small>
                           <small> AI / DS / IWT Notes</small>
                         </span>
-                        </a>
+                      </a>
                       {/* </Link> */}
                       <li>
                         {
@@ -207,12 +207,12 @@ export default function Home() {
                   </div>
                   <div className="col col-lg-5">
                     <div className="banner_image_1 decoration_wrap">
-                      <div className="image_wrap">
-                        <img
-                          src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751695/Assets2/banner_gwfmq2.png"
-                          alt="Notes-Era – Online Learning Platform"
-                        />
-                      </div>
+                      // <div className="image_wrap">
+                      //   <img
+                      //     src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751695/Assets2/banner_gwfmq2.png"
+                      //     alt="Notes-Era – Online Learning Platform"
+                      //   />
+                      // </div>
                       <div className="satisfied_student">
                         <h3 className="wrap_title">4000+ Satisfied Student</h3>
                         <ul className="students_thumbnail unordered_list_center">
