@@ -184,11 +184,11 @@ export default function Home() {
                       {/* <Link to="/premium" className="btn btn_premium"> */}
                       <a
                       className="btn btn_premium"
-                      href="https://drive.google.com/drive/folders/1-CG6XhXQn5dX9vfjMpG_-DGsmFdQPwoS "
+                      href="https://drive.google.com/drive/folders/14HEj1KVgvOyaZKKIW4vWkjcTsQqVonjd "
                     >
                         <span>
-                          <small>Python/BlockChain Notes</small>
-                          <small>Python/BlockChain Notes</small>
+                          <small> AI / DS / IWT Notes</small>
+                          <small> AI / DS / IWT Notes</small>
                         </span>
                         </a>
                       {/* </Link> */}
