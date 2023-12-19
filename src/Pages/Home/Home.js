@@ -71,7 +71,7 @@ export default function Home() {
                 <div className="site_logo">
                   <a className="site_link" href="index.html">
                     <img
-                      src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751840/Assets2/NotesEra_sq741d.png"
+                      src="Assets2/notesera_logo.png"
                       style={{ width: "200px" }}
                       alt="NotesEra - Online Learning Platform"
                     />
