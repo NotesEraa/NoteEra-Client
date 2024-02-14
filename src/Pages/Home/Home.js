@@ -185,11 +185,11 @@ export default function Home() {
                       {/* <Link to="/premium" className="btn btn_premium"> */}
                       <a
                       className="btn btn_premium"
-                      href="https://drive.google.com/drive/folders/14HEj1KVgvOyaZKKIW4vWkjcTsQqVonjd "
+                      href="https://drive.google.com/drive/folders/1TWq-kyU5SE-L-eInlt10IaAxaHY8WvRW?usp=drive_link "
                      >
                         <span>
-                          <small> AI / DS / IWT Notes</small>
-                          <small> AI / DS / IWT Notes</small>
+                          <small> Second Year Notes</small>
+                          <small> Second Year Notes</small>
                         </span>
                       </a>
                       {/* </Link> */}
