@@ -17,7 +17,7 @@ const HeroSection = ({ module, className }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [purchaseType, setPurchaseType] = useState("soft");
   const [razorOpts, setRazorOpts] = useState(null);
-  const [orderDigest, setOrderDigest] = useState(null);
+  const [orderToken, setOrderToken] = useState(null);
 
   useEffect(() => {
     loadRazorPay();
@@ -40,12 +40,11 @@ const HeroSection = ({ module, className }) => {
         }) => {
           verifyPayment({
             ...user,
-            digest: orderDigest,
+            token: orderToken,
             orderId: razorpay_order_id,
             paymentId: razorpay_payment_id,
             signature: razorpay_signature,
             productId: module.slug,
-            purchaseType,
           });
         },
       });
@@ -54,7 +53,7 @@ const HeroSection = ({ module, className }) => {
       });
       rzp.open();
     },
-    [razorOpts, module.slug, purchaseType, orderDigest],
+    [razorOpts, module.slug, purchaseType, orderToken],
   );
 
   const closeModal = useCallback(() => {
@@ -66,9 +65,9 @@ const HeroSection = ({ module, className }) => {
       setPurchaseType(type);
       setIsModalOpen(true);
 
-      const { digest, order_id, amount, currency, key, name, description } =
+      const { token, order_id, amount, currency, key, name, description } =
         await createOrder(module.slug, type);
-      setOrderDigest(digest);
+      setOrderToken(token);
 
       setRazorOpts({ order_id, amount, currency, key, name, description });
     },
