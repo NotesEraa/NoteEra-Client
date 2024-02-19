@@ -1,0 +1,68 @@
+.card {
+  --price-color: #3fc89e;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 16px 20px;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h2 span {
+  font-size: 16px;
+}
+
+.card h2 svg {
+  font-size: 14px;
+  line-height: 100%;
+  transform: translateY(3px);
+}
+
+.card .textContainer .para {
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.card .textContainer .price {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--price-color);
+}
+
+.card .textContainer p.totalRatingsPara {
+  font-size: 14px;
+}
+
+.card .textContainer .ratingsContainer {
+  font-size: 12px;
+}
+
+.card .textContainer p.ratingPara {
+  font-size: 14px;
+  transform: translateY(2px);
+  color: var(--price-color);
+}
+
+.ratings {
+  color: #ffa033;
+}
+
+@media screen and (min-width: 430px) {
+  .card {
+    width: 364px;
+  }
+  .card h2 span {
+    font-size: 20px;
+  }
+  .card h2 svg {
+    font-size: 16px;
+    transform: translateY(5px);
+  }
+  .card .textContainer .para {
+    font-size: 16px;
+  }
+}

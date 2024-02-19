@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container py-4 d-flex flex-wrap gap-4 align-items-center justify-content-around">
         <a href="/">
           <img
-            src="/Assets2/darkLogo.png"
+            src="/Assets2/lightLogo.png"
             alt="NotesEra Logo"
             width={106}
             height={46}

@@ -1,20 +1,22 @@
 import axios from "axios";
 
-const backendUrl = "https://easy-cyan-dugong-kilt.cyclic.app/api";
-// const backendUrl = "http://localhost:3000/api";
+// const backendUrl = "https://easy-cyan-dugong-kilt.cyclic.app/api";
+const backendUrl = "http://localhost:3000/api";
 
 const fetchSubjects = async ({ yearValue, programmeValue, branchValue }) => {
   try {
-    const res = await axios.get(
-      `${backendUrl}/premium/data`,
-    );
+    const res = await axios.get(`${backendUrl}/premium/data`);
     const data = res.data.body.data;
-    const subjects = data.filter(({ year, programme, branch }) =>
-      year === yearValue && programme === programmeValue &&
-      branch === branchValue
-    ).map(({ subject, link, image }) => {
-      return { name: subject, link, imgLink: image };
-    });
+    const subjects = data
+      .filter(
+        ({ year, programme, branch }) =>
+          year === yearValue &&
+          programme === programmeValue &&
+          branch === branchValue,
+      )
+      .map(({ subject, link, image }) => {
+        return { name: subject, link, imgLink: image };
+      });
     return subjects;
   } catch (err) {
     console.error(err);

@@ -26,7 +26,7 @@ export default function Home() {
   // const closePopup = () => {
   //   setShowPopup(false);
   // };
-  
+
   useEffect(() => {
     const sectionObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -59,12 +59,10 @@ export default function Home() {
             <i className="far fa-arrow-up"></i>
           </a>
         </div>
-        {
-          /* <!-- Back To Top - End -->
+        {/* <!-- Back To Top - End -->
 
         <!-- Site Header - Start
-          ================================================== --> */
-        }
+          ================================================== --> */}
         <header className="site_header site_header_1">
           <div className="container">
             <div className="row align-items-center">
@@ -94,25 +92,21 @@ export default function Home() {
               <div className="col col-lg-3 col-5">
                 <ul className="header_btns_group unordered_list_end">
                   <li className="d-lg-none">
-                    {
-                      /* <button className="mobile_menu_btn" type="button" data-bs-toggle="collapse"
+                    {/* <button className="mobile_menu_btn" type="button" data-bs-toggle="collapse"
                       data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false"
                       aria-label="Toggle navigation">
                       <i className="far fa-bars">
                       </i>
-                    </button> */
-                    }
+                    </button> */}
                   </li>
-                  {
-                    /* <li>
+                  {/* <li>
                     <a className="btn border_dark" href="login.html">
                       <span>
                         <small>Login</small>
                         <small>Login</small>
                       </span>
                     </a>
-                  </li> */
-                  }
+                  </li> */}
                   <li>
                     <a
                       className="btn btn_dark"
@@ -130,20 +124,14 @@ export default function Home() {
           </div>
         </header>
 
-        {
-          /* <!-- Site Header - End
-          ================================================== -->*/
-        }
+        {/* <!-- Site Header - End
+          ================================================== -->*/}
 
-        {
-          /*<!-- Main Body - Start
-          ================================================== -->*/
-        }
+        {/*<!-- Main Body - Start
+          ================================================== -->*/}
         <main className="page_content">
-          {
-            /*<!-- Banner Section - Start
-            ================================================== --> */
-          }
+          {/*<!-- Banner Section - Start
+            ================================================== --> */}
           <section className="hero_banner style_1">
             <div className="container">
               <div className="content_wrap">
@@ -184,9 +172,9 @@ export default function Home() {
                       </li>
                       {/* <Link to="/premium" className="btn btn_premium"> */}
                       <a
-                      className="btn btn_premium"
-                      href="https://drive.google.com/drive/folders/1TWq-kyU5SE-L-eInlt10IaAxaHY8WvRW?usp=drive_link "
-                     >
+                        className="btn btn_premium"
+                        href="https://drive.google.com/drive/folders/1TWq-kyU5SE-L-eInlt10IaAxaHY8WvRW?usp=drive_link "
+                      >
                         <span>
                           <small> Second Year Notes</small>
                           <small> Second Year Notes</small>
@@ -194,25 +182,25 @@ export default function Home() {
                       </a>
                       {/* </Link> */}
                       <li>
-                        {
-                          /* <button className="btn btn_primary" onClick={()=>{setShowPopup(true)}}>
+                        {/* <button className="btn btn_primary" onClick={()=>{setShowPopup(true)}}>
                           <span>
                             <small>MST bundle !!</small>
                             <small>DAA/FMEA MST2</small>
                           </span>
-                        </button> */
-                        }
+                        </button> */}
                       </li>
                     </ul>
                   </div>
                   <div className="col col-lg-5">
                     <div className="banner_image_1 decoration_wrap">
-                      // <div className="image_wrap">
-                      //   <img
-                          src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751695/Assets2/banner_gwfmq2.png"
-                          alt="Notes-Era – Online Learning Platform"
-                        />
-                      </div>
+                      {/*
+                        <div className="image_wrap">
+                          <img
+                            src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751695/Assets2/banner_gwfmq2.png"
+                            alt="Notes-Era – Online Learning Platform"
+                          />
+                        </div>
+                      */}
                       <div className="satisfied_student">
                         <h3 className="wrap_title">4000+ Satisfied Student</h3>
                         <ul className="students_thumbnail unordered_list_center">
@@ -282,13 +270,11 @@ export default function Home() {
               </div>
             </div>
           </section>
-          {
-            /* <!-- Banner Section - End
+          {/* <!-- Banner Section - End
             ================================================== -->
 
           <!-- Expect From Course - Start
-            ================================================== --> */
-          }
+            ================================================== --> */}
           <section className="expect_from_course section_space_lg">
             <div className="container">
               <div className="row">
@@ -316,8 +302,7 @@ export default function Home() {
                 </div>
                 <div className="col col-lg-6">
                   {/* <!-- Button will hide on Mobile Device --> */}
-                  <div className="btn_wrap pt-0 d-none d-lg-flex justify-content-end">
-                  </div>
+                  <div className="btn_wrap pt-0 d-none d-lg-flex justify-content-end"></div>
 
                   <div className="row">
                     <div className="col col-md-6">
@@ -405,13 +390,11 @@ export default function Home() {
               </div>
             </div>
           </section>
-          {
-            /* <!-- Expect From Course - End
+          {/* <!-- Expect From Course - End
             ================================================== -->
 
           <!-- Counter Section - Start
-            ================================================== --> */
-          }
+            ================================================== --> */}
           <section className="counter_section bg_light section_space_md">
             <div
               className={`container ${sectionInView ? "animate-counters" : ""}`}
@@ -422,9 +405,11 @@ export default function Home() {
                     {({ inView, ref }) => (
                       <div className="counter_item" ref={ref}>
                         <h3 className="counter_value">
-                          {inView
-                            ? <CountUp start={0} end={500} duration={2} />
-                            : <span className="counter_value_text">0</span>}
+                          {inView ? (
+                            <CountUp start={0} end={500} duration={2} />
+                          ) : (
+                            <span className="counter_value_text">0</span>
+                          )}
                           <span>+</span>
                         </h3>
                         <p className="mb-0">
@@ -440,9 +425,11 @@ export default function Home() {
                     {({ inView, ref }) => (
                       <div className="counter_item" ref={ref}>
                         <h3 className="counter_value">
-                          {inView
-                            ? <CountUp start={0} end={4200} duration={2} />
-                            : <span className="counter_value_text">0</span>}
+                          {inView ? (
+                            <CountUp start={0} end={4200} duration={2} />
+                          ) : (
+                            <span className="counter_value_text">0</span>
+                          )}
                           <span>+</span>
                         </h3>
                         <p className="mb-0">
@@ -458,9 +445,11 @@ export default function Home() {
                     {({ inView, ref }) => (
                       <div className="counter_item" ref={ref}>
                         <h3 className="counter_value">
-                          {inView
-                            ? <CountUp start={0} end={150} duration={2} />
-                            : <span className="counter_value_text">0</span>}
+                          {inView ? (
+                            <CountUp start={0} end={150} duration={2} />
+                          ) : (
+                            <span className="counter_value_text">0</span>
+                          )}
                           <span>+</span>
                         </h3>
                         <p className="mb-0">
@@ -476,9 +465,11 @@ export default function Home() {
                     {({ inView, ref }) => (
                       <div className="counter_item" ref={ref}>
                         <h3 className="counter_value">
-                          {inView
-                            ? <CountUp start={0} end={150} duration={2} />
-                            : <span className="counter_value_text">0</span>}
+                          {inView ? (
+                            <CountUp start={0} end={150} duration={2} />
+                          ) : (
+                            <span className="counter_value_text">0</span>
+                          )}
                           <span>+</span>
                         </h3>
                         <p className="mb-0">
@@ -515,7 +506,6 @@ export default function Home() {
             //         </div>
             //       </div>
             //     </div>
-
             //     <div className="tabs_wrapper">
             //       <ul className="nav" role="tablist">
             //         <li role="presentation">
@@ -586,7 +576,6 @@ export default function Home() {
             //                     </ul>
             //                     <div className="item_price">
             //                       <span className="sale_price">3rd Year</span>
-
             //                     </div>
             //                   </div>
             //                   <ul className="meta_info_list unordered_list">
@@ -618,7 +607,6 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div>
-
             //             <div className="col col-lg-5">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -711,7 +699,6 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div>
-
             //             <div className="col col-lg-5">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -761,10 +748,8 @@ export default function Home() {
             //             </div>
             //           </div>
             //         </div>
-
             //         <div className="tab-pane fade" id="teb_photography" role="tabpanel">
             //           <div className="row">
-
             //             <div className="col col-lg-5">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -810,7 +795,6 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div>
-
             //             <div className="col col-lg-5">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -856,7 +840,6 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div>
-
             //             <div className="col col-lg-5">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -902,7 +885,6 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div>
-
             //             <div className="col col-lg-5">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -948,13 +930,10 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div>
-
             //           </div>
             //         </div>
-
             //         <div className="tab-pane fade" id="teb_database" role="tabpanel">
             //           <div className="row">
-
             //             { <div className="col col-lg-4">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -1000,7 +979,6 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div> }
-
             //             <div className="col col-lg-4">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -1046,7 +1024,6 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div>
-
             //             <div className="col col-lg-4">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -1092,7 +1069,6 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div>
-
             //             { <div className="col col-lg-4">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -1138,7 +1114,6 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div> }
-
             //             <div className="col col-lg-4">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -1186,10 +1161,8 @@ export default function Home() {
             //             </div>
             //           </div>
             //         </div>
-
             //         <div className="tab-pane fade" id="teb_management" role="tabpanel">
             //           <div className="row">
-
             //             { <div className="col col-lg-4">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -1235,10 +1208,8 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div> }
-
             //           </div>
             //         </div>
-
             //         <div className="tab-pane fade" id="teb_programming" role="tabpanel">
             //           <div className="row">
             //             <div className="col col-lg-4">
@@ -1286,7 +1257,6 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div>
-
             //             <div className="col col-lg-4">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -1336,7 +1306,6 @@ export default function Home() {
             //             </div>
             //           </div>
             //         </div>
-
             //         <div className="tab-pane fade" id="teb_marketing" role="tabpanel">
             //           <div className="row">
             //             <div className="col col-lg-4">
@@ -1384,7 +1353,6 @@ export default function Home() {
             //                 </div>
             //               </div>
             //             </div>
-
             //             <div className="col col-lg-4">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -1432,10 +1400,8 @@ export default function Home() {
             //             </div>
             //           </div>
             //         </div>
-
             //         <div className="tab-pane fade" id="teb_elite" role="tabpanel">
             //           <div className="row">
-
             //             <div className="col col-lg-4">
             //               <div className="course_card">
             //                 <div className="item_image">
@@ -1488,13 +1454,11 @@ export default function Home() {
             //   </div>
             // </section>
           }
-          {
-            /* <!-- Courses Section - End
+          {/* <!-- Courses Section - End
             ================================================== -->
 
           <!-- Advertisement Section - Start
-            ================================================== --> */
-          }
+            ================================================== --> */}
           <section className="advertisement_section bg_dark">
             <div
               className="container"
@@ -1579,13 +1543,11 @@ export default function Home() {
               </div>
             </div>
           </section>
-          {
-            /* <!-- Advertisement Section - End
+          {/* <!-- Advertisement Section - End
             ================================================== -->
 
           <!-- Courses Info Section - Start
-            ================================================== --> */
-          }
+            ================================================== --> */}
           <section className="courses_info_section section_space_lg">
             <div className="container">
               <div className="row align-items-center">
@@ -1647,19 +1609,15 @@ export default function Home() {
               </div>
             </div>
           </section>
-          {
-            /* <!--         Courses Info Section - End
+          {/* <!--         Courses Info Section - End
             ================================================== -->
 
           <!-- Pricing Section - Start
-            ================================================== --> */
-          }
+            ================================================== --> */}
           <section className="pricing_section section_space_lg bg_light">
             <div className="container decoration_wrap">
               <div className="section_heading text-center">
-                <h2 className="heading_text mb-0">
-                  Premium BootCamps
-                </h2>
+                <h2 className="heading_text mb-0">Premium BootCamps</h2>
               </div>
 
               <div className="pricing_cards_wrapper row align-items-center">
@@ -1685,8 +1643,7 @@ export default function Home() {
                       <li />
                       <i className="fas fa-caret-right"></i>
                       <span>Notes+Assignments</span>
-                      {
-                        /* <!--                   </li>
+                      {/* <!--                   </li>
                                   <li>
                                     <i className="fas fa-caret-right"></i>
                                 <span></span> -->
@@ -1694,8 +1651,7 @@ export default function Home() {
                                   <li>
                                     <i className="fas fa-caret-right"></i> -->
                 <!--              <span>End Semster Exam Packages</span> -->
-                <!--                   </li> -->  */
-                      }
+                <!--                   </li> -->  */}
                     </ul>
                     <div className="btn_wrap pb-0">
                       <a className="btn border_dark" href="#!">
@@ -1850,9 +1806,7 @@ export default function Home() {
                     <ul className="info_list unordered_list_block text-start">
                       <li>
                         <i className="fas fa-caret-right"></i>
-                        <span>
-                          15 Days Python MEGA bootcamp
-                        </span>
+                        <span>15 Days Python MEGA bootcamp</span>
                       </li>
                       <li>
                         <i className="fas fa-caret-right"></i>
@@ -1921,13 +1875,11 @@ export default function Home() {
               </div>
             </div>
           </section>
-          {
-            /* <!-- Pricing Section - End
+          {/* <!-- Pricing Section - End
             ================================================== -->
 
           <!-- Testimonial Section - Start
-            ================================================== --> */
-          }
+            ================================================== --> */}
           <section className="testimonial_section section_space_lg">
             <div className="container">
               <div className="section_heading">
@@ -2152,15 +2104,11 @@ export default function Home() {
               </div>
             </div>
           </section>
-          {
-            /* <!-- Testimonial Section - End
-            ================================================== --> */
-          }
+          {/* <!-- Testimonial Section - End
+            ================================================== --> */}
 
-          {
-            /* <!-- Newslatter Section - Start
-            ================================================== --> */
-          }
+          {/* <!-- Newslatter Section - Start
+            ================================================== --> */}
           <section className="newslatter_section">
             <div className="container">
               <div
@@ -2206,20 +2154,14 @@ export default function Home() {
               </div>
             </div>
           </section>
-          {
-            /* <!-- Newslatter Section - End
-                ================================================== --> */
-          }
+          {/* <!-- Newslatter Section - End
+                ================================================== --> */}
         </main>
-        {
-          /* <!-- Main Body - End
-              ================================================== --> */
-        }
+        {/* <!-- Main Body - End
+              ================================================== --> */}
 
-        {
-          /* <!-- Site Footer - Start
-              ================================================== --> */
-        }
+        {/* <!-- Site Footer - Start
+              ================================================== --> */}
         <footer className="site_footer">
           <div className="footer_widget_area">
             <div className="container">
@@ -2400,8 +2342,7 @@ export default function Home() {
           <div className="copyright_widget">
             <div className="container">
               <p className="copyright_text text-center mb-0">
-                <a href="https://www.instagram.com/noteseraa/">Copyright</a> ©
-                {" "}
+                <a href="https://www.instagram.com/noteseraa/">Copyright</a> ©{" "}
                 <b>2023</b> Notes-Era. All rights reserved.
               </p>
             </div>
