@@ -30,6 +30,10 @@
 }
 
 .mainImgWrapper {
+  transform: scale(0.7);
+}
+
+.mainImgWrapper {
   position: relative;
   width: fit-content;
 }
@@ -147,7 +151,16 @@
   font-weight: 100;
 }
 
+@media screen and (min-width: 350px) {
+  .mainImgWrapper {
+    transform: scale(0.8);
+  }
+}
+
 @media screen and (min-width: 400px) {
+  .mainImgWrapper {
+    transform: scale(1);
+  }
   .section .mainTextContainer h1 {
     font-size: 38px;
   }
