@@ -26,7 +26,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <PremiumModulesPage />,
     },
     {
       path: "/courses",
@@ -88,10 +88,10 @@ function App() {
       path: "/premium",
       element: <Premium />,
     },
-    {
-      path: "/premium-modules",
-      element: <PremiumModulesPage />,
-    },
+    // {
+    // path: "/premium-modules",
+    // element: <PremiumModulesPage />,
+    // },
     {
       path: "/premium-modules/:repoId/:moduleSlug",
       element: <ModulePage />,
