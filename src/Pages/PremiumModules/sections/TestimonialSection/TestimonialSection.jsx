@@ -1,6 +1,7 @@
 import Carousel from "../../../../components/Carousel/Carousel";
 import ReviewCard from "./ReviewCard";
 import styles from "./TestimonialSection.module.css";
+import reviews from "./reviews";
 
 const TestimonialSection = () => {
   return (
@@ -27,55 +28,17 @@ const TestimonialSection = () => {
           slideClasses={styles.inactiveCard}
           activeSlideClasses={styles.activeCard}
         >
-          <ReviewCard
-            imgSrc="/Assets2/Premium-Modules/Reviewers/kanishk-jain.png"
-            imgAlt="Kanishk Jain"
-            name="Kanishk Jain"
-            about="Medi-Caps University"
-            rating={4}
-            review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu."
-          />
-          <ReviewCard
-            imgSrc="/Assets2/Premium-Modules/Reviewers/mahik-makariya.png"
-            imgAlt="Mahik Makariya"
-            name="Mahik Makariya"
-            about="Medi-Caps University"
-            rating={4}
-            shortReview="It was a very good experience"
-            review="AAJ TAK WEBSITE HI NAHI KHULI INKI MERE PHONE FIR BHI ACHHI HAI BHAIII"
-          />
-          <ReviewCard
-            imgSrc="/Assets2/Premium-Modules/Reviewers/kanishk-jain.png"
-            imgAlt="Kanishk Jain"
-            name="Kanishk Jain"
-            about="Medi-Caps University"
-            rating={4}
-            review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu."
-          />
-          <ReviewCard
-            imgSrc="/Assets2/Premium-Modules/Reviewers/kanishk-jain.png"
-            imgAlt="Kanishk Jain"
-            name="Kanishk Jain"
-            about="Medi-Caps University"
-            rating={4}
-            review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu."
-          />
-          <ReviewCard
-            imgSrc="/Assets2/Premium-Modules/Reviewers/kanishk-jain.png"
-            imgAlt="Kanishk Jain"
-            name="Kanishk Jain"
-            about="Medi-Caps University"
-            rating={4}
-            review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu."
-          />
-          <ReviewCard
-            imgSrc="/Assets2/Premium-Modules/Reviewers/kanishk-jain.png"
-            imgAlt="Kanishk Jain"
-            name="Kanishk Jain"
-            about="Medi-Caps University"
-            rating={4}
-            review="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu."
-          />
+          {reviews.map((review, index) => (
+            <ReviewCard
+              key={index}
+              imgSrc={review.imgSrc}
+              imgAlt={review.name}
+              name={review.name}
+              about={review.about}
+              rating={review.rating}
+              review={review.review}
+            />
+          ))}
         </Carousel>
       </main>
     </section>

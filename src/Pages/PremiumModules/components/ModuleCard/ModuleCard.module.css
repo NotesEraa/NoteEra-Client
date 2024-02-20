@@ -1,5 +1,12 @@
+.card,
+.card:hover,
+.card:active,
+.card:visited {
+  color: var(--para-color);
+}
+
 .card {
-  --price-color: #3fc89e;
+  --price-color: #3fc89e !important;
   width: 100%;
   margin: 0 auto;
   padding: 16px 16px 20px;

@@ -1,7 +1,7 @@
 import styles from "./SecondaryButton.module.css";
 
 const SecondaryButton = ({
-  isLink = true,
+  isLink = false,
   href = "/",
   children,
   handleClick = () => {},
