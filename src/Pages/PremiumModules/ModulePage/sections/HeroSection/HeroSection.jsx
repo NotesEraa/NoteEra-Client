@@ -44,7 +44,6 @@ const HeroSection = ({ module, className }) => {
             orderId: razorpay_order_id,
             paymentId: razorpay_payment_id,
             signature: razorpay_signature,
-            productId: module.slug,
           });
         },
       });

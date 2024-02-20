@@ -24,7 +24,9 @@ const HeroSection = () => {
               <div className="d-flex flex-wrap align-items-center gap-4">
                 <ActionButton>Premium Modules</ActionButton>
                 <div className="position-relative">
-                  <SecondaryButton>Free Notes</SecondaryButton>
+                  <SecondaryButton isLink href="/courses">
+                    Free Notes
+                  </SecondaryButton>
                   <div className={styles.greenEllipse} />
                 </div>
               </div>

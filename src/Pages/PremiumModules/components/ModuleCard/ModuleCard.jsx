@@ -15,17 +15,15 @@ const ModuleCard = ({
   const stars = Array.from({ length: 5 }, (_, index) => index);
 
   return (
-    <div className={`${styles.card} d-flex flex-column gap-1 shadow`}>
+    <a href={link} className={`${styles.card} d-flex flex-column gap-1 shadow`}>
       <div className={`${styles.imgContainer}`}>
         <img src={imgSrc} alt={`${name} thumbnail`} />
       </div>
       <div className={`${styles.textContainer} d-flex flex-column gap-1`}>
         <h1>Premium Modules</h1>
-        <a href={link}>
-          <h2>
-            <span>{name}</span> <MdArrowOutward />
-          </h2>
-        </a>
+        <h2>
+          <span>{name}</span> <MdArrowOutward />
+        </h2>
         <p className={styles.para}>{about}</p>
         <p className={styles.price}>{price}₹</p>
         <div className="d-flex align-items-center gap-2">
@@ -44,7 +42,7 @@ const ModuleCard = ({
           <p className={styles.totalRatingsPara}>{`(${totalRatings})`}</p>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
