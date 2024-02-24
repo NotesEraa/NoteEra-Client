@@ -115,14 +115,16 @@ const HeroSection = ({ module, className }) => {
                     </p>
                   </div>
                 </PrimaryButton>
-                <PrimaryButton handleClick={() => handlePurchase("hard")}>
-                  <div className="d-flex flex-column align-items-center">
-                    <p>{`Hard Copy Module - ${module.hardCopyPrice}₹`}</p>
-                    <p>
-                      <strong>Buy Now !</strong>
-                    </p>
-                  </div>
-                </PrimaryButton>
+                {/*
+                  <PrimaryButton handleClick={() => handlePurchase("hard")}>
+                    <div className="d-flex flex-column align-items-center">
+                      <p>{`Hard Copy Module - ${module.hardCopyPrice}₹`}</p>
+                      <p>
+                        <strong>Buy Now !</strong>
+                      </p>
+                    </div>
+                  </PrimaryButton>
+                */}
               </div>
               <div>
                 <h2>Description</h2>
