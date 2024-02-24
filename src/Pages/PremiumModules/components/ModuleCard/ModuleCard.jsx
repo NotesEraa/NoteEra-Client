@@ -8,6 +8,7 @@ const ModuleCard = ({
   name,
   about,
   price,
+  oldPrice,
   rating,
   totalRatings,
 }) => {
@@ -25,7 +26,18 @@ const ModuleCard = ({
           <span>{name}</span> <MdArrowOutward />
         </h2>
         <p className={styles.para}>{about}</p>
-        <p className={styles.price}>{price}₹</p>
+        <div
+          className={`${styles.priceContainer} d-flex justify-content-start gap-2`}
+        >
+          {oldPrice ? (
+            <p className={`${styles.oldPrice} position-relative`}>
+              {oldPrice}₹<div />
+            </p>
+          ) : (
+            ""
+          )}
+          <p className={styles.price}>{price}₹</p>
+        </div>
         <div className="d-flex align-items-center gap-2">
           <div
             className={`${styles.ratingsContainer} d-flex align-items-center gap-1`}
