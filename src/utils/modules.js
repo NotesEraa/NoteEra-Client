@@ -36,12 +36,12 @@ const createOrder = async (slug, type) => {
   }
 };
 
-const verifyPayment = async (paymentDetails) => {
+const verifyPayment = async (paymentDetails, successCallback) => {
   const { data } = await axios.post(
     `${backendUrl}/payment/verify`,
     paymentDetails,
   );
-  console.log(data);
+  if (data.status === "success") successCallback();
 };
 
 export { fetchAllRepos, fetchRepo, createOrder, verifyPayment };
