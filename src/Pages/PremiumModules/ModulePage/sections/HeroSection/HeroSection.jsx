@@ -7,6 +7,8 @@ import PrimaryButton from "../../../components/PrimaryButton/PrimaryButton";
 import PreviewCard from "./PreviewCard";
 import PurchaseForm from "./PurchaseForm";
 import styles from "./HeroSection.module.css";
+import Spinner from "../../../components/Spinner/Spinner";
+import { IoCopy } from "react-icons/io5";
 
 const formatNewLine = (text) => {
   const formattedText = text.replace(/\n/g, "<br />");
@@ -14,18 +16,38 @@ const formatNewLine = (text) => {
 };
 
 const HeroSection = ({ module, className }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
   const [purchaseType, setPurchaseType] = useState("soft");
   const [razorOpts, setRazorOpts] = useState(null);
   const [orderToken, setOrderToken] = useState(null);
+  const [isPaymentProcessing, setIsPaymentProcessing] = useState(false);
+  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
 
   useEffect(() => {
     loadRazorPay();
   }, []);
 
+  const copyText = useCallback((text) => {
+    navigator.clipboard.writeText(text);
+  }, []);
+
+  const handlePaymentSuccess = useCallback(() => {
+    setIsPaymentProcessing(false);
+    setIsSuccessModalOpen(true);
+  }, []);
+
+  const closeLoadingModal = useCallback(() => {
+    setIsPaymentProcessing(false);
+  }, []);
+
+  const closeSuccessModal = useCallback(() => {
+    setIsSuccessModalOpen(false);
+  }, []);
+
   const handlePayNow = useCallback(
     (user) => {
-      setIsModalOpen(false);
+      setIsPaymentModalOpen(false);
+      setIsPaymentProcessing(true);
       const rzp = getRazorPay({
         ...razorOpts,
         prefill: { contact: `+91${user.contactNumber}` },
@@ -38,13 +60,16 @@ const HeroSection = ({ module, className }) => {
           razorpay_payment_id,
           razorpay_signature,
         }) => {
-          verifyPayment({
-            ...user,
-            token: orderToken,
-            orderId: razorpay_order_id,
-            paymentId: razorpay_payment_id,
-            signature: razorpay_signature,
-          });
+          verifyPayment(
+            {
+              ...user,
+              token: orderToken,
+              orderId: razorpay_order_id,
+              paymentId: razorpay_payment_id,
+              signature: razorpay_signature,
+            },
+            handlePaymentSuccess,
+          );
         },
       });
       rzp.on("payment.failed", (response) => {
@@ -52,17 +77,17 @@ const HeroSection = ({ module, className }) => {
       });
       rzp.open();
     },
-    [razorOpts, module.slug, purchaseType, orderToken],
+    [razorOpts, module.slug, purchaseType, orderToken, handlePaymentSuccess],
   );
 
-  const closeModal = useCallback(() => {
-    setIsModalOpen(false);
-  }, [setIsModalOpen]);
+  const closePaymentModal = useCallback(() => {
+    setIsPaymentModalOpen(false);
+  }, [setIsPaymentModalOpen]);
 
   const handlePurchase = useCallback(
     async (type) => {
       setPurchaseType(type);
-      setIsModalOpen(true);
+      setIsPaymentModalOpen(true);
 
       const { token, order_id, amount, currency, key, name, description } =
         await createOrder(module.slug, type);
@@ -163,12 +188,69 @@ const HeroSection = ({ module, className }) => {
           </div>
         </div>
 
-        {isModalOpen ? (
+        {isPaymentModalOpen ? (
           <PurchaseForm
             purchaseType={purchaseType}
             handlePayNow={handlePayNow}
-            closeModal={closeModal}
+            closeModal={closePaymentModal}
           />
+        ) : (
+          ""
+        )}
+        {isPaymentProcessing ? (
+          <div className={`${styles.loadingModalWrapper}`}>
+            <div className={`${styles.loadingModal}`}>
+              <Spinner size={50} />
+            </div>
+            <div className={`${styles.overlay}`} onClick={closeLoadingModal} />
+          </div>
+        ) : (
+          ""
+        )}
+
+        {isSuccessModalOpen ? (
+          <div className="popup-container">
+            <div
+              className={`${styles.popupContent} popup-content d-flex flex-column justify-content-center`}
+            >
+              <span className="popup-close" onClick={closeSuccessModal}>
+                &times;
+              </span>
+              <img
+                src="/Assets2/Premium-Modules/display-asset.jpg"
+                alt="Notes-Era MST bunddle"
+              />
+              <p className="text-center mt-2">Thank You for trusting us</p>
+              <p className="text-center">
+                Your purchase is added to your drive. View the below link with
+                your registered email id.
+              </p>
+              <div className="d-flex align-items-center justify-content-center gap-3 mt-3">
+                <a
+                  href={`https://drive.google.com/file/d/${module.fileId}/view?usp=drive_link`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn_premium"
+                >
+                  <span>
+                    <small>Open Drive Link</small>
+                    <small>Open Drive Link</small>
+                  </span>
+                </a>
+                <button
+                  className={styles.copyBtn}
+                  onClick={() =>
+                    copyText(
+                      `https://drive.google.com/file/d/${module.fileId}/view?usp=drive_link`,
+                    )
+                  }
+                >
+                  <IoCopy size={35} />
+                </button>
+              </div>
+            </div>
+            <div className={`${styles.overlay}`} onClick={closeSuccessModal} />
+          </div>
         ) : (
           ""
         )}
