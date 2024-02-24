@@ -150,6 +150,17 @@ const HeroSection = ({ module, className }) => {
                     </div>
                   </PrimaryButton>
                 */}
+                <a
+                  href={`https://drive.google.com/file/d/${module.fileId}/view?usp=drive_link`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn_premium"
+                >
+                  <span>
+                    <small>Open Drive Link</small>
+                    <small>Open Drive Link</small>
+                  </span>
+                </a>
               </div>
               <div>
                 <h2>Description</h2>
