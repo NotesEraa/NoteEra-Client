@@ -45,7 +45,7 @@ const ModuleSection = ({
             link={`/premium-modules/${module.repoId}/${module.slug}`}
             name={module.name}
             about={module.about}
-            price={module.softCopyPrice + module.hardCopyPrice}
+            price={module.softCopyPrice}
             rating={module.rating}
             totalRatings={module.totalRatings}
           />
