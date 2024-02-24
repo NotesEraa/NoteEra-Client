@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const backendUrl = "http://localhost:3000/api";
-const backendUrl = "https://notesera-modules-backend.onrender.com/api";
+const backendUrl = "http://localhost:3000/api";
+// const backendUrl = "https://notesera-modules-backend.onrender.com/api";
 
 const fetchAllRepos = async () => {
   try {
