@@ -33,11 +33,11 @@ const reviews = [
   },
   {
     imgSrc: "/Assets2/Premium-Modules/Reviewers/mahik-makariya.png",
-    name: "Durva Sadawarte",
+    name: "Mahik Makariya",
     about: "Medi-Caps University",
     rating: 4,
     review:
-      "Fantastic study notes website! Genuine content and user-friendly interface make accessing study material a breeze. A valuable resource for students.",
+      "It was literally helpful for me, 95% of the questions came from the research and methodology module. Even though it was a bit hectic, the language in the notes was literally understandable. ",
   },
 ];
 
