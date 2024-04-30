@@ -15,11 +15,11 @@ function Courses() {
   const [selectedCollege, setSelectedCollege] = useState(null);
   const [selectedYear, setSelectedYear] = useState(null);
   const [selectedType, setSelectedType] = useState(null);
-
+  const BASE_URL='https://notesera-basic-backend.onrender.com'
   const fetchColleges = async () => {
     try {
       const response = await axios.get(
-        'https://notesera-backend.onrender.com/data/all/colleges'
+        `${BASE_URL}/data/all/colleges`
       );
       const collegeData = response.data.map((college) => ({
         value: college,
@@ -42,7 +42,7 @@ function Courses() {
     setSelectedCollege(selectedOption);
 
     // Fetch years for the selected college from the API
-    axios.get(`https://notesera-backend.onrender.com/data/all/${selectedOption.value}/years`)
+    axios.get(`${BASE_URL}/data/all/${selectedOption.value}/years`)
       .then(response => {
         const yearData = response.data.map(year => ({
           value: year,
@@ -59,7 +59,7 @@ function Courses() {
     setSelectedYear(selectedOption);
 
     // Fetch types for the selected college and year from the API
-    axios.get(`https://notesera-backend.onrender.com/data/all/${selectedCollege.value}/${selectedOption.value}/types`)
+    axios.get(`${BASE_URL}/data/all/${selectedCollege.value}/${selectedOption.value}/types`)
       .then(response => {
         const typeData = response.data.map(type => ({
           value: type,
@@ -78,7 +78,7 @@ function Courses() {
 
   const fetchSubjects = async () => {
     if (selectedCollege && selectedYear && selectedType) {
-      const link = `https://notesera-backend.onrender.com/data/all/${selectedCollege.value}/${selectedYear.value}/${selectedType.value}/subjects`;
+      const link = `${BASE_URL}/data/all/${selectedCollege.value}/${selectedYear.value}/${selectedType.value}/subjects`;
       setSubjectbutton(true);
       try {
         const response = await axios.get(link);
@@ -96,7 +96,7 @@ function Courses() {
   // Function to open the link associated with a subject
   const openSubjectLink = async (subject) => {
     if (selectedCollege && selectedYear && selectedType && subject) {
-      const link = `https://notesera-backend.onrender.com/data/all/${selectedCollege.value}/${selectedYear.value}/${selectedType.value}/${subject}/links`;
+      const link = `${BASE_URL}/data/all/${selectedCollege.value}/${selectedYear.value}/${selectedType.value}/${subject}/links`;
       try {
         const response = await axios.get(link);
         const links = response.data;
