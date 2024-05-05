@@ -30,10 +30,11 @@ export function getNotesAuthToken(){
 }
 
 export async function checkNotesAuthLoader(){
+    const BASE_URL='https://notesera-basic-backend.onrender.com'
     const token = getNotesAuthToken();
     let getvalue;
     try{
-     getvalue = await axios.get("https://notesera-backend.onrender.com/auth/checkvalidity",{
+     getvalue = await axios.get(`${BASE_URL}/auth/checkvalidity`,{
         headers:{
             Authorization :`Bearer ${token}`
         }

@@ -6,7 +6,7 @@ import Cookies from 'js-cookie';
 import axios from 'axios';
 
 const EditData = () => {
-
+  const BASE_URL='https://notesera-basic-backend.onrender.com'
   // Use the useParams hook to get the ID of the data you want to edit
   const { id } = useParams();
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ const EditData = () => {
   // Fetch the existing data based on the ID when the component mounts
   useEffect(() => {
     // Make an API call to fetch the data based on the ID and set the state variables
-    axios.get(`https://notesera-backend.onrender.com/data/${id}`)
+    axios.get(`${BASE_URL}s/data/${id}`)
       .then((response) => {
         const data = response.data;
         setCollege(data.college);
@@ -50,7 +50,7 @@ const EditData = () => {
     };
 
     // Make an API call to update the data
-    axios.put(`https://notesera-backend.onrender.com/data/${id}`, updatedData,{
+    axios.put(`${BASE_URL}s/data/${id}`, updatedData,{
       headers: {
         Authorization: `Bearer ${Cookies.get("notestoken")}`,
       }

@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Cookies from 'js-cookie';
 const AddData = () => {
-
+  const BASE_URL='https://notesera-basic-backend.onrender.com'
   const navigate = useNavigate();
 
   const initialFormData = {
@@ -48,13 +48,13 @@ const AddData = () => {
 
       // if (userPasskey === addPasskey) {
       //   // If the passkey matches, proceed to redirect the user to the dashboard
-      //   await axios.post('https://notesera-backend.onrender.com/data/add', formData);
+      //   await axios.post('${BASE_URL}/data/add', formData);
       //   setFormData(initialFormData);
       //   window.alert('Data added successfully');
       // } else {
       //   window.alert('Invalid Passkey');
       // }
-      await axios.post('https://notesera-backend.onrender.com/data/add', formData,{
+      await axios.post(`${BASE_URL}/data/add`, formData,{
         headers: {
           Authorization: `Bearer ${Cookies.get("notestoken")}`,
         },

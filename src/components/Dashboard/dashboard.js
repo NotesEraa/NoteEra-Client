@@ -6,6 +6,7 @@ import axios from 'axios';
 import Button from '../UI/button';
 import Cookies from 'js-cookie';
 const Dashboard = () => {
+  const BASE_URL='https://notesera-basic-backend.onrender.com'
   const navigate = useNavigate();
   
   // State to manage the list of data
@@ -27,7 +28,7 @@ const Dashboard = () => {
     if (confirmed){
       try {
         // Make a DELETE request to your server to delete the data entry
-        await axios.delete(`https://notesera-backend.onrender.com/data/${id}`,
+        await axios.delete(`${BASE_URL}/data/${id}`,
         {
           headers: {
             Authorization: `Bearer ${Cookies.get("notestoken")}`,
@@ -52,7 +53,7 @@ const Dashboard = () => {
   // Function to fetch data from the backend
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://notesera-backend.onrender.com/data/all'); 
+      const response = await axios.get(`${BASE_URL}/data/all`); 
       setDataList(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);

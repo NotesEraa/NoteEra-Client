@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useNavigate} from 'react-router-dom';
 import Cookies from 'js-cookie';
 const VideoLogin=()=>{
+    const BASE_URL='https://notesera-basic-backend.onrender.com'
     const navigate =useNavigate();
     const[emailInput,setEmailInput]=useState(null);
     const [passwordInput,setPasswordInput]=useState(null);
@@ -21,7 +22,7 @@ const VideoLogin=()=>{
             setErrorMsg(true)
         }
         else{
-            axios.post("https://notesera-backend.onrender.com/auth/login",{
+            axios.post(`${BASE_URL}/auth/login`,{
                 email:emailInput,
                 password:passwordInput
             }).then(res=>{
