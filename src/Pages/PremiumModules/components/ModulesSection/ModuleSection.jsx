@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import Carousel from "../../../../components/Carousel/Carousel";
+// import Carousel from "../../../../components/Carousel/Carousel";
 import ModuleCard from "../ModuleCard/ModuleCard";
-
+import classes from "./modulesection.module.css";
 const ModuleSection = ({
   name,
   about,
@@ -25,7 +25,7 @@ const ModuleSection = ({
         <h2>{`Explore ${name} Modules Repository`}</h2>
         <p>{about}</p>
       </header>
-      <Carousel
+      {/* <Carousel
         className="px-2 mb-5"
         loop
         slidesPerView={1}
@@ -37,7 +37,8 @@ const ModuleSection = ({
           1200: { slidesPerView: 3 },
         }}
         keyboard={{ enabled: true, onlyInViewport: true }}
-      >
+      > */}
+      <div className={classes.gallary}>
         {sectionModules.map((module, index) => (
           <ModuleCard
             key={index}
@@ -51,7 +52,7 @@ const ModuleSection = ({
             totalRatings={module.totalRatings}
           />
         ))}
-      </Carousel>
+      </div>
     </div>
   ) : (
     ""
