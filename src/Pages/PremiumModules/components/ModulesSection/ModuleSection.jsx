@@ -17,7 +17,6 @@ const ModuleSection = ({
       setSectionModules(relatedMods);
     }
   }, [modules, isRelatedMods, slug]);
-  console.log(sectionModules);
 
   return sectionModules.length ? (
     <div className={``}>
