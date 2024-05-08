@@ -8,13 +8,15 @@
 .card {
   --price-color: #3fc89e !important;
   width: 100%;
+  height: 640px;
   margin: 0 auto;
   padding: 16px 16px 20px;
   border-radius: 8px;
 }
 
 .card img {
-  width: 100%;
+  width: 325px;
+  height: 440px;
 }
 
 .card h2 span {
