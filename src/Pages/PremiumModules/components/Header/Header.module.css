@@ -71,28 +71,28 @@
   color: var(--primary-text-color);
 }
 
-.loginBtn {
+.primaryBtn {
   background: #091f18;
   border-radius: 8px;
   width: fit-content;
   font-size: 12px;
 }
 
-.loginBtn span small {
+.primaryBtn span small {
   padding: 4px 0;
   font-size: inherit;
 }
 
-.loginBtn a {
+.primaryBtn a {
   color: #fff;
   padding: 0 10px;
 }
 
-.loginBtn:hover {
+.primaryBtn:hover {
   background: var(--primary-text-color);
 }
 
-.loginBtn a:hover {
+.primaryBtn a:hover {
   color: #fff;
 }
 
