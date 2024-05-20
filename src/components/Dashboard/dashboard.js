@@ -6,7 +6,7 @@ import axios from 'axios';
 import Button from '../UI/button';
 import Cookies from 'js-cookie';
 const Dashboard = () => {
-  const BASE_URL='https://notesera-basic-backend.onrender.com'
+  const BASE_URL='https://notesera-basic-backend-d3bk.onrender.com'
   const navigate = useNavigate();
   
   // State to manage the list of data

@@ -6,7 +6,7 @@ import Cookies from 'js-cookie';
 import axios from 'axios';
 
 const EditData = () => {
-  const BASE_URL='https://notesera-basic-backend.onrender.com'
+  const BASE_URL='https://notesera-basic-backend-d3bk.onrender.com'
   // Use the useParams hook to get the ID of the data you want to edit
   const { id } = useParams();
   const navigate = useNavigate();
