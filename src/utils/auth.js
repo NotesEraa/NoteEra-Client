@@ -30,7 +30,7 @@ export function getNotesAuthToken(){
 }
 
 export async function checkNotesAuthLoader(){
-    const BASE_URL='https://notesera-basic-backend.onrender.com'
+    const BASE_URL='https://notesera-basic-backend-d3bk.onrender.com'
     const token = getNotesAuthToken();
     let getvalue;
     try{

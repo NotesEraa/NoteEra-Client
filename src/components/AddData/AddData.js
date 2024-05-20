@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Cookies from 'js-cookie';
 const AddData = () => {
-  const BASE_URL='https://notesera-basic-backend.onrender.com'
+  const BASE_URL='https://notesera-basic-backend-d3bk.onrender.com'
   const navigate = useNavigate();
 
   const initialFormData = {

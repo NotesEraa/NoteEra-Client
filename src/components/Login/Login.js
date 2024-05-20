@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useNavigate} from 'react-router-dom';
 import Cookies from 'js-cookie';
 const VideoLogin=()=>{
-    const BASE_URL='https://notesera-basic-backend.onrender.com'
+    const BASE_URL='https://notesera-basic-backend-d3bk.onrender.com'
     const navigate =useNavigate();
     const[emailInput,setEmailInput]=useState(null);
     const [passwordInput,setPasswordInput]=useState(null);
