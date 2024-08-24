@@ -113,7 +113,7 @@ const HeroSection = () => {
               <strong>Creative Thinking</strong>
             </div>
           </div>
-          <div className={`${styles.brandsContainer} d-flex gap-3 mt-5`}>
+          {/* <div className={`${styles.brandsContainer} d-flex gap-3 mt-5`}>
             <div
               className={`${styles.collabContainer} d-flex align-items-center`}
             >
@@ -146,7 +146,7 @@ const HeroSection = () => {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </HeroBackground>
     </section>
