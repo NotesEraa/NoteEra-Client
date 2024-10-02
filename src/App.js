@@ -20,6 +20,7 @@ import { checkNotesAuthLoader, checkVideoAuthLoader } from "./utils/auth.js";
 import HackerBhai from "./Pages/BlankPage/HackerBhai.js";
 import PremiumModulesPage from "./Pages/PremiumModules/PremiumModulesPage.jsx";
 import ModulePage from "./Pages/PremiumModules/ModulePage/ModulePage.jsx";
+import Contactus from "./Pages/PremiumModules/components/ContactUs/Contactus.jsx";
 // import axios from 'axios';
 
 function App() {
@@ -32,6 +33,11 @@ function App() {
       path: "/courses",
       element: <Courses />,
     },
+    {
+      path:"/contactus",
+      element:<Contactus/>
+    }
+    ,
     {
       path: "/signup9875",
       element: <SignUp />,
