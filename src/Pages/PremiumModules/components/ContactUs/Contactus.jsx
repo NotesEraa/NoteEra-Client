@@ -34,9 +34,10 @@ export default function Contactus() {
         setError(response.message)
       }
     })
-    .catch(error => {
+    .catch(err => {
       // request related error.
-      setError(error.message ? error.message : error);
+      setError(err.message ? err.message : err);
+      alert(error);
     });
   }
 
