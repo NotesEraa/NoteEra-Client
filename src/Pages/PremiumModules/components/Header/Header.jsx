@@ -85,14 +85,14 @@ const Nav = ({ location }) => {
         </li>
       </ul>
 
-      <div className={styles.primaryBtn}>
+{/*       <div className={styles.primaryBtn}>
         <a href="https://razorpay.me/@notes-era" className="btn">
           <span>
             <small>Donate Now!</small>
             <small>Donate Now!</small>
           </span>
         </a>
-      </div>
+      </div> */}
     </nav>
   );
 };
