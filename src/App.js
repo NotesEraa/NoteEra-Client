@@ -21,6 +21,7 @@ import HackerBhai from "./Pages/BlankPage/HackerBhai.js";
 import PremiumModulesPage from "./Pages/PremiumModules/PremiumModulesPage.jsx";
 import ModulePage from "./Pages/PremiumModules/ModulePage/ModulePage.jsx";
 import Contactus from "./Pages/PremiumModules/components/ContactUs/Contactus.jsx";
+import CancellationAndRefund from "./Pages/CancellationAndRefund/CancellationAndRefund.jsx";
 // import axios from 'axios';
 
 function App() {
@@ -89,6 +90,10 @@ function App() {
     {
       path: "/terms",
       element: <Termsandconditions />,
+    },
+    {
+      path: "/cancellationandrefund",
+      element: <CancellationAndRefund/>,
     },
     {
       path: "/premium",
