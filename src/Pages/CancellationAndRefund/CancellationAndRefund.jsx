@@ -30,7 +30,7 @@ const CancellationAndRefund=()=>{
 <p><strong>Service</strong> refers to the Website.</p>
 </li>
 <li>
-<p><strong>Website</strong> refers to notesera, accessible from <a href="https://www.notesera.in/" rel="external nofollow noopener" target="_blank">https://www.notesera.in/</a></p>
+<p><strong>Website</strong> refers to notesera, accessible from <a href="/">https://www.notesera.in/</a></p>
 </li>
 <li>
 <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
