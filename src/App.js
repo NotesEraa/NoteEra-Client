@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Pages/Home/Home.js";
 import Courses from "./Pages/Courses/Courses.js";
 import SignUp from "./Pages/SignUp/SignUp";
 import Login from "./components/Login/Login";
@@ -23,6 +22,7 @@ import ModulePage from "./Pages/PremiumModules/ModulePage/ModulePage.jsx";
 import CancellationAndRefund from "./Pages/CancellationAndRefund/CancellationAndRefund.jsx";
 import ShippingAndDelivery from "./Pages/shippingAndDelivery/ShippingAndDelivery.jsx";
 import ContactUs from "./Pages/PremiumModules/components/ContactUs/ContactusPage/Contactus.jsx";
+import About from "./Pages/About/About.jsx";
 // import axios from 'axios';
 
 function App() {
@@ -103,6 +103,10 @@ function App() {
     {
       path: "/premium",
       element: <Premium />,
+    },
+    {
+      path:"/aboutus",
+      element:<About/>
     },
     // {
     // path: "/premium-modules",

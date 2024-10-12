@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import { InView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import Header from "../PremiumModules/components/Header/Header";
 export default function Home() {
   const [sectionInView, setSectionInView] = useState(false);
 
@@ -63,66 +64,7 @@ export default function Home() {
 
         <!-- Site Header - Start
           ================================================== --> */}
-        <header className="site_header site_header_1">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col col-lg-3 col-5">
-                <div className="site_logo">
-                  <a className="site_link" href="index.html">
-                    <img
-                      src="Assets2/notesera_logo.png"
-                      style={{ width: "200px" }}
-                      alt="NotesEra - Online Learning Platform"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="col col-lg-6 col-2">
-                <nav className="main_menu navbar navbar-expand-lg">
-                  <div
-                    className="main_menu_inner collapse navbar-collapse justify-content-center"
-                    id="main_menu_dropdown"
-                  >
-                    <ul className="main_menu_list unordered_list_center">
-                      <li className="dropdown active" />
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-              <div className="col col-lg-3 col-5">
-                <ul className="header_btns_group unordered_list_end">
-                  <li className="d-lg-none">
-                    {/* <button className="mobile_menu_btn" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false"
-                      aria-label="Toggle navigation">
-                      <i className="far fa-bars">
-                      </i>
-                    </button> */}
-                  </li>
-                  {/* <li>
-                    <a className="btn border_dark" href="login.html">
-                      <span>
-                        <small>Login</small>
-                        <small>Login</small>
-                      </span>
-                    </a>
-                  </li> */}
-                  <li>
-                    <a
-                      className="btn btn_dark"
-                      href="http://chat.whatsapp.com/CU0h46Rmu5j3R9iqG3ci4Y"
-                    >
-                      <span>
-                        <small>Join Our Community</small>
-                        <small>Join Our Community</small>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Header/>
 
         {/* <!-- Site Header - End
           ================================================== -->*/}
@@ -132,144 +74,144 @@ export default function Home() {
         <main className="page_content">
           {/*<!-- Banner Section - Start
             ================================================== --> */}
-          <section className="hero_banner style_1">
-            <div className="container">
-              <div className="content_wrap">
-                <div className="row">
-                  <div className="col col-lg-7">
-                    <h1
-                      className="banner_small_title"
-                      style={{
-                        fontSize: "50px",
-                        textAlign: "left",
-                        color: "#AF69EE",
-                        marginBottom: "40px",
-                      }}
-                    >
-                      Notes-Era
-                    </h1>
-                    <h2 className="banner_big_title">
-                      Your Ultimate Source for All Educational Requirements
-                      Online
-                    </h2>
-                    <p className="banner_description">
-                      Welcome to Notes-Era – Your Ultimate Source for All
-                      Educational Note Requirements Online. At Notes-Era, we
-                      understand the importance of quality educational resources
-                      in your learning journey. Our platform offers a
-                      comprehensive collection of notes, study materials, and
-                      resources to cater to the diverse needs of students and
-                      learners.
-                    </p>
-                    <ul className="banner_btns_group unordered_list">
-                      <li>
-                        <Link to="/courses" className="btn btn_primary">
-                          <span>
-                            <small>Explore Notes</small>
-                            <small>Explore Notes</small>
-                          </span>
-                        </Link>
-                      </li>
-                      {/* <Link to="/premium" className="btn btn_premium"> */}
-                      <a
-                        className="btn btn_premium"
-                        href="https://drive.google.com/drive/folders/1TWq-kyU5SE-L-eInlt10IaAxaHY8WvRW?usp=drive_link "
+            <section className="hero_banner style_1">
+              <div className="container">
+                <div className="content_wrap">
+                  <div className="row">
+                    <div className="col col-lg-7">
+                      <h1
+                        className="banner_small_title"
+                        style={{
+                          fontSize: "50px",
+                          textAlign: "left",
+                          color: "#AF69EE",
+                          marginBottom: "40px",
+                        }}
                       >
-                        <span>
-                          <small> Second Year Notes</small>
-                          <small> Second Year Notes</small>
-                        </span>
-                      </a>
-                      {/* </Link> */}
-                      <li>
-                        {/* <button className="btn btn_primary" onClick={()=>{setShowPopup(true)}}>
+                        Notes-Era
+                      </h1>
+                      <h2 className="banner_big_title">
+                        Your Ultimate Source for All Educational Requirements
+                        Online
+                      </h2>
+                      <p className="banner_description">
+                        Welcome to Notes-Era – Your Ultimate Source for All
+                        Educational Note Requirements Online. At Notes-Era, we
+                        understand the importance of quality educational resources
+                        in your learning journey. Our platform offers a
+                        comprehensive collection of notes, study materials, and
+                        resources to cater to the diverse needs of students and
+                        learners.
+                      </p>
+                      <ul className="banner_btns_group unordered_list">
+                        <li>
+                          <Link to="/courses" className="btn btn_primary">
+                            <span>
+                              <small>Explore Notes</small>
+                              <small>Explore Notes</small>
+                            </span>
+                          </Link>
+                        </li>
+                        {/* <Link to="/premium" className="btn btn_premium"> */}
+                        <a
+                          className="btn btn_premium"
+                          href="https://drive.google.com/drive/folders/1TWq-kyU5SE-L-eInlt10IaAxaHY8WvRW?usp=drive_link "
+                        >
                           <span>
-                            <small>MST bundle !!</small>
-                            <small>DAA/FMEA MST2</small>
+                            <small> Second Year Notes</small>
+                            <small> Second Year Notes</small>
                           </span>
-                        </button> */}
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col col-lg-5">
-                    <div className="banner_image_1 decoration_wrap">
-                      {/*
-                        <div className="image_wrap">
+                        </a>
+                        {/* </Link> */}
+                        <li>
+                          {/* <button className="btn btn_primary" onClick={()=>{setShowPopup(true)}}>
+                            <span>
+                              <small>MST bundle !!</small>
+                              <small>DAA/FMEA MST2</small>
+                            </span>
+                          </button> */}
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col col-lg-5">
+                      <div className="banner_image_1 decoration_wrap">
+                        {/*
+                          <div className="image_wrap">
+                            <img
+                              src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751695/Assets2/banner_gwfmq2.png"
+                              alt="Notes-Era – Online Learning Platform"
+                            />
+                          </div>
+                        */}
+                        <div className="satisfied_student">
+                          <h3 className="wrap_title">4000+ Satisfied Student</h3>
+                          <ul className="students_thumbnail unordered_list_center">
+                            <li>
+                              <span>
+                                <img
+                                  src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751792/Assets2/Untitleddesign_1_wceupe.png"
+                                  alt="Notes-Era – Online Learning Platform"
+                                />
+                              </span>
+                            </li>
+                            <li>
+                              <span>
+                                <img
+                                  src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751793/Assets2/Untitleddesign_2_fje1wf.png"
+                                  alt="Notes-Era – Online Learning Platform"
+                                />
+                              </span>
+                            </li>
+                            <li>
+                              <span>
+                                <img
+                                  src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751793/Assets2/Untitleddesign_3_lknnof.png"
+                                  alt="Notes-Era – Online Learning Platform"
+                                />
+                              </span>
+                            </li>
+                            <li>
+                              <span>
+                                <img
+                                  src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751793/Assets2/Untitleddesign_4_ljes1d.png"
+                                  alt="Notes-Era – Online Learning Platform"
+                                />
+                              </span>
+                            </li>
+                            <li>
+                              <span>
+                                <img
+                                  src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751794/Assets2/Untitleddesign_flr1tu.png"
+                                  alt="Notes-Era – Online Learning Platform"
+                                />
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          className="deco_item shape_img_1"
+                          data-parallax='{"y" : -130, "smoothness": 6}'
+                        >
                           <img
-                            src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751695/Assets2/banner_gwfmq2.png"
+                            src="assets/images/shape/shape_img_1.png"
                             alt="Notes-Era – Online Learning Platform"
                           />
                         </div>
-                      */}
-                      <div className="satisfied_student">
-                        <h3 className="wrap_title">4000+ Satisfied Student</h3>
-                        <ul className="students_thumbnail unordered_list_center">
-                          <li>
-                            <span>
-                              <img
-                                src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751792/Assets2/Untitleddesign_1_wceupe.png"
-                                alt="Notes-Era – Online Learning Platform"
-                              />
-                            </span>
-                          </li>
-                          <li>
-                            <span>
-                              <img
-                                src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751793/Assets2/Untitleddesign_2_fje1wf.png"
-                                alt="Notes-Era – Online Learning Platform"
-                              />
-                            </span>
-                          </li>
-                          <li>
-                            <span>
-                              <img
-                                src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751793/Assets2/Untitleddesign_3_lknnof.png"
-                                alt="Notes-Era – Online Learning Platform"
-                              />
-                            </span>
-                          </li>
-                          <li>
-                            <span>
-                              <img
-                                src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751793/Assets2/Untitleddesign_4_ljes1d.png"
-                                alt="Notes-Era – Online Learning Platform"
-                              />
-                            </span>
-                          </li>
-                          <li>
-                            <span>
-                              <img
-                                src="https://res.cloudinary.com/dckce9dzy/image/upload/v1693751794/Assets2/Untitleddesign_flr1tu.png"
-                                alt="Notes-Era – Online Learning Platform"
-                              />
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div
-                        className="deco_item shape_img_1"
-                        data-parallax='{"y" : -130, "smoothness": 6}'
-                      >
-                        <img
-                          src="assets/images/shape/shape_img_1.png"
-                          alt="Notes-Era – Online Learning Platform"
-                        />
-                      </div>
-                      <div
-                        className="deco_item shape_img_2"
-                        data-parallax='{"y" : 160, "smoothness": 6}'
-                      >
-                        <img
-                          src="assets/images/shape/shape_img_2.png"
-                          alt="Notes-Era – Online Learning Platform"
-                        />
+                        <div
+                          className="deco_item shape_img_2"
+                          data-parallax='{"y" : 160, "smoothness": 6}'
+                        >
+                          <img
+                            src="assets/images/shape/shape_img_2.png"
+                            alt="Notes-Era – Online Learning Platform"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
           {/* <!-- Banner Section - End
             ================================================== -->
 
