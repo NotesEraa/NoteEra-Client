@@ -6,7 +6,8 @@ const Header = () => {
   const [isHeaderAtTop, setIsHeaderAtTop] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const location = useLocation();
-
+  const hello = isHeaderAtTop
+  console.log(hello);
   useEffect(() => {
     const setScrollPosition = () => {
       const { scrollY } = window;
@@ -17,6 +18,7 @@ const Header = () => {
     window.addEventListener("scroll", setScrollPosition);
     return () => {
       window.removeEventListener("scroll", setScrollPosition);
+      
     };
   }, []);
 
