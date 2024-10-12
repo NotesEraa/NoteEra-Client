@@ -20,9 +20,9 @@ import { checkNotesAuthLoader, checkVideoAuthLoader } from "./utils/auth.js";
 import HackerBhai from "./Pages/BlankPage/HackerBhai.js";
 import PremiumModulesPage from "./Pages/PremiumModules/PremiumModulesPage.jsx";
 import ModulePage from "./Pages/PremiumModules/ModulePage/ModulePage.jsx";
-import Contactus from "./Pages/PremiumModules/components/ContactUs/Contactus.jsx";
 import CancellationAndRefund from "./Pages/CancellationAndRefund/CancellationAndRefund.jsx";
 import ShippingAndDelivery from "./Pages/shippingAndDelivery/ShippingAndDelivery.jsx";
+import ContactUs from "./Pages/PremiumModules/components/ContactUs/ContactusPage/Contactus.jsx";
 // import axios from 'axios';
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
     },
     {
       path:"/contactus",
-      element:<Contactus/>
+      element:<ContactUs/>
     }
     ,
     {

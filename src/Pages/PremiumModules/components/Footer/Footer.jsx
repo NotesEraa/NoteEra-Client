@@ -1,9 +1,7 @@
 import {
-  FaTwitter,
   FaLinkedin,
-  FaFacebook,
-  FaGithub,
-  FaDribbble,
+  FaInstagram ,
+  FaWhatsapp
 } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
@@ -43,21 +41,21 @@ const Footer = () => {
               <a href="/">Blog Section</a>
               <span className={styles.badge}>New</span>
             </div>
-            <a href="/">Video Section</a>
+            <a href="/videosection">Video Section</a>
             <a href="/">Internship Updates</a>
           </div>
           <div className={`${styles.footerSectionContainer}`}>
             <h1>Social</h1>
-            <a href="/">YouTube</a>
-            <a href="/">Instagram</a>
-            <a href="/">LinkedIn</a>
-            <a href="/">Twitter</a>
+            <a href="https://www.instagram.com/noteseraa/">Instagram</a>
+            <a href="https://www.linkedin.com/company/notes-era/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://chat.whatsapp.com/IpIHSeyewli315RP9b9aPn" target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
           <div className={`${styles.footerSectionContainer}`}>
             <h1>Legal</h1>
-            <a href="/">Terms</a>
-            <a href="/">Privacy</a>
-            <a href="/">Cookies</a>
+            <a href="/terms">Terms</a>
+            <a href="/privacypolicy">Privacy</a>
+            <a href="/shippingPolicy">Shipping policy</a>
+            <a href="/cancellationandrefund"> cancellation and refund policy</a>
             <a href="/">Contact</a>
           </div>
         </div>
@@ -66,20 +64,15 @@ const Footer = () => {
         >
           <p>Copyright &copy; 2024 Notes-Era. All rights reserved.</p>
           <div className={`${styles.socialIcons} d-flex gap-3`}>
-            <a href="/">
-              <FaTwitter />
-            </a>
-            <a href="/">
+            
+            <a href="https://www.linkedin.com/company/notes-era/" target="_blank" rel="noreferrer">
               <FaLinkedin />
             </a>
-            <a href="/">
-              <FaFacebook />
+            <a href="https://www.instagram.com/noteseraa/" target="_blank" rel="noreferrer">
+              <FaInstagram  />
             </a>
-            <a href="/">
-              <FaGithub />
-            </a>
-            <a href="/">
-              <FaDribbble />
+            <a href="https://chat.whatsapp.com/IpIHSeyewli315RP9b9aPn" target="_blank" rel="noreferrer">
+              <FaWhatsapp/>
             </a>
           </div>
         </div>

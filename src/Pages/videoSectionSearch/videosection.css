@@ -1,12 +1,12 @@
 .videosection{
-    background-color: black;
+    background-color: white;
     height: 100vh;
 }
 .videosection h1{
     margin-top: 5px;
     text-align: center;
     font-size: 20px;
-    color:white
+    color:black;
 
 }
 .searchimage{

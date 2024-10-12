@@ -1,23 +1,95 @@
-import "./navbar.css";
-import image from "../../assets/darkLogo.png";
-const Navbar = (props) => {
-  let subjectname = "";
-  let backlink = "/";
-  if (props.subjectname && props.backlink) {
-    subjectname = props.subjectname;
-    backlink = props.backlink;
-  }
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import styles from "./navbar.module.css";
+
+const Header = () => {
+  const [isHeaderAtTop, setIsHeaderAtTop] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const setScrollPosition = () => {
+      const { scrollY } = window;
+      if (scrollY <= 10) setIsHeaderAtTop(true);
+      else setIsHeaderAtTop(false);
+    };
+    setScrollPosition();
+    window.addEventListener("scroll", setScrollPosition);
+    return () => {
+      window.removeEventListener("scroll", setScrollPosition);
+    };
+  }, []);
+
+  useEffect(() => {
+    const closeNavOnLg = () => {
+      if (window.innerWidth >= 990) setIsNavOpen(false);
+    };
+    window.addEventListener("resize", closeNavOnLg);
+    return () => {
+      window.removeEventListener("resize", closeNavOnLg);
+    };
+  }, []);
+
   return (
-    <div className="vidnavbar">
-      <div className="logoside">
-        <img src={image} alt=" this is logo" />
+    <header
+      className={`${styles.header} `}
+    >
+      <div className={`${styles.wrapper} container d-flex flex-column`}>
+        <div className="d-flex justify-content-between align-items-center py-3">
+          <div className={`${styles.imgContainer}`}>
+            <a href="/">
+              <img src="/Assets2/darkLogo.png" alt="NotesEra logo" />
+            </a>
+          </div>
+          <Nav location={location} />
+          <div
+            className={`${styles.menuBtn} ${isNavOpen ? styles.navOpen : ""}`}
+            onClick={() => setIsNavOpen(!isNavOpen)}
+          >
+            <div className={`${styles.menuBar} ${styles.menuBar1}`} />
+            <div className={`${styles.menuBar} ${styles.menuBar2}`} />
+            <div className={`${styles.menuBar} ${styles.menuBar3}`} />
+          </div>
+        </div>
+        {isNavOpen ? (
+          <nav className={`${styles.mobNav}`}>
+            <Nav location={location} />
+          </nav>
+        ) : (
+          ""
+        )}
       </div>
-      <div className="subjectname">{subjectname}</div>
-      <a href={backlink} className="backbutton">
-        back
-      </a>
-    </div>
+    </header>
   );
 };
-export default Navbar;
 
+const Nav = ({ location }) => {
+  return (
+    <nav className={`${styles.nav}`}>
+      <ul className="d-flex list-unstyled">
+        <li
+          className={location.pathname === "/landing" ? styles.activeLink : ""}
+        >
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/videosection">Video Section</a>
+        </li>
+        <li>
+          <a href="/contactus">Contact Us</a>
+        </li>
+      </ul>
+
+{/*       <div className={styles.primaryBtn}>
+        <a href="https://razorpay.me/@notes-era" className="btn">
+          <span>
+            <small>Donate Now!</small>
+            <small>Donate Now!</small>
+          </span>
+        </a>
+      </div> */}
+    </nav>
+  );
+};
+
+export default Header;

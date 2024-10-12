@@ -75,13 +75,10 @@ const Nav = ({ location }) => {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/">Video Section</a>
+          <a href="/videosection">Video Section</a>
         </li>
         <li>
-          <a href="/">Social Welfare</a>
-        </li>
-        <li>
-          <a href="/">Contact Us</a>
+          <a href="/contactus">Contact Us</a>
         </li>
       </ul>
 
