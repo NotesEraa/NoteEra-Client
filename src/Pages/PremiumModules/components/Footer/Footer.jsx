@@ -37,12 +37,7 @@ const Footer = () => {
           <div className={`${styles.footerSectionContainer}`}>
             <h1>Sections</h1>
             <a href="/">Home</a>
-            <div className="d-flex align-items-center gap-3">
-              <a href="/">Blog Section</a>
-              <span className={styles.badge}>New</span>
-            </div>
             <a href="/videosection">Video Section</a>
-            <a href="/">Internship Updates</a>
           </div>
           <div className={`${styles.footerSectionContainer}`}>
             <h1>Social</h1>
@@ -56,7 +51,7 @@ const Footer = () => {
             <a href="/privacypolicy">Privacy</a>
             <a href="/shippingPolicy">Shipping policy</a>
             <a href="/cancellationandrefund"> cancellation and refund policy</a>
-            <a href="/">Contact</a>
+            <a href="/contactus">Contact</a>
           </div>
         </div>
         <div
