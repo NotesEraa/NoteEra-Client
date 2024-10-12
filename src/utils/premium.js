@@ -1,8 +1,8 @@
 import axios from "axios";
 
 // const backendUrl = "http://localhost:3000/api";
-const backendUrl = "https://notes-era-backend.onrender.com/api";
-
+//const backendUrl = "https://notes-era-backend.onrender.com/api";
+const backendUrl = "https://portal.notesera.in/api"; // NotesEra alt
 const fetchSubjects = async ({ yearValue, programmeValue, branchValue }) => {
   try {
     const res = await axios.get(`${backendUrl}/premium/data`);
